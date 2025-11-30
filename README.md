@@ -1,0 +1,2 @@
+# 17_Egzamin_wstepny
+PojektSO_17_Egzamin_wstepny
