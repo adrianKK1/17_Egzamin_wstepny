@@ -1,4 +1,4 @@
-// Wklej to do dziekan.c, komisja.c i kandydat.c (tymczasowo)
+// Wklej to do dziekan.c, komisja.c i kandydat.c (tymczasowo) test test
 #include "common.h"
 #include "utils.h"
 #include <signal.h>
@@ -92,6 +92,6 @@ int main() {
     while (1) {
         sleep(1);
     }
-    
+
     return 0;
 }
