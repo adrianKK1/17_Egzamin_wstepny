@@ -1,0 +1,11 @@
+# Pliki obiektowe
+*.o
+
+# Pliki wykonywalne
+dziekan
+komisja
+kandydat
+
+# Pliki tymczasowe edytora (opcjonalnie)
+.vscode/
+*.swp
