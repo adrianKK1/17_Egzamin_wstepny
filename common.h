@@ -28,6 +28,7 @@
 #define MSG_WYNIK_A       4   // Komisja A -> Kandydat + Dziekan
 #define MSG_WEJSCIE_B     5   // Kandydat -> Komisja B
 #define MSG_WYNIK_B       6   // Komisja B -> Kandydat + Dziekan
+#define MSG_WYNIKI        7   // Komisja -> Dziekan (Raport końcowy)
 #define MSG_KONIEC        99  // Sygnał zakończenia
 
 // Struktura komunikatu (wymóg: long mtype na początku) [cite: 762, 1367]

@@ -1,4 +1,3 @@
-// Wklej to do dziekan.c, komisja.c i kandydat.c (tymczasowo) test test
 #include "common.h"
 #include "utils.h"
 #include <signal.h>
@@ -89,8 +88,48 @@ int main() {
     printf("[DZIEKAN] Semafory zainicjalizowane (A=%d, B=%d, START=0).\n", LIMIT_SALA, LIMIT_SALA);
     printf("[DZIEKAN] System gotowy. Naciśnij Ctrl+C aby zakończyć i posprzątać.\n");
 
-    while (1) {
-        sleep(1);
+    printf("[DZIEKAN] System gotowy. Oczekuje na kandydatów i wyniki... \n");
+
+    Komunikat msg;
+    while (1){
+        // Dziekan odbiera WSZYSTKIE komunikaty skierowane do niego:
+        // 1. Prośby o maturę (MSG_MATURA_REQ)
+        // 2. Wyniki z komisji (MSG_WYNIKI)
+        // Używamy typu -MSG_WYNIKI (ujemna wartość w msgrcv oznacza: odbierz pierwszy komunikat 
+        // o typie <= MSG_WYNIKI). Dzięki temu łapiemy różne typy w jednej funkcji.
+        // Ale dla precyzji w tym projekcie zróbmy prościej - sprawdzajmy po kolei (nieblokująco) 
+        // lub użyjmy IPC_NOWAIT, żeby Dziekan nie wisiał tylko na jednym typie.
+        
+        // Podejście proste: Czekaj na COKOLWIEK (typ 0 nie działa w msgrcv tak jak chcemy dla priorytetów),
+        // ale najbezpieczniej obsłużyć to tak:
+
+        //A) Sprawdz czy sa pytania o mature (ipc_NOWAIT - nie czekaj jesli brak)
+        if (msgrcv(msgid, &msg, sizeof(Komunikat) - sizeof(long), MSG_MATURA_REQ, IPC_NOWAIT) != -1){
+            printf("[DZIEKAN] Pytanie o mature od PID=%d\n", msg.nadawca_pid);
+
+            //sprawdzenie matury (98% zdaje)
+            Komunikat odp;
+            odp.mtype = msg.nadawca_pid; //odpowiedz do konkretnego kandydata
+
+            if (losuj(1,100) <=2) {
+                odp.dane_int = 0; //brak matury
+                printf("[DZIEKAN] PID=%d nie ma matury.\n", msg.nadawca_pid);
+            } else {
+                odp.dane_int = 1; //matura zaliczona
+                printf("[DZIEKAN] PID=%d ma mature.\n", msg.nadawca_pid);
+            }
+            msgsnd(msgid, &odp, sizeof(Komunikat) - sizeof(long), 0);
+        }
+
+        //B) Sprawdz czy sa wyniki z komisji (ipc_NOWAIT - nie czekaj jesli brak)
+        if (msgrcv(msgid, &msg, sizeof(Komunikat) - sizeof(long), MSG_WYNIKI, IPC_NOWAIT) != -1){
+            //otrzymano wynik z komisji
+            printf("[DZIEKAN] Otrzymano wynik: Student PID=%d, %s\n", msg.nadawca_pid, msg.tresc);
+            //tutaj w przyszlosci dodamy zapis pliku do raportu
+        }
+
+        // sleep żeby nie zajechać procesora w pętli (bo używamy IPC_NOWAIT)
+        usleep(10000); // 10ms
     }
 
     return 0;
