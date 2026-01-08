@@ -1,4 +1,3 @@
-#include <time.h>
 #include "common.h"
 #include "utils.h"
 
@@ -19,7 +18,7 @@ void operacja_semafor(int sem_idx, int op){
             perror("[KOMISJA] Blad operacji na semaforze");
             exit(1);
         } else {
-            exit(0); //koniec symulacji
+            exit(0); 
         }
     }
 }
@@ -28,6 +27,10 @@ int main() {
     
     pid_t moj_pid = getpid();
     srand(time(NULL) ^ moj_pid); // inicjalizacja generatora liczb losowych
+
+    //losowanie czy kandydat jest poprawkowiczem (2% szans)
+    int czy_poprawkowicz = (rand() % 100 < 2) ? 1 : 0;
+    printf("[KANDYDAT %d] Start procesu. Poprawkowicz: %s\n", moj_pid, czy_poprawkowicz ? "TAK" : "NIE");
 
     //1 podlacznie do IPC, dziekan już stworzył kolejke i semafory
     key_t key = ftok(PROG_SCIEZKA, PROG_ID);
@@ -48,6 +51,7 @@ int main() {
     Komunikat msg;
     msg.mtype = MSG_MATURA_REQ;
     msg.nadawca_pid = moj_pid;
+    msg.status_specjalny = czy_poprawkowicz;
     msg.dane_int = 0; //brak danych dodatkowych
     sprintf(msg.tresc, "Proszę o weryfikację matury.");
 
@@ -76,9 +80,14 @@ int main() {
     operacja_semafor(SEM_KOMISJA_A_IDX, -1); //P(SEM_KOMISJA_A_IDX)
     printf("[KANDYDAT %d] Zajmuję miejsce w sali Komisji A.\n", moj_pid);
 
+    int czas_Ti = losuj(1, 2); 
+    sleep(czas_Ti); //symulacja czasu dotarcia do komisji
+
     // b) wysyłanie komunikatu do Komisji A
     msg.mtype = MSG_WEJSCIE_A;
     msg.nadawca_pid = moj_pid;
+    msg.status_specjalny = czy_poprawkowicz;
+    
     if(msgsnd(msgid, &msg, sizeof(Komunikat) - sizeof(long),0) == -1) {        
         perror("[KANDYDAT] Blad wyslania komunikatu do Komisji A");
         exit (1);
@@ -106,10 +115,12 @@ int main() {
     printf("[KANDYDAT %d] Czekam na wolne miejsce w Komisji B...\n", moj_pid);
     operacja_semafor(SEM_KOMISJA_B_IDX, -1); 
     printf("[KANDYDAT %d] Zajmuję miejsce w sali Komisji B.\n", moj_pid);
-
+    
+    sleep(losuj(1, 2));
     // b) wysyłanie komunikatu do Komisji B
     msg.mtype = MSG_WEJSCIE_B;  
     msg.nadawca_pid = moj_pid;
+    msg.status_specjalny = 0;
     if(msgsnd(msgid, &msg, sizeof(Komunikat) - sizeof(long),0) == -1) {        
         perror("[KANDYDAT] Blad wyslania komunikatu do Komisji B");
         exit (1);

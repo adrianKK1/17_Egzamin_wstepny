@@ -52,8 +52,8 @@ Komunikat pobierz_z_kolejki_wew(){
     Komunikat msg = temp->dane_studenta;
     head = head->next;
     if(head == NULL) tail = NULL; //kolejka pusta po pobraniu
-    free(temp);
     pthread_mutex_unlock(&mutex_kolejki);
+    free(temp);
     return msg;
 }
 
@@ -67,40 +67,52 @@ void* watek_egzaminatora(void* arg) {
         //1. Czekaj na studenta - Pobierz studenta z kolejki wewnętrznej
         Komunikat student = pobierz_z_kolejki_wew();
         printf("[Komisja %c] Egzaminator %d rozpoczyna egzamin studenta PID: %d.\n", typ_komisji, id_egzaminatora, student.nadawca_pid);
-
-        //2. Przeprowadz egzamin (symulacja czasem snu)
-        int czas_egzaminu = (rand() % 3) + 2; //czas egzaminu 2-4 sekundy
-        sleep(czas_egzaminu);
-
-        //3. Wystawianie oceny (0-100%)
-        int ocena = losuj(0, 100);
+        
+        //egzamin
+        int ocena_koncowa = 0;
+        if (typ_komisji == 'A' && student.status_specjalny == 1) {
+            ocena_koncowa = 100;
+        } else {
+            int suma_ocen = 0;
+            for (int i = 0; i < liczba_egzaminatorow; i++) {
+                sleep(losuj(1, 2)); 
+                suma_ocen += losuj(0, 100);
+            }
+            ocena_koncowa = suma_ocen / liczba_egzaminatorow;
+        }
+        
 
         //4. Wsylanie wyniku do dziekana (do rankingu)
         Komunikat wynik_dla_dziekana;
         wynik_dla_dziekana.mtype = MSG_WYNIKI; //typ komunikatu dla dziekana
         wynik_dla_dziekana.nadawca_pid = student.nadawca_pid; //ID studenta
-        wynik_dla_dziekana.dane_int = ocena; //ocena
+        wynik_dla_dziekana.dane_int = ocena_koncowa; //ocena
 
-        // Zakodowanie w treści, od której to komisji (np. "A:55")
-        snprintf(wynik_dla_dziekana.tresc, 20, "%c:%d", typ_komisji, ocena);
+        if (student.status_specjalny == 1)
+            snprintf(wynik_dla_dziekana.tresc, 50, "%c:%d (POPRAWKOWICZ)", typ_komisji, ocena_koncowa);
+        else
+            snprintf(wynik_dla_dziekana.tresc, 50, "%c:%d", typ_komisji, ocena_koncowa);
 
         if (msgsnd(msgid, &wynik_dla_dziekana, sizeof(Komunikat) - sizeof(long), 0) == -1) {
             perror("Bład wysylania wyniku do Dziekana");
         }
-
+        
+        
         //wyslanie wyniku do studenta - aby mogl isc dalej
-        //adresujemy po PID studenta
+        
         Komunikat wynik_dla_studenta;
         wynik_dla_studenta.mtype = student.nadawca_pid; //typ
-        wynik_dla_studenta.dane_int = ocena; //ocena
-        snprintf(wynik_dla_studenta.tresc, 256, "Komisja %c zakonczona. Ocena: %d%%", typ_komisji, ocena);
+        wynik_dla_studenta.dane_int = ocena_koncowa; //ocena
+        snprintf(wynik_dla_studenta.tresc, 256, "Komisja %c zakonczona. Ocena: %d%%", typ_komisji, ocena_koncowa);
 
         if (msgsnd(msgid, &wynik_dla_studenta, sizeof(Komunikat) - sizeof(long), 0) == -1) {
             perror("Blad wysylania wyniku do studenta");
         }
 
         printf("[KOMISJA %c] Egzaminator %d: Zakończono egzamin PID=%d, Ocena=%d%%\n", 
-               typ_komisji, id_egzaminatora, student.nadawca_pid, ocena);
+               typ_komisji, id_egzaminatora, student.nadawca_pid, ocena_koncowa);
+
+        
     }
     return NULL;
 }
@@ -137,6 +149,7 @@ int main(int argc, char* argv[]) {
             perror("Blad tworzenia watku egzaminatora");
             exit(1);
         }
+        
     }
 
     //3 petla glowan (recepcja) - odbieranie studentow z kolejki i przekazywanie do egzaminatorow
@@ -161,8 +174,6 @@ int main(int argc, char* argv[]) {
         }
     }
 
-    //sprzatanie pamieci
-    free(watki);
 
     return 0;
 }

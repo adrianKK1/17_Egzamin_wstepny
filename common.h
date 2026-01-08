@@ -11,6 +11,8 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <signal.h>
+#include <time.h>
+#include <stdarg.h>
 
 //stale projektowe
 #define M_MIEJSC 120        // Liczba miejsc na roku
@@ -35,7 +37,8 @@
 typedef struct {
     long mtype;             // Typ komunikatu
     pid_t nadawca_pid;      // PID procesu wysyłającego (żeby wiedzieć komu odpisać)
-    int dane_int;           // Np. ocena, status (0/1)
+    int dane_int;           // Np. ocena, status 
+    int status_specjalny;   // 0=zwykły, 1=poprawkowicz
     char tresc[256];        // Opcjonalny tekst (np. do raportu)
 } Komunikat;
 

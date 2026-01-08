@@ -1,0 +1,102 @@
+[19:53:04] [Dziekan] Uczelnia otwarta. Liczba miejsc: 120. Kandydatow: 20.
+[19:53:04] [Dziekan] Komisja A (PID: 39319) i komisja B (PID: 39320) rozpoczynaja prace.
+[19:53:05] [Dziekan] Wpuszczono 20 kandydatow. Czekam na wyniki.
+[19:53:05] [Dziekan] Kandydat (PID: 39343) posiada matura. Akceptacja.
+[19:53:05] [Dziekan] Kandydat (PID: 39348) posiada matura. Akceptacja.
+[19:53:05] [Dziekan] Kandydat (PID: 39349) posiada matura. Akceptacja.
+[19:53:05] [Dziekan] Kandydat (PID: 39350) posiada matura. Akceptacja.
+[19:53:06] [Dziekan] Kandydat (PID: 39351) posiada matura. Akceptacja.
+[19:53:06] [Dziekan] Kandydat (PID: 39352) posiada matura. Akceptacja.
+[19:53:06] [Dziekan] Kandydat (PID: 39353) posiada matura. Akceptacja.
+[19:53:06] [Dziekan] Kandydat (PID: 39354) posiada matura. Akceptacja.
+[19:53:06] [Dziekan] Kandydat (PID: 39356) posiada matura. Akceptacja.
+[19:53:06] [Dziekan] Kandydat (PID: 39355) posiada matura. Akceptacja.
+[19:53:06] [Dziekan] Kandydat (PID: 39357) posiada matura. Akceptacja.
+[19:53:06] [Dziekan] Kandydat (PID: 39381) posiada matura. Akceptacja.
+[19:53:06] [Dziekan] Kandydat (PID: 39382) posiada matura. Akceptacja.
+[19:53:07] [Dziekan] Kandydat (PID: 39383) posiada matura. Akceptacja.
+[19:53:07] [Dziekan] Kandydat (PID: 39384) posiada matura. Akceptacja.
+[19:53:07] [Dziekan] Kandydat (PID: 39385) posiada matura. Akceptacja.
+[19:53:07] [Dziekan] Kandydat (PID: 39386) posiada matura. Akceptacja.
+[19:53:07] [Dziekan] Kandydat (PID: 39387) posiada matura. Akceptacja.
+[19:53:07] [Dziekan] Kandydat (PID: 39389) posiada matura. Akceptacja.
+[19:53:07] [Dziekan] Kandydat (PID: 39388) posiada matura. Akceptacja.
+[19:53:14] WYNIK: Student PID=39348 -> A:48
+[19:53:14] WYNIK: Student PID=39348 -> A:48
+[19:53:14] WYNIK: Student PID=39343 -> A:50
+[19:53:14] WYNIK: Student PID=39343 -> A:50
+[19:53:16] WYNIK: Student PID=39349 -> A:23
+[19:53:16] WYNIK: Student PID=39349 -> A:23
+[19:53:19] WYNIK: Student PID=39348 -> B:35
+[19:53:20] WYNIK: Student PID=39348 -> B:35
+[19:53:21] WYNIK: Student PID=39343 -> B:45
+[19:53:21] WYNIK: Student PID=39343 -> B:45
+[19:53:23] WYNIK: Student PID=39350 -> A:32
+[19:53:23] WYNIK: Student PID=39350 -> A:32
+[19:53:24] WYNIK: Student PID=39351 -> A:77
+[19:53:24] WYNIK: Student PID=39351 -> A:77
+[19:53:27] WYNIK: Student PID=39352 -> A:48
+[19:53:27] WYNIK: Student PID=39352 -> A:48
+[19:53:28] WYNIK: Student PID=39350 -> B:25
+[19:53:28] WYNIK: Student PID=39350 -> B:25
+[19:53:31] WYNIK: Student PID=39351 -> B:43
+[19:53:31] WYNIK: Student PID=39351 -> B:43
+[19:53:32] WYNIK: Student PID=39353 -> A:78
+[19:53:32] WYNIK: Student PID=39353 -> A:78
+[19:53:32] WYNIK: Student PID=39354 -> A:64
+[19:53:32] WYNIK: Student PID=39354 -> A:64
+[19:53:32] WYNIK: Student PID=39352 -> B:26
+[19:53:32] WYNIK: Student PID=39352 -> B:26
+[19:53:33] WYNIK: Student PID=39356 -> A:47
+[19:53:33] WYNIK: Student PID=39356 -> A:47
+[19:53:38] WYNIK: Student PID=39353 -> B:25
+[19:53:38] WYNIK: Student PID=39353 -> B:25
+[19:53:39] WYNIK: Student PID=39354 -> B:84
+[19:53:39] WYNIK: Student PID=39354 -> B:84
+[19:53:40] WYNIK: Student PID=39355 -> A:37
+[19:53:40] WYNIK: Student PID=39355 -> A:37
+[19:53:40] WYNIK: Student PID=39356 -> B:60
+[19:53:40] WYNIK: Student PID=39356 -> B:60
+[19:53:41] WYNIK: Student PID=39357 -> A:34
+[19:53:41] WYNIK: Student PID=39357 -> A:34
+[19:53:42] WYNIK: Student PID=39381 -> A:55
+[19:53:42] WYNIK: Student PID=39381 -> A:55
+[19:53:45] WYNIK: Student PID=39355 -> B:49
+[19:53:45] WYNIK: Student PID=39355 -> B:49
+[19:53:45] WYNIK: Student PID=39357 -> B:28
+[19:53:45] WYNIK: Student PID=39357 -> B:28
+[19:53:48] WYNIK: Student PID=39381 -> B:46
+[19:53:48] WYNIK: Student PID=39381 -> B:46
+[19:53:50] WYNIK: Student PID=39382 -> A:46
+[19:53:50] WYNIK: Student PID=39382 -> A:46
+[19:53:50] WYNIK: Student PID=39384 -> A:44
+[19:53:50] WYNIK: Student PID=39384 -> A:44
+[19:53:51] WYNIK: Student PID=39383 -> A:55
+[19:53:51] WYNIK: Student PID=39383 -> A:55
+[19:53:56] WYNIK: Student PID=39382 -> B:43
+[19:53:56] WYNIK: Student PID=39382 -> B:43
+[19:53:57] WYNIK: Student PID=39383 -> B:59
+[19:53:57] WYNIK: Student PID=39383 -> B:59
+[19:53:57] WYNIK: Student PID=39384 -> B:63
+[19:53:57] WYNIK: Student PID=39384 -> B:63
+[19:53:59] WYNIK: Student PID=39387 -> A:66
+[19:53:59] WYNIK: Student PID=39387 -> A:66
+[19:53:59] WYNIK: Student PID=39386 -> A:71
+[19:53:59] WYNIK: Student PID=39386 -> A:71
+[19:54:00] WYNIK: Student PID=39385 -> A:45
+[19:54:00] WYNIK: Student PID=39385 -> A:45
+[19:54:04] WYNIK: Student PID=39385 -> B:67
+[19:54:04] WYNIK: Student PID=39385 -> B:67
+[19:54:04] WYNIK: Student PID=39386 -> B:60
+[19:54:04] WYNIK: Student PID=39386 -> B:60
+[19:54:05] WYNIK: Student PID=39387 -> B:31
+[19:54:05] WYNIK: Student PID=39387 -> B:31
+[19:54:08] WYNIK: Student PID=39388 -> A:68
+[19:54:08] WYNIK: Student PID=39388 -> A:68
+[19:54:10] WYNIK: Student PID=39389 -> A:47
+[19:54:10] WYNIK: Student PID=39389 -> A:47
+[19:54:13] WYNIK: Student PID=39388 -> B:8
+[19:54:13] WYNIK: Student PID=39388 -> B:8
+[19:54:16] WYNIK: Student PID=39389 -> B:32
+[19:54:16] WYNIK: Student PID=39389 -> B:32
+[19:54:54] [Dziekan] Zamykanie systemu i sprzatanie zasobow IPC...
