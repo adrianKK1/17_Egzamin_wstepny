@@ -1,102 +1,132 @@
-[19:53:04] [Dziekan] Uczelnia otwarta. Liczba miejsc: 120. Kandydatow: 20.
-[19:53:04] [Dziekan] Komisja A (PID: 39319) i komisja B (PID: 39320) rozpoczynaja prace.
-[19:53:05] [Dziekan] Wpuszczono 20 kandydatow. Czekam na wyniki.
-[19:53:05] [Dziekan] Kandydat (PID: 39343) posiada matura. Akceptacja.
-[19:53:05] [Dziekan] Kandydat (PID: 39348) posiada matura. Akceptacja.
-[19:53:05] [Dziekan] Kandydat (PID: 39349) posiada matura. Akceptacja.
-[19:53:05] [Dziekan] Kandydat (PID: 39350) posiada matura. Akceptacja.
-[19:53:06] [Dziekan] Kandydat (PID: 39351) posiada matura. Akceptacja.
-[19:53:06] [Dziekan] Kandydat (PID: 39352) posiada matura. Akceptacja.
-[19:53:06] [Dziekan] Kandydat (PID: 39353) posiada matura. Akceptacja.
-[19:53:06] [Dziekan] Kandydat (PID: 39354) posiada matura. Akceptacja.
-[19:53:06] [Dziekan] Kandydat (PID: 39356) posiada matura. Akceptacja.
-[19:53:06] [Dziekan] Kandydat (PID: 39355) posiada matura. Akceptacja.
-[19:53:06] [Dziekan] Kandydat (PID: 39357) posiada matura. Akceptacja.
-[19:53:06] [Dziekan] Kandydat (PID: 39381) posiada matura. Akceptacja.
-[19:53:06] [Dziekan] Kandydat (PID: 39382) posiada matura. Akceptacja.
-[19:53:07] [Dziekan] Kandydat (PID: 39383) posiada matura. Akceptacja.
-[19:53:07] [Dziekan] Kandydat (PID: 39384) posiada matura. Akceptacja.
-[19:53:07] [Dziekan] Kandydat (PID: 39385) posiada matura. Akceptacja.
-[19:53:07] [Dziekan] Kandydat (PID: 39386) posiada matura. Akceptacja.
-[19:53:07] [Dziekan] Kandydat (PID: 39387) posiada matura. Akceptacja.
-[19:53:07] [Dziekan] Kandydat (PID: 39389) posiada matura. Akceptacja.
-[19:53:07] [Dziekan] Kandydat (PID: 39388) posiada matura. Akceptacja.
-[19:53:14] WYNIK: Student PID=39348 -> A:48
-[19:53:14] WYNIK: Student PID=39348 -> A:48
-[19:53:14] WYNIK: Student PID=39343 -> A:50
-[19:53:14] WYNIK: Student PID=39343 -> A:50
-[19:53:16] WYNIK: Student PID=39349 -> A:23
-[19:53:16] WYNIK: Student PID=39349 -> A:23
-[19:53:19] WYNIK: Student PID=39348 -> B:35
-[19:53:20] WYNIK: Student PID=39348 -> B:35
-[19:53:21] WYNIK: Student PID=39343 -> B:45
-[19:53:21] WYNIK: Student PID=39343 -> B:45
-[19:53:23] WYNIK: Student PID=39350 -> A:32
-[19:53:23] WYNIK: Student PID=39350 -> A:32
-[19:53:24] WYNIK: Student PID=39351 -> A:77
-[19:53:24] WYNIK: Student PID=39351 -> A:77
-[19:53:27] WYNIK: Student PID=39352 -> A:48
-[19:53:27] WYNIK: Student PID=39352 -> A:48
-[19:53:28] WYNIK: Student PID=39350 -> B:25
-[19:53:28] WYNIK: Student PID=39350 -> B:25
-[19:53:31] WYNIK: Student PID=39351 -> B:43
-[19:53:31] WYNIK: Student PID=39351 -> B:43
-[19:53:32] WYNIK: Student PID=39353 -> A:78
-[19:53:32] WYNIK: Student PID=39353 -> A:78
-[19:53:32] WYNIK: Student PID=39354 -> A:64
-[19:53:32] WYNIK: Student PID=39354 -> A:64
-[19:53:32] WYNIK: Student PID=39352 -> B:26
-[19:53:32] WYNIK: Student PID=39352 -> B:26
-[19:53:33] WYNIK: Student PID=39356 -> A:47
-[19:53:33] WYNIK: Student PID=39356 -> A:47
-[19:53:38] WYNIK: Student PID=39353 -> B:25
-[19:53:38] WYNIK: Student PID=39353 -> B:25
-[19:53:39] WYNIK: Student PID=39354 -> B:84
-[19:53:39] WYNIK: Student PID=39354 -> B:84
-[19:53:40] WYNIK: Student PID=39355 -> A:37
-[19:53:40] WYNIK: Student PID=39355 -> A:37
-[19:53:40] WYNIK: Student PID=39356 -> B:60
-[19:53:40] WYNIK: Student PID=39356 -> B:60
-[19:53:41] WYNIK: Student PID=39357 -> A:34
-[19:53:41] WYNIK: Student PID=39357 -> A:34
-[19:53:42] WYNIK: Student PID=39381 -> A:55
-[19:53:42] WYNIK: Student PID=39381 -> A:55
-[19:53:45] WYNIK: Student PID=39355 -> B:49
-[19:53:45] WYNIK: Student PID=39355 -> B:49
-[19:53:45] WYNIK: Student PID=39357 -> B:28
-[19:53:45] WYNIK: Student PID=39357 -> B:28
-[19:53:48] WYNIK: Student PID=39381 -> B:46
-[19:53:48] WYNIK: Student PID=39381 -> B:46
-[19:53:50] WYNIK: Student PID=39382 -> A:46
-[19:53:50] WYNIK: Student PID=39382 -> A:46
-[19:53:50] WYNIK: Student PID=39384 -> A:44
-[19:53:50] WYNIK: Student PID=39384 -> A:44
-[19:53:51] WYNIK: Student PID=39383 -> A:55
-[19:53:51] WYNIK: Student PID=39383 -> A:55
-[19:53:56] WYNIK: Student PID=39382 -> B:43
-[19:53:56] WYNIK: Student PID=39382 -> B:43
-[19:53:57] WYNIK: Student PID=39383 -> B:59
-[19:53:57] WYNIK: Student PID=39383 -> B:59
-[19:53:57] WYNIK: Student PID=39384 -> B:63
-[19:53:57] WYNIK: Student PID=39384 -> B:63
-[19:53:59] WYNIK: Student PID=39387 -> A:66
-[19:53:59] WYNIK: Student PID=39387 -> A:66
-[19:53:59] WYNIK: Student PID=39386 -> A:71
-[19:53:59] WYNIK: Student PID=39386 -> A:71
-[19:54:00] WYNIK: Student PID=39385 -> A:45
-[19:54:00] WYNIK: Student PID=39385 -> A:45
-[19:54:04] WYNIK: Student PID=39385 -> B:67
-[19:54:04] WYNIK: Student PID=39385 -> B:67
-[19:54:04] WYNIK: Student PID=39386 -> B:60
-[19:54:04] WYNIK: Student PID=39386 -> B:60
-[19:54:05] WYNIK: Student PID=39387 -> B:31
-[19:54:05] WYNIK: Student PID=39387 -> B:31
-[19:54:08] WYNIK: Student PID=39388 -> A:68
-[19:54:08] WYNIK: Student PID=39388 -> A:68
-[19:54:10] WYNIK: Student PID=39389 -> A:47
-[19:54:10] WYNIK: Student PID=39389 -> A:47
-[19:54:13] WYNIK: Student PID=39388 -> B:8
-[19:54:13] WYNIK: Student PID=39388 -> B:8
-[19:54:16] WYNIK: Student PID=39389 -> B:32
-[19:54:16] WYNIK: Student PID=39389 -> B:32
-[19:54:54] [Dziekan] Zamykanie systemu i sprzatanie zasobow IPC...
+[22:12:16] [Dziekan] Uczelnia otwarta. Liczba miejsc: 120. Kandydatow: 120.
+[22:12:16] [Dziekan] Komisja A (PID: 59998) i komisja B (PID: 59999) rozpoczynaja prace.
+[22:12:20] [Dziekan] Wpuszczono 120 kandydatow (Nr 1-120). Czekam na wyniki.
+[22:12:20] [Dziekan] Kandydat nr 1 (PID: 60012) posiada matura. Akceptacja.
+[22:23:16] 
+ [Dziekan] KONIEC EGZAMINU. PUBLIKACJA WYNIKOW
+
+======================================================================
+| NR   | PID        | MATURA   | KOMISJA A | KOMISJA B | STATUS                   |
+======================================================================
+| 1    | 60012      | ZALICZONA | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 2    | 60026      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 3    | 60027      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 4    | 60028      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 5    | 60029      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 6    | 60030      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 7    | 60031      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 8    | 60032      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 9    | 60033      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 10   | 60034      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 11   | 60035      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 12   | 60036      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 13   | 60037      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 14   | 60038      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 15   | 60039      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 16   | 60040      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 17   | 60041      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 18   | 60042      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 19   | 60043      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 20   | 60044      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 21   | 60045      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 22   | 60052      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 23   | 60053      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 24   | 60054      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 25   | 60055      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 26   | 60056      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 27   | 60057      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 28   | 60058      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 29   | 60059      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 30   | 60060      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 31   | 60061      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 32   | 60062      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 33   | 60063      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 34   | 60064      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 35   | 60065      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 36   | 60066      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 37   | 60067      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 38   | 60068      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 39   | 60069      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 40   | 60070      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 41   | 60071      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 42   | 60072      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 43   | 60073      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 44   | 60074      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 45   | 60075      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 46   | 60076      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 47   | 60088      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 48   | 60089      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 49   | 60090      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 50   | 60091      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 51   | 60092      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 52   | 60093      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 53   | 60094      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 54   | 60095      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 55   | 60096      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 56   | 60097      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 57   | 60098      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 58   | 60099      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 59   | 60100      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 60   | 60101      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 61   | 60102      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 62   | 60103      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 63   | 60104      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 64   | 60105      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 65   | 60106      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 66   | 60107      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 67   | 60108      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 68   | 60109      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 69   | 60110      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 70   | 60111      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 71   | 60112      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 72   | 60113      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 73   | 60114      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 74   | 60115      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 75   | 60116      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 76   | 60117      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 77   | 60118      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 78   | 60119      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 79   | 60120      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 80   | 60121      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 81   | 60122      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 82   | 60123      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 83   | 60124      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 84   | 60125      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 85   | 60126      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 86   | 60127      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 87   | 60128      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 88   | 60129      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 89   | 60130      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 90   | 60131      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 91   | 60132      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 92   | 60133      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 93   | 60134      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 94   | 60135      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 95   | 60136      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 96   | 60137      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 97   | 60138      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 98   | 60139      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 99   | 60140      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 100  | 60141      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 101  | 60142      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 102  | 60143      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 103  | 60144      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 104  | 60145      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 105  | 60146      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 106  | 60147      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 107  | 60148      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 108  | 60149      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 109  | 60150      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 110  | 60151      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 111  | 60152      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 112  | 60153      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 113  | 60154      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 114  | 60155      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 115  | 60156      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 116  | 60157      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 117  | 60158      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 118  | 60159      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 119  | 60160      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 120  | 60161      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+======================================================================
+[22:23:16] [Dziekan] Zamykanie systemu i sprzatanie zasobow IPC...
