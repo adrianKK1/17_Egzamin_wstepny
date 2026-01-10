@@ -1,132 +1,909 @@
-[22:12:16] [Dziekan] Uczelnia otwarta. Liczba miejsc: 120. Kandydatow: 120.
-[22:12:16] [Dziekan] Komisja A (PID: 59998) i komisja B (PID: 59999) rozpoczynaja prace.
-[22:12:20] [Dziekan] Wpuszczono 120 kandydatow (Nr 1-120). Czekam na wyniki.
-[22:12:20] [Dziekan] Kandydat nr 1 (PID: 60012) posiada matura. Akceptacja.
-[22:23:16] 
+[17:24:49] [Dziekan] Uczelnia otwarta. Kandydatow: 150. Czekam na zebranie sie wszystkich przed wejsciem...
+[17:24:49] [Dziekan] Komisja A (PID: 42938) i komisja B (PID: 42939) rozpoczynaja prace.
+[17:24:52] [Dziekan] Wszyscy kandydaci zgromadzeni. Wybija godzina T. Rozpoczynam weryfikacje matur.
+[17:24:52] [Weryfikacja] Kandydat nr 1 (PID: 42955) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 2 (PID: 42971) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 3 (PID: 42972) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 5 (PID: 42974) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 4 (PID: 42973) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 8 (PID: 42978) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 9 (PID: 42979) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 10 (PID: 42980) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 7 (PID: 42977) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 6 (PID: 42976) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 11 (PID: 42981) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 12 (PID: 42982) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 13 (PID: 42983) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 15 (PID: 42985) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 14 (PID: 42984) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 17 (PID: 42987) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 16 (PID: 42986) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 19 (PID: 42989) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 18 (PID: 42988) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 20 (PID: 42990) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 21 (PID: 42991) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 23 (PID: 42993) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 22 (PID: 42992) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 26 (PID: 42996) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 27 (PID: 42997) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 25 (PID: 42995) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 30 (PID: 43000) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 24 (PID: 42994) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 28 (PID: 42998) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 31 (PID: 43001) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 29 (PID: 42999) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 32 (PID: 43002) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 33 (PID: 43003) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 34 (PID: 43004) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 36 (PID: 43006) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 35 (PID: 43005) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 38 (PID: 43008) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 40 (PID: 43010) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 37 (PID: 43007) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 41 (PID: 43011) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 39 (PID: 43009) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 42 (PID: 43012) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 44 (PID: 43014) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 43 (PID: 43013) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 47 (PID: 43017) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 45 (PID: 43015) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 49 (PID: 43019) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 51 (PID: 43021) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 48 (PID: 43018) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 46 (PID: 43016) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 50 (PID: 43020) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 54 (PID: 43024) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 52 (PID: 43022) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 56 (PID: 43026) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 57 (PID: 43027) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 53 (PID: 43023) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 58 (PID: 43028) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 61 (PID: 43031) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 55 (PID: 43025) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 60 (PID: 43030) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 59 (PID: 43029) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 62 (PID: 43032) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 64 (PID: 43034) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 67 (PID: 43037) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 65 (PID: 43035) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 71 (PID: 43041) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 66 (PID: 43036) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 70 (PID: 43040) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 68 (PID: 43038) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 69 (PID: 43039) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 63 (PID: 43033) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 73 (PID: 43043) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 72 (PID: 43042) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 76 (PID: 43046) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 74 (PID: 43044) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 78 (PID: 43048) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 75 (PID: 43045) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 77 (PID: 43047) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 79 (PID: 43049) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 80 (PID: 43050) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 81 (PID: 43051) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 82 (PID: 43052) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 83 (PID: 43053) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 87 (PID: 43057) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 84 (PID: 43054) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 85 (PID: 43055) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 88 (PID: 43058) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 86 (PID: 43056) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 89 (PID: 43059) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 91 (PID: 43061) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 90 (PID: 43060) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 92 (PID: 43062) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 93 (PID: 43063) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 96 (PID: 43066) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 95 (PID: 43065) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 97 (PID: 43067) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 94 (PID: 43064) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 98 (PID: 43068) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 99 (PID: 43069) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 100 (PID: 43070) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 101 (PID: 43071) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 102 (PID: 43083) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 104 (PID: 43085) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 105 (PID: 43086) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 107 (PID: 43088) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 103 (PID: 43084) -> BRAK MATURY. Odrzucony.
+[17:24:52] [Weryfikacja] Kandydat nr 108 (PID: 43089) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 106 (PID: 43087) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 110 (PID: 43091) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 111 (PID: 43092) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 109 (PID: 43090) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 113 (PID: 43094) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 112 (PID: 43093) -> BRAK MATURY. Odrzucony.
+[17:24:52] [Weryfikacja] Kandydat nr 115 (PID: 43096) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 116 (PID: 43097) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 117 (PID: 43098) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 114 (PID: 43095) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 118 (PID: 43099) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 121 (PID: 43102) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 120 (PID: 43101) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 119 (PID: 43100) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 122 (PID: 43103) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 123 (PID: 43104) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 124 (PID: 43105) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 126 (PID: 43107) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 127 (PID: 43108) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 129 (PID: 43110) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 125 (PID: 43106) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 131 (PID: 43112) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 128 (PID: 43109) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 130 (PID: 43111) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 133 (PID: 43114) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 132 (PID: 43113) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 135 (PID: 43116) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 137 (PID: 43118) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 134 (PID: 43115) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 139 (PID: 43120) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 136 (PID: 43117) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 138 (PID: 43119) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 141 (PID: 43122) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 140 (PID: 43121) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 144 (PID: 43125) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 142 (PID: 43123) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 143 (PID: 43124) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 147 (PID: 43128) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 145 (PID: 43126) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 146 (PID: 43127) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 148 (PID: 43129) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 149 (PID: 43130) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] [Weryfikacja] Kandydat nr 150 (PID: 43131) -> MATURA ZALICZONA. Dopuszczony do egzaminu.
+[17:24:52] 
+[Dziekan] ZAKONCZONO WERYFIKACJE MATUR. PUBLIKACJA LIST STARTOWYCH.
+
+===LISTA NIEDOPUSZCZONYCH (BRAK MATURY) ===
+Kandydat nr 103 (PID: 43084) - BRAK MATURY
+Kandydat nr 112 (PID: 43093) - BRAK MATURY
+
+===LISTA DOPUSZCZONYCH DO EGZAMINU ===
+Student nr 1 (PID: 42955) - DOPUSZCZONY
+Student nr 2 (PID: 42971) - DOPUSZCZONY
+Student nr 3 (PID: 42972) - DOPUSZCZONY
+Student nr 4 (PID: 42973) - DOPUSZCZONY
+Student nr 5 (PID: 42974) - DOPUSZCZONY
+Student nr 6 (PID: 42976) - DOPUSZCZONY
+Student nr 7 (PID: 42977) - DOPUSZCZONY
+Student nr 8 (PID: 42978) - DOPUSZCZONY
+Student nr 9 (PID: 42979) - DOPUSZCZONY
+Student nr 10 (PID: 42980) - DOPUSZCZONY
+Student nr 11 (PID: 42981) - DOPUSZCZONY
+Student nr 12 (PID: 42982) - DOPUSZCZONY
+Student nr 13 (PID: 42983) - DOPUSZCZONY
+Student nr 14 (PID: 42984) - DOPUSZCZONY
+Student nr 15 (PID: 42985) - DOPUSZCZONY
+Student nr 16 (PID: 42986) - DOPUSZCZONY
+Student nr 17 (PID: 42987) - DOPUSZCZONY
+Student nr 18 (PID: 42988) - DOPUSZCZONY
+Student nr 19 (PID: 42989) - DOPUSZCZONY
+Student nr 20 (PID: 42990) - DOPUSZCZONY
+Student nr 21 (PID: 42991) - DOPUSZCZONY
+Student nr 22 (PID: 42992) - DOPUSZCZONY
+Student nr 23 (PID: 42993) - DOPUSZCZONY
+Student nr 24 (PID: 42994) - DOPUSZCZONY
+Student nr 25 (PID: 42995) - DOPUSZCZONY
+Student nr 26 (PID: 42996) - DOPUSZCZONY
+Student nr 27 (PID: 42997) - DOPUSZCZONY
+Student nr 28 (PID: 42998) - DOPUSZCZONY
+Student nr 29 (PID: 42999) - DOPUSZCZONY
+Student nr 30 (PID: 43000) - DOPUSZCZONY
+Student nr 31 (PID: 43001) - DOPUSZCZONY
+Student nr 32 (PID: 43002) - DOPUSZCZONY
+Student nr 33 (PID: 43003) - DOPUSZCZONY
+Student nr 34 (PID: 43004) - DOPUSZCZONY
+Student nr 35 (PID: 43005) - DOPUSZCZONY
+Student nr 36 (PID: 43006) - DOPUSZCZONY
+Student nr 37 (PID: 43007) - DOPUSZCZONY
+Student nr 38 (PID: 43008) - DOPUSZCZONY
+Student nr 39 (PID: 43009) - DOPUSZCZONY
+Student nr 40 (PID: 43010) - DOPUSZCZONY
+Student nr 41 (PID: 43011) - DOPUSZCZONY
+Student nr 42 (PID: 43012) - DOPUSZCZONY
+Student nr 43 (PID: 43013) - DOPUSZCZONY
+Student nr 44 (PID: 43014) - DOPUSZCZONY
+Student nr 45 (PID: 43015) - DOPUSZCZONY
+Student nr 46 (PID: 43016) - DOPUSZCZONY
+Student nr 47 (PID: 43017) - DOPUSZCZONY
+Student nr 48 (PID: 43018) - DOPUSZCZONY
+Student nr 49 (PID: 43019) - DOPUSZCZONY
+Student nr 50 (PID: 43020) - DOPUSZCZONY
+Student nr 51 (PID: 43021) - DOPUSZCZONY
+Student nr 52 (PID: 43022) - DOPUSZCZONY
+Student nr 53 (PID: 43023) - DOPUSZCZONY
+Student nr 54 (PID: 43024) - DOPUSZCZONY
+Student nr 55 (PID: 43025) - DOPUSZCZONY
+Student nr 56 (PID: 43026) - DOPUSZCZONY
+Student nr 57 (PID: 43027) - DOPUSZCZONY
+Student nr 58 (PID: 43028) - DOPUSZCZONY
+Student nr 59 (PID: 43029) - DOPUSZCZONY
+Student nr 60 (PID: 43030) - DOPUSZCZONY
+Student nr 61 (PID: 43031) - DOPUSZCZONY
+Student nr 62 (PID: 43032) - DOPUSZCZONY
+Student nr 63 (PID: 43033) - DOPUSZCZONY
+Student nr 64 (PID: 43034) - DOPUSZCZONY
+Student nr 65 (PID: 43035) - DOPUSZCZONY
+Student nr 66 (PID: 43036) - DOPUSZCZONY
+Student nr 67 (PID: 43037) - DOPUSZCZONY
+Student nr 68 (PID: 43038) - DOPUSZCZONY
+Student nr 69 (PID: 43039) - DOPUSZCZONY
+Student nr 70 (PID: 43040) - DOPUSZCZONY
+Student nr 71 (PID: 43041) - DOPUSZCZONY
+Student nr 72 (PID: 43042) - DOPUSZCZONY
+Student nr 73 (PID: 43043) - DOPUSZCZONY
+Student nr 74 (PID: 43044) - DOPUSZCZONY
+Student nr 75 (PID: 43045) - DOPUSZCZONY
+Student nr 76 (PID: 43046) - DOPUSZCZONY
+Student nr 77 (PID: 43047) - DOPUSZCZONY
+Student nr 78 (PID: 43048) - DOPUSZCZONY
+Student nr 79 (PID: 43049) - DOPUSZCZONY
+Student nr 80 (PID: 43050) - DOPUSZCZONY
+Student nr 81 (PID: 43051) - DOPUSZCZONY
+Student nr 82 (PID: 43052) - DOPUSZCZONY
+Student nr 83 (PID: 43053) - DOPUSZCZONY
+Student nr 84 (PID: 43054) - DOPUSZCZONY
+Student nr 85 (PID: 43055) - DOPUSZCZONY
+Student nr 86 (PID: 43056) - DOPUSZCZONY
+Student nr 87 (PID: 43057) - DOPUSZCZONY
+Student nr 88 (PID: 43058) - DOPUSZCZONY
+Student nr 89 (PID: 43059) - DOPUSZCZONY
+Student nr 90 (PID: 43060) - DOPUSZCZONY
+Student nr 91 (PID: 43061) - DOPUSZCZONY
+Student nr 92 (PID: 43062) - DOPUSZCZONY
+Student nr 93 (PID: 43063) - DOPUSZCZONY
+Student nr 94 (PID: 43064) - DOPUSZCZONY
+Student nr 95 (PID: 43065) - DOPUSZCZONY
+Student nr 96 (PID: 43066) - DOPUSZCZONY
+Student nr 97 (PID: 43067) - DOPUSZCZONY
+Student nr 98 (PID: 43068) - DOPUSZCZONY
+Student nr 99 (PID: 43069) - DOPUSZCZONY
+Student nr 100 (PID: 43070) - DOPUSZCZONY
+Student nr 101 (PID: 43071) - DOPUSZCZONY
+Student nr 102 (PID: 43083) - DOPUSZCZONY
+Student nr 104 (PID: 43085) - DOPUSZCZONY
+Student nr 105 (PID: 43086) - DOPUSZCZONY
+Student nr 106 (PID: 43087) - DOPUSZCZONY
+Student nr 107 (PID: 43088) - DOPUSZCZONY
+Student nr 108 (PID: 43089) - DOPUSZCZONY
+Student nr 109 (PID: 43090) - DOPUSZCZONY
+Student nr 110 (PID: 43091) - DOPUSZCZONY
+Student nr 111 (PID: 43092) - DOPUSZCZONY
+Student nr 113 (PID: 43094) - DOPUSZCZONY
+Student nr 114 (PID: 43095) - DOPUSZCZONY
+Student nr 115 (PID: 43096) - DOPUSZCZONY
+Student nr 116 (PID: 43097) - DOPUSZCZONY
+Student nr 117 (PID: 43098) - DOPUSZCZONY
+Student nr 118 (PID: 43099) - DOPUSZCZONY
+Student nr 119 (PID: 43100) - DOPUSZCZONY
+Student nr 120 (PID: 43101) - DOPUSZCZONY
+Student nr 121 (PID: 43102) - DOPUSZCZONY
+Student nr 122 (PID: 43103) - DOPUSZCZONY
+Student nr 123 (PID: 43104) - DOPUSZCZONY
+Student nr 124 (PID: 43105) - DOPUSZCZONY
+Student nr 125 (PID: 43106) - DOPUSZCZONY
+Student nr 126 (PID: 43107) - DOPUSZCZONY
+Student nr 127 (PID: 43108) - DOPUSZCZONY
+Student nr 128 (PID: 43109) - DOPUSZCZONY
+Student nr 129 (PID: 43110) - DOPUSZCZONY
+Student nr 130 (PID: 43111) - DOPUSZCZONY
+Student nr 131 (PID: 43112) - DOPUSZCZONY
+Student nr 132 (PID: 43113) - DOPUSZCZONY
+Student nr 133 (PID: 43114) - DOPUSZCZONY
+Student nr 134 (PID: 43115) - DOPUSZCZONY
+Student nr 135 (PID: 43116) - DOPUSZCZONY
+Student nr 136 (PID: 43117) - DOPUSZCZONY
+Student nr 137 (PID: 43118) - DOPUSZCZONY
+Student nr 138 (PID: 43119) - DOPUSZCZONY
+Student nr 139 (PID: 43120) - DOPUSZCZONY
+Student nr 140 (PID: 43121) - DOPUSZCZONY
+Student nr 141 (PID: 43122) - DOPUSZCZONY
+Student nr 142 (PID: 43123) - DOPUSZCZONY
+Student nr 143 (PID: 43124) - DOPUSZCZONY
+Student nr 144 (PID: 43125) - DOPUSZCZONY
+Student nr 145 (PID: 43126) - DOPUSZCZONY
+Student nr 146 (PID: 43127) - DOPUSZCZONY
+Student nr 147 (PID: 43128) - DOPUSZCZONY
+Student nr 148 (PID: 43129) - DOPUSZCZONY
+Student nr 149 (PID: 43130) - DOPUSZCZONY
+Student nr 150 (PID: 43131) - DOPUSZCZONY
+[17:24:52] [Dziekan] Statystyki wstepne: Dopuszczeni: 148, Odrzuceni: 2. Rozpoczynamy egzaminy.
+--------------------------------------------------
+
+[17:24:52] [Dziekan] Kandydat nr 103 (PID: 43084) zakonczyl proces - ODRZUCONY (BRAK MATURY).
+[17:24:52] [Dziekan] Kandydat nr 112 (PID: 43093) zakonczyl proces - ODRZUCONY (BRAK MATURY).
+[17:25:00] [Dziekan] Student nr 3 (PID: 42972) -> Komisja A: 57%
+[17:25:01] [Dziekan] Student nr 1 (PID: 42955) -> Komisja A: 22%
+[17:25:01] [Dziekan] Kandydat nr 1 (PID: 42955) zakonczyl egzaminy.
+[17:25:03] [Dziekan] Student nr 2 (PID: 42971) -> Komisja A: 45%
+[17:25:08] [Dziekan] Student nr 3 (PID: 42972) -> Komisja B: 42%
+[17:25:08] [Dziekan] Kandydat nr 3 (PID: 42972) zakonczyl egzaminy.
+[17:25:08] [Dziekan] Student nr 4 (PID: 42973) -> Komisja A: 64%
+[17:25:10] [Dziekan] Student nr 2 (PID: 42971) -> Komisja B: 39%
+[17:25:10] [Dziekan] Kandydat nr 2 (PID: 42971) zakonczyl egzaminy.
+[17:25:11] [Dziekan] Student nr 8 (PID: 42978) -> Komisja A: 64%
+[17:25:14] [Dziekan] Student nr 5 (PID: 42974) -> Komisja A: 49%
+[17:25:14] [Dziekan] Kandydat nr 4 (PID: 42973) zakonczyl egzaminy.
+[17:25:14] [Dziekan] Student nr 4 (PID: 42973) -> Komisja B: 42%
+[17:25:15] [Dziekan] Student nr 8 (PID: 42978) -> Komisja B: 21%
+[17:25:15] [Dziekan] Kandydat nr 8 (PID: 42978) zakonczyl egzaminy.
+[17:25:17] [Dziekan] Student nr 7 (PID: 42977) -> Komisja A: 39%
+[17:25:19] [Dziekan] Student nr 10 (PID: 42980) -> Komisja A: 71%
+[17:25:20] [Dziekan] Student nr 5 (PID: 42974) -> Komisja B: 41%
+[17:25:20] [Dziekan] Kandydat nr 5 (PID: 42974) zakonczyl egzaminy.
+[17:25:23] [Dziekan] Student nr 6 (PID: 42976) -> Komisja A: 55%
+[17:25:23] [Dziekan] Kandydat nr 7 (PID: 42977) zakonczyl egzaminy.
+[17:25:23] [Dziekan] Student nr 7 (PID: 42977) -> Komisja B: 42%
+[17:25:26] [Dziekan] Student nr 10 (PID: 42980) -> Komisja B: 80%
+[17:25:26] [Dziekan] Kandydat nr 10 (PID: 42980) zakonczyl egzaminy.
+[17:25:26] [Dziekan] Student nr 12 (PID: 42982) -> Komisja A: 63%
+[17:25:26] [Dziekan] Student nr 9 (PID: 42979) -> Komisja A: 40%
+[17:25:30] [Dziekan] Student nr 6 (PID: 42976) -> Komisja B: 41%
+[17:25:30] [Dziekan] Kandydat nr 6 (PID: 42976) zakonczyl egzaminy.
+[17:25:30] [Dziekan] Student nr 11 (PID: 42981) -> Komisja A: 37%
+[17:25:32] [Dziekan] Student nr 12 (PID: 42982) -> Komisja B: 50%
+[17:25:32] [Dziekan] Kandydat nr 9 (PID: 42979) zakonczyl egzaminy.
+[17:25:32] [Dziekan] Student nr 9 (PID: 42979) -> Komisja B: 53%
+[17:25:32] [Dziekan] Kandydat nr 12 (PID: 42982) zakonczyl egzaminy.
+[17:25:34] [Dziekan] Student nr 11 (PID: 42981) -> Komisja B: 63%
+[17:25:34] [Dziekan] Kandydat nr 11 (PID: 42981) zakonczyl egzaminy.
+[17:25:36] [Dziekan] Student nr 13 (PID: 42983) -> Komisja A: 66%
+[17:25:36] [Dziekan] Student nr 15 (PID: 42985) -> Komisja A: 42%
+[17:25:38] [Dziekan] Student nr 17 (PID: 42987) -> Komisja A: 42%
+[17:25:41] [Dziekan] Student nr 13 (PID: 42983) -> Komisja B: 63%
+[17:25:41] [Dziekan] Kandydat nr 13 (PID: 42983) zakonczyl egzaminy.
+[17:25:42] [Dziekan] Student nr 15 (PID: 42985) -> Komisja B: 75%
+[17:25:42] [Dziekan] Kandydat nr 15 (PID: 42985) zakonczyl egzaminy.
+[17:25:42] [Dziekan] Student nr 17 (PID: 42987) -> Komisja B: 23%
+[17:25:42] [Dziekan] Kandydat nr 17 (PID: 42987) zakonczyl egzaminy.
+[17:25:47] [Dziekan] Student nr 19 (PID: 42989) -> Komisja A: 54%
+[17:25:47] [Dziekan] Student nr 16 (PID: 42986) -> Komisja A: 66%
+[17:25:47] [Dziekan] Student nr 14 (PID: 42984) -> Komisja A: 49%
+[17:25:51] [Dziekan] Student nr 14 (PID: 42984) -> Komisja B: 60%
+[17:25:51] [Dziekan] Kandydat nr 14 (PID: 42984) zakonczyl egzaminy.
+[17:25:52] [Dziekan] Student nr 19 (PID: 42989) -> Komisja B: 80%
+[17:25:52] [Dziekan] Kandydat nr 19 (PID: 42989) zakonczyl egzaminy.
+[17:25:55] [Dziekan] Student nr 16 (PID: 42986) -> Komisja B: 39%
+[17:25:55] [Dziekan] Kandydat nr 16 (PID: 42986) zakonczyl egzaminy.
+[17:25:56] [Dziekan] Student nr 20 (PID: 42990) -> Komisja A: 62%
+[17:25:56] [Dziekan] Student nr 18 (PID: 42988) -> Komisja A: 51%
+[17:25:56] [Dziekan] Student nr 21 (PID: 42991) -> Komisja A: 35%
+[17:26:01] [Dziekan] Student nr 20 (PID: 42990) -> Komisja B: 57%
+[17:26:01] [Dziekan] Kandydat nr 20 (PID: 42990) zakonczyl egzaminy.
+[17:26:02] [Dziekan] Student nr 18 (PID: 42988) -> Komisja B: 19%
+[17:26:02] [Dziekan] Kandydat nr 18 (PID: 42988) zakonczyl egzaminy.
+[17:26:02] [Dziekan] Student nr 21 (PID: 42991) -> Komisja B: 62%
+[17:26:02] [Dziekan] Kandydat nr 21 (PID: 42991) zakonczyl egzaminy.
+[17:26:03] [Dziekan] Student nr 22 (PID: 42992) -> Komisja A: 66%
+[17:26:05] [Dziekan] Student nr 23 (PID: 42993) -> Komisja A: 49%
+[17:26:06] [Dziekan] Student nr 26 (PID: 42996) -> Komisja A: 64%
+[17:26:09] [Dziekan] Student nr 22 (PID: 42992) -> Komisja B: 54%
+[17:26:09] [Dziekan] Kandydat nr 22 (PID: 42992) zakonczyl egzaminy.
+[17:26:10] [Dziekan] Student nr 25 (PID: 42995) -> Komisja A: 38%
+[17:26:13] [Dziekan] Student nr 23 (PID: 42993) -> Komisja B: 51%
+[17:26:13] [Dziekan] Kandydat nr 23 (PID: 42993) zakonczyl egzaminy.
+[17:26:13] [Dziekan] Student nr 30 (PID: 43000) -> Komisja A: 49%
+[17:26:13] [Dziekan] Kandydat nr 26 (PID: 42996) zakonczyl egzaminy.
+[17:26:13] [Dziekan] Student nr 26 (PID: 42996) -> Komisja B: 56%
+[17:26:14] [Dziekan] Student nr 27 (PID: 42997) -> Komisja A: 54%
+[17:26:15] [Dziekan] Student nr 25 (PID: 42995) -> Komisja B: 46%
+[17:26:15] [Dziekan] Kandydat nr 25 (PID: 42995) zakonczyl egzaminy.
+[17:26:20] [Dziekan] Student nr 28 (PID: 42998) -> Komisja A: 33%
+[17:26:20] [Dziekan] Kandydat nr 27 (PID: 42997) zakonczyl egzaminy.
+[17:26:20] [Dziekan] Student nr 27 (PID: 42997) -> Komisja B: 19%
+[17:26:21] [Dziekan] Student nr 30 (PID: 43000) -> Komisja B: 54%
+[17:26:21] [Dziekan] Kandydat nr 30 (PID: 43000) zakonczyl egzaminy.
+[17:26:22] [Dziekan] Student nr 31 (PID: 43001) -> Komisja A: 38%
+[17:26:22] [Dziekan] Student nr 32 (PID: 43002) -> Komisja A: 73%
+[17:26:25] [Dziekan] Student nr 28 (PID: 42998) -> Komisja B: 66%
+[17:26:25] [Dziekan] Kandydat nr 28 (PID: 42998) zakonczyl egzaminy.
+[17:26:27] [Dziekan] Student nr 32 (PID: 43002) -> Komisja B: 28%
+[17:26:27] [Dziekan] Kandydat nr 32 (PID: 43002) zakonczyl egzaminy.
+[17:26:28] [Dziekan] Student nr 31 (PID: 43001) -> Komisja B: 49%
+[17:26:28] [Dziekan] Kandydat nr 31 (PID: 43001) zakonczyl egzaminy.
+[17:26:28] [Dziekan] Student nr 24 (PID: 42994) -> Komisja A: 35%
+[17:26:31] [Dziekan] Student nr 29 (PID: 42999) -> Komisja A: 38%
+[17:26:32] [Dziekan] Student nr 33 (PID: 43003) -> Komisja A: 46%
+[17:26:35] [Dziekan] Student nr 24 (PID: 42994) -> Komisja B: 68%
+[17:26:35] [Dziekan] Kandydat nr 24 (PID: 42994) zakonczyl egzaminy.
+[17:26:36] [Dziekan] Student nr 34 (PID: 43004) -> Komisja A: 57%
+[17:26:38] [Dziekan] Student nr 29 (PID: 42999) -> Komisja B: 54%
+[17:26:38] [Dziekan] Kandydat nr 29 (PID: 42999) zakonczyl egzaminy.
+[17:26:39] [Dziekan] Student nr 33 (PID: 43003) -> Komisja B: 73%
+[17:26:39] [Dziekan] Kandydat nr 33 (PID: 43003) zakonczyl egzaminy.
+[17:26:39] [Dziekan] Student nr 36 (PID: 43006) -> Komisja A: 49%
+[17:26:40] [Dziekan] Student nr 35 (PID: 43005) -> Komisja A: 51%
+[17:26:43] [Dziekan] Student nr 34 (PID: 43004) -> Komisja B: 53%
+[17:26:43] [Dziekan] Kandydat nr 34 (PID: 43004) zakonczyl egzaminy.
+[17:26:44] [Dziekan] Student nr 38 (PID: 43008) -> Komisja A: 45%
+[17:26:45] [Dziekan] Student nr 36 (PID: 43006) -> Komisja B: 52%
+[17:26:45] [Dziekan] Kandydat nr 35 (PID: 43005) zakonczyl egzaminy.
+[17:26:45] [Dziekan] Student nr 35 (PID: 43005) -> Komisja B: 52%
+[17:26:45] [Dziekan] Kandydat nr 36 (PID: 43006) zakonczyl egzaminy.
+[17:26:47] [Dziekan] Student nr 40 (PID: 43010) -> Komisja A: 39%
+[17:26:49] [Dziekan] Student nr 39 (PID: 43009) -> Komisja A: 67%
+[17:26:50] [Dziekan] Student nr 38 (PID: 43008) -> Komisja B: 41%
+[17:26:50] [Dziekan] Kandydat nr 38 (PID: 43008) zakonczyl egzaminy.
+[17:26:52] [Dziekan] Student nr 42 (PID: 43012) -> Komisja A: 66%
+[17:26:53] [Dziekan] Student nr 40 (PID: 43010) -> Komisja B: 62%
+[17:26:53] [Dziekan] Kandydat nr 40 (PID: 43010) zakonczyl egzaminy.
+[17:26:54] [Dziekan] Student nr 44 (PID: 43014) -> Komisja A: 51%
+[17:26:56] [Dziekan] Student nr 39 (PID: 43009) -> Komisja B: 61%
+[17:26:56] [Dziekan] Kandydat nr 39 (PID: 43009) zakonczyl egzaminy.
+[17:26:57] [Dziekan] Student nr 37 (PID: 43007) -> Komisja A: 71%
+[17:26:58] [Dziekan] Student nr 44 (PID: 43014) -> Komisja B: 42%
+[17:26:58] [Dziekan] Kandydat nr 44 (PID: 43014) zakonczyl egzaminy.
+[17:26:59] [Dziekan] Student nr 42 (PID: 43012) -> Komisja B: 55%
+[17:26:59] [Dziekan] Kandydat nr 42 (PID: 43012) zakonczyl egzaminy.
+[17:27:01] [Dziekan] Student nr 41 (PID: 43011) -> Komisja A: 40%
+[17:27:02] [Dziekan] Student nr 43 (PID: 43013) -> Komisja A: 53%
+[17:27:03] [Dziekan] Student nr 37 (PID: 43007) -> Komisja B: 18%
+[17:27:03] [Dziekan] Kandydat nr 37 (PID: 43007) zakonczyl egzaminy.
+[17:27:06] [Dziekan] Student nr 41 (PID: 43011) -> Komisja B: 35%
+[17:27:06] [Dziekan] Kandydat nr 41 (PID: 43011) zakonczyl egzaminy.
+[17:27:07] [Dziekan] Student nr 49 (PID: 43019) -> Komisja A: 54%
+[17:27:07] [Dziekan] Student nr 51 (PID: 43021) -> Komisja A: 37%
+[17:27:08] [Dziekan] Student nr 43 (PID: 43013) -> Komisja B: 44%
+[17:27:08] [Dziekan] Kandydat nr 43 (PID: 43013) zakonczyl egzaminy.
+[17:27:12] [Dziekan] Student nr 45 (PID: 43015) -> Komisja A: 49%
+[17:27:12] [Dziekan] Kandydat nr 49 (PID: 43019) zakonczyl egzaminy.
+[17:27:12] [Dziekan] Student nr 49 (PID: 43019) -> Komisja B: 15%
+[17:27:13] [Dziekan] Student nr 51 (PID: 43021) -> Komisja B: 75%
+[17:27:13] [Dziekan] Kandydat nr 51 (PID: 43021) zakonczyl egzaminy.
+[17:27:16] [Dziekan] Student nr 48 (PID: 43018) -> Komisja A: 66%
+[17:27:18] [Dziekan] Student nr 47 (PID: 43017) -> Komisja A: 38%
+[17:27:18] [Dziekan] Kandydat nr 45 (PID: 43015) zakonczyl egzaminy.
+[17:27:18] [Dziekan] Student nr 45 (PID: 43015) -> Komisja B: 16%
+[17:27:21] [Dziekan] Student nr 48 (PID: 43018) -> Komisja B: 72%
+[17:27:21] [Dziekan] Kandydat nr 48 (PID: 43018) zakonczyl egzaminy.
+[17:27:22] [Dziekan] Student nr 50 (PID: 43020) -> Komisja A: 51%
+[17:27:24] [Dziekan] Student nr 47 (PID: 43017) -> Komisja B: 58%
+[17:27:24] [Dziekan] Kandydat nr 47 (PID: 43017) zakonczyl egzaminy.
+[17:27:27] [Dziekan] Student nr 52 (PID: 43022) -> Komisja A: 77%
+[17:27:27] [Dziekan] Student nr 54 (PID: 43024) -> Komisja A: 30%
+[17:27:28] [Dziekan] Student nr 46 (PID: 43016) -> Komisja A: 19%
+[17:27:28] [Dziekan] Kandydat nr 46 (PID: 43016) zakonczyl egzaminy.
+[17:27:29] [Dziekan] Student nr 50 (PID: 43020) -> Komisja B: 28%
+[17:27:29] [Dziekan] Kandydat nr 50 (PID: 43020) zakonczyl egzaminy.
+[17:27:32] [Dziekan] Student nr 52 (PID: 43022) -> Komisja B: 65%
+[17:27:32] [Dziekan] Kandydat nr 52 (PID: 43022) zakonczyl egzaminy.
+[17:27:33] [Dziekan] Student nr 54 (PID: 43024) -> Komisja B: 41%
+[17:27:33] [Dziekan] Kandydat nr 54 (PID: 43024) zakonczyl egzaminy.
+[17:27:34] [Dziekan] Student nr 53 (PID: 43023) -> Komisja A: 32%
+[17:27:36] [Dziekan] Student nr 57 (PID: 43027) -> Komisja A: 35%
+[17:27:38] [Dziekan] Student nr 56 (PID: 43026) -> Komisja A: 61%
+[17:27:39] [Dziekan] Student nr 53 (PID: 43023) -> Komisja B: 31%
+[17:27:39] [Dziekan] Kandydat nr 53 (PID: 43023) zakonczyl egzaminy.
+[17:27:41] [Dziekan] Student nr 57 (PID: 43027) -> Komisja B: 6%
+[17:27:41] [Dziekan] Kandydat nr 57 (PID: 43027) zakonczyl egzaminy.
+[17:27:41] [Dziekan] Student nr 61 (PID: 43031) -> Komisja A: 31%
+[17:27:44] [Dziekan] Student nr 56 (PID: 43026) -> Komisja B: 25%
+[17:27:44] [Dziekan] Kandydat nr 56 (PID: 43026) zakonczyl egzaminy.
+[17:27:47] [Dziekan] Student nr 55 (PID: 43025) -> Komisja A: 47%
+[17:27:47] [Dziekan] Student nr 60 (PID: 43030) -> Komisja A: 42%
+[17:27:48] [Dziekan] Student nr 61 (PID: 43031) -> Komisja B: 54%
+[17:27:48] [Dziekan] Kandydat nr 61 (PID: 43031) zakonczyl egzaminy.
+[17:27:52] [Dziekan] Student nr 62 (PID: 43032) -> Komisja A: 48%
+[17:27:53] [Dziekan] Student nr 60 (PID: 43030) -> Komisja B: 53%
+[17:27:53] [Dziekan] Kandydat nr 60 (PID: 43030) zakonczyl egzaminy.
+[17:27:54] [Dziekan] Student nr 55 (PID: 43025) -> Komisja B: 57%
+[17:27:54] [Dziekan] Kandydat nr 55 (PID: 43025) zakonczyl egzaminy.
+[17:27:55] [Dziekan] Student nr 59 (PID: 43029) -> Komisja A: 40%
+[17:27:57] [Dziekan] Student nr 62 (PID: 43032) -> Komisja B: 33%
+[17:27:57] [Dziekan] Kandydat nr 62 (PID: 43032) zakonczyl egzaminy.
+[17:27:58] [Dziekan] Student nr 64 (PID: 43034) -> Komisja A: 52%
+[17:28:01] [Dziekan] Student nr 59 (PID: 43029) -> Komisja B: 50%
+[17:28:01] [Dziekan] Kandydat nr 59 (PID: 43029) zakonczyl egzaminy.
+[17:28:02] [Dziekan] Student nr 58 (PID: 43028) -> Komisja A: 56%
+[17:28:02] [Dziekan] Student nr 67 (PID: 43037) -> Komisja A: 66%
+[17:28:04] [Dziekan] Student nr 70 (PID: 43040) -> Komisja A: 100%
+[17:28:04] [Dziekan] Kandydat nr 64 (PID: 43034) zakonczyl egzaminy.
+[17:28:04] [Dziekan] Student nr 64 (PID: 43034) -> Komisja B: 35%
+[17:28:06] [Dziekan] Student nr 71 (PID: 43041) -> Komisja A: 18%
+[17:28:06] [Dziekan] Kandydat nr 71 (PID: 43041) zakonczyl egzaminy.
+[17:28:07] [Dziekan] Student nr 67 (PID: 43037) -> Komisja B: 77%
+[17:28:07] [Dziekan] Kandydat nr 58 (PID: 43028) zakonczyl egzaminy.
+[17:28:07] [Dziekan] Student nr 58 (PID: 43028) -> Komisja B: 45%
+[17:28:07] [Dziekan] Kandydat nr 67 (PID: 43037) zakonczyl egzaminy.
+[17:28:09] [Dziekan] Student nr 70 (PID: 43040) -> Komisja B: 43%
+[17:28:09] [Dziekan] Kandydat nr 70 (PID: 43040) zakonczyl egzaminy.
+[17:28:10] [Dziekan] Student nr 66 (PID: 43036) -> Komisja A: 68%
+[17:28:11] [Dziekan] Student nr 65 (PID: 43035) -> Komisja A: 71%
+[17:28:16] [Dziekan] Student nr 68 (PID: 43038) -> Komisja A: 73%
+[17:28:16] [Dziekan] Kandydat nr 66 (PID: 43036) zakonczyl egzaminy.
+[17:28:16] [Dziekan] Student nr 66 (PID: 43036) -> Komisja B: 52%
+[17:28:17] [Dziekan] Student nr 63 (PID: 43033) -> Komisja A: 47%
+[17:28:18] [Dziekan] Student nr 65 (PID: 43035) -> Komisja B: 31%
+[17:28:18] [Dziekan] Kandydat nr 65 (PID: 43035) zakonczyl egzaminy.
+[17:28:21] [Dziekan] Student nr 73 (PID: 43043) -> Komisja A: 37%
+[17:28:21] [Dziekan] Kandydat nr 68 (PID: 43038) zakonczyl egzaminy.
+[17:28:21] [Dziekan] Student nr 68 (PID: 43038) -> Komisja B: 58%
+[17:28:23] [Dziekan] Student nr 63 (PID: 43033) -> Komisja B: 36%
+[17:28:23] [Dziekan] Kandydat nr 63 (PID: 43033) zakonczyl egzaminy.
+[17:28:25] [Dziekan] Student nr 69 (PID: 43039) -> Komisja A: 31%
+[17:28:26] [Dziekan] Student nr 73 (PID: 43043) -> Komisja B: 68%
+[17:28:26] [Dziekan] Kandydat nr 73 (PID: 43043) zakonczyl egzaminy.
+[17:28:27] [Dziekan] Student nr 72 (PID: 43042) -> Komisja A: 26%
+[17:28:27] [Dziekan] Kandydat nr 72 (PID: 43042) zakonczyl egzaminy.
+[17:28:31] [Dziekan] Student nr 74 (PID: 43044) -> Komisja A: 31%
+[17:28:33] [Dziekan] Student nr 69 (PID: 43039) -> Komisja B: 74%
+[17:28:33] [Dziekan] Kandydat nr 69 (PID: 43039) zakonczyl egzaminy.
+[17:28:35] [Dziekan] Student nr 76 (PID: 43046) -> Komisja A: 25%
+[17:28:35] [Dziekan] Kandydat nr 76 (PID: 43046) zakonczyl egzaminy.
+[17:28:36] [Dziekan] Student nr 74 (PID: 43044) -> Komisja B: 47%
+[17:28:36] [Dziekan] Kandydat nr 74 (PID: 43044) zakonczyl egzaminy.
+[17:28:38] [Dziekan] Student nr 78 (PID: 43048) -> Komisja A: 39%
+[17:28:40] [Dziekan] Student nr 79 (PID: 43049) -> Komisja A: 45%
+[17:28:42] [Dziekan] Student nr 80 (PID: 43050) -> Komisja A: 57%
+[17:28:43] [Dziekan] Student nr 78 (PID: 43048) -> Komisja B: 35%
+[17:28:43] [Dziekan] Kandydat nr 78 (PID: 43048) zakonczyl egzaminy.
+[17:28:46] [Dziekan] Student nr 79 (PID: 43049) -> Komisja B: 74%
+[17:28:46] [Dziekan] Kandydat nr 79 (PID: 43049) zakonczyl egzaminy.
+[17:28:46] [Dziekan] Student nr 75 (PID: 43045) -> Komisja A: 48%
+[17:28:47] [Dziekan] Student nr 77 (PID: 43047) -> Komisja A: 75%
+[17:28:49] [Dziekan] Student nr 80 (PID: 43050) -> Komisja B: 26%
+[17:28:49] [Dziekan] Kandydat nr 80 (PID: 43050) zakonczyl egzaminy.
+[17:28:50] [Dziekan] Student nr 82 (PID: 43052) -> Komisja A: 41%
+[17:28:52] [Dziekan] Student nr 77 (PID: 43047) -> Komisja B: 51%
+[17:28:52] [Dziekan] Kandydat nr 77 (PID: 43047) zakonczyl egzaminy.
+[17:28:53] [Dziekan] Student nr 75 (PID: 43045) -> Komisja B: 62%
+[17:28:53] [Dziekan] Kandydat nr 75 (PID: 43045) zakonczyl egzaminy.
+[17:28:54] [Dziekan] Student nr 81 (PID: 43051) -> Komisja A: 30%
+[17:28:56] [Dziekan] Student nr 87 (PID: 43057) -> Komisja A: 36%
+[17:28:56] [Dziekan] Kandydat nr 82 (PID: 43052) zakonczyl egzaminy.
+[17:28:56] [Dziekan] Student nr 82 (PID: 43052) -> Komisja B: 37%
+[17:28:59] [Dziekan] Student nr 84 (PID: 43054) -> Komisja A: 47%
+[17:29:01] [Dziekan] Student nr 81 (PID: 43051) -> Komisja B: 51%
+[17:29:01] [Dziekan] Kandydat nr 81 (PID: 43051) zakonczyl egzaminy.
+[17:29:01] [Dziekan] Student nr 85 (PID: 43055) -> Komisja A: 47%
+[17:29:02] [Dziekan] Student nr 87 (PID: 43057) -> Komisja B: 43%
+[17:29:02] [Dziekan] Kandydat nr 87 (PID: 43057) zakonczyl egzaminy.
+[17:29:05] [Dziekan] Student nr 84 (PID: 43054) -> Komisja B: 33%
+[17:29:05] [Dziekan] Kandydat nr 84 (PID: 43054) zakonczyl egzaminy.
+[17:29:06] [Dziekan] Student nr 86 (PID: 43056) -> Komisja A: 59%
+[17:29:07] [Dziekan] Student nr 85 (PID: 43055) -> Komisja B: 60%
+[17:29:07] [Dziekan] Kandydat nr 85 (PID: 43055) zakonczyl egzaminy.
+[17:29:10] [Dziekan] Student nr 91 (PID: 43061) -> Komisja A: 71%
+[17:29:10] [Dziekan] Student nr 83 (PID: 43053) -> Komisja A: 55%
+[17:29:13] [Dziekan] Student nr 86 (PID: 43056) -> Komisja B: 41%
+[17:29:13] [Dziekan] Kandydat nr 86 (PID: 43056) zakonczyl egzaminy.
+[17:29:14] [Dziekan] Student nr 88 (PID: 43058) -> Komisja A: 52%
+[17:29:16] [Dziekan] Student nr 91 (PID: 43061) -> Komisja B: 72%
+[17:29:16] [Dziekan] Kandydat nr 83 (PID: 43053) zakonczyl egzaminy.
+[17:29:16] [Dziekan] Student nr 83 (PID: 43053) -> Komisja B: 62%
+[17:29:16] [Dziekan] Kandydat nr 91 (PID: 43061) zakonczyl egzaminy.
+[17:29:20] [Dziekan] Student nr 90 (PID: 43060) -> Komisja A: 51%
+[17:29:20] [Dziekan] Kandydat nr 88 (PID: 43058) zakonczyl egzaminy.
+[17:29:20] [Dziekan] Student nr 92 (PID: 43062) -> Komisja A: 31%
+[17:29:20] [Dziekan] Student nr 88 (PID: 43058) -> Komisja B: 46%
+[17:29:24] [Dziekan] Student nr 89 (PID: 43059) -> Komisja A: 54%
+[17:29:27] [Dziekan] Student nr 92 (PID: 43062) -> Komisja B: 68%
+[17:29:27] [Dziekan] Kandydat nr 90 (PID: 43060) zakonczyl egzaminy.
+[17:29:27] [Dziekan] Student nr 90 (PID: 43060) -> Komisja B: 65%
+[17:29:27] [Dziekan] Kandydat nr 92 (PID: 43062) zakonczyl egzaminy.
+[17:29:28] [Dziekan] Student nr 95 (PID: 43065) -> Komisja A: 63%
+[17:29:30] [Dziekan] Student nr 93 (PID: 43063) -> Komisja A: 68%
+[17:29:30] [Dziekan] Kandydat nr 89 (PID: 43059) zakonczyl egzaminy.
+[17:29:30] [Dziekan] Student nr 89 (PID: 43059) -> Komisja B: 30%
+[17:29:33] [Dziekan] Student nr 95 (PID: 43065) -> Komisja B: 42%
+[17:29:33] [Dziekan] Kandydat nr 95 (PID: 43065) zakonczyl egzaminy.
+[17:29:35] [Dziekan] Student nr 96 (PID: 43066) -> Komisja A: 36%
+[17:29:35] [Dziekan] Kandydat nr 93 (PID: 43063) zakonczyl egzaminy.
+[17:29:35] [Dziekan] Student nr 93 (PID: 43063) -> Komisja B: 55%
+[17:29:40] [Dziekan] Student nr 97 (PID: 43067) -> Komisja A: 37%
+[17:29:41] [Dziekan] Student nr 94 (PID: 43064) -> Komisja A: 56%
+[17:29:43] [Dziekan] Student nr 96 (PID: 43066) -> Komisja B: 53%
+[17:29:43] [Dziekan] Kandydat nr 96 (PID: 43066) zakonczyl egzaminy.
+[17:29:43] [Dziekan] Student nr 98 (PID: 43068) -> Komisja A: 28%
+[17:29:43] [Dziekan] Kandydat nr 98 (PID: 43068) zakonczyl egzaminy.
+[17:29:46] [Dziekan] Student nr 97 (PID: 43067) -> Komisja B: 38%
+[17:29:46] [Dziekan] Kandydat nr 97 (PID: 43067) zakonczyl egzaminy.
+[17:29:48] [Dziekan] Student nr 94 (PID: 43064) -> Komisja B: 51%
+[17:29:48] [Dziekan] Kandydat nr 94 (PID: 43064) zakonczyl egzaminy.
+[17:29:48] [Dziekan] Student nr 99 (PID: 43069) -> Komisja A: 38%
+[17:29:48] [Dziekan] Student nr 100 (PID: 43070) -> Komisja A: 54%
+[17:29:50] [Dziekan] Student nr 104 (PID: 43085) -> Komisja A: 72%
+[17:29:54] [Dziekan] Student nr 100 (PID: 43070) -> Komisja B: 24%
+[17:29:54] [Dziekan] Kandydat nr 100 (PID: 43070) zakonczyl egzaminy.
+[17:29:54] [Dziekan] Student nr 104 (PID: 43085) -> Komisja B: 72%
+[17:29:54] [Dziekan] Kandydat nr 104 (PID: 43085) zakonczyl egzaminy.
+[17:29:55] [Dziekan] Student nr 99 (PID: 43069) -> Komisja B: 34%
+[17:29:55] [Dziekan] Kandydat nr 99 (PID: 43069) zakonczyl egzaminy.
+[17:29:56] [Dziekan] Student nr 105 (PID: 43086) -> Komisja A: 57%
+[17:29:57] [Dziekan] Student nr 107 (PID: 43088) -> Komisja A: 77%
+[17:29:59] [Dziekan] Student nr 102 (PID: 43083) -> Komisja A: 47%
+[17:30:03] [Dziekan] Student nr 105 (PID: 43086) -> Komisja B: 35%
+[17:30:03] [Dziekan] Kandydat nr 105 (PID: 43086) zakonczyl egzaminy.
+[17:30:04] [Dziekan] Student nr 107 (PID: 43088) -> Komisja B: 76%
+[17:30:04] [Dziekan] Kandydat nr 107 (PID: 43088) zakonczyl egzaminy.
+[17:30:05] [Dziekan] Student nr 101 (PID: 43071) -> Komisja A: 65%
+[17:30:07] [Dziekan] Student nr 102 (PID: 43083) -> Komisja B: 61%
+[17:30:07] [Dziekan] Kandydat nr 102 (PID: 43083) zakonczyl egzaminy.
+[17:30:08] [Dziekan] Student nr 106 (PID: 43087) -> Komisja A: 68%
+[17:30:08] [Dziekan] Student nr 108 (PID: 43089) -> Komisja A: 35%
+[17:30:10] [Dziekan] Student nr 101 (PID: 43071) -> Komisja B: 36%
+[17:30:10] [Dziekan] Kandydat nr 101 (PID: 43071) zakonczyl egzaminy.
+[17:30:14] [Dziekan] Student nr 108 (PID: 43089) -> Komisja B: 29%
+[17:30:14] [Dziekan] Kandydat nr 106 (PID: 43087) zakonczyl egzaminy.
+[17:30:14] [Dziekan] Student nr 109 (PID: 43090) -> Komisja A: 52%
+[17:30:14] [Dziekan] Kandydat nr 108 (PID: 43089) zakonczyl egzaminy.
+[17:30:14] [Dziekan] Student nr 106 (PID: 43087) -> Komisja B: 39%
+[17:30:16] [Dziekan] Student nr 113 (PID: 43094) -> Komisja A: 73%
+[17:30:17] [Dziekan] Student nr 110 (PID: 43091) -> Komisja A: 53%
+[17:30:19] [Dziekan] Student nr 109 (PID: 43090) -> Komisja B: 60%
+[17:30:19] [Dziekan] Kandydat nr 109 (PID: 43090) zakonczyl egzaminy.
+[17:30:22] [Dziekan] Student nr 113 (PID: 43094) -> Komisja B: 28%
+[17:30:22] [Dziekan] Kandydat nr 113 (PID: 43094) zakonczyl egzaminy.
+[17:30:25] [Dziekan] Student nr 115 (PID: 43096) -> Komisja A: 44%
+[17:30:25] [Dziekan] Kandydat nr 110 (PID: 43091) zakonczyl egzaminy.
+[17:30:25] [Dziekan] Student nr 110 (PID: 43091) -> Komisja B: 73%
+[17:30:27] [Dziekan] Student nr 111 (PID: 43092) -> Komisja A: 57%
+[17:30:27] [Dziekan] Kandydat nr 116 (PID: 43097) zakonczyl egzaminy.
+[17:30:27] [Dziekan] Student nr 116 (PID: 43097) -> Komisja A: 22%
+[17:30:32] [Dziekan] Student nr 115 (PID: 43096) -> Komisja B: 55%
+[17:30:32] [Dziekan] Kandydat nr 111 (PID: 43092) zakonczyl egzaminy.
+[17:30:32] [Dziekan] Student nr 111 (PID: 43092) -> Komisja B: 21%
+[17:30:32] [Dziekan] Kandydat nr 115 (PID: 43096) zakonczyl egzaminy.
+[17:30:35] [Dziekan] Student nr 118 (PID: 43099) -> Komisja A: 41%
+[17:30:36] [Dziekan] Student nr 117 (PID: 43098) -> Komisja A: 38%
+[17:30:37] [Dziekan] Student nr 114 (PID: 43095) -> Komisja A: 47%
+[17:30:41] [Dziekan] Student nr 118 (PID: 43099) -> Komisja B: 38%
+[17:30:41] [Dziekan] Kandydat nr 118 (PID: 43099) zakonczyl egzaminy.
+[17:30:42] [Dziekan] Student nr 114 (PID: 43095) -> Komisja B: 54%
+[17:30:42] [Dziekan] Kandydat nr 114 (PID: 43095) zakonczyl egzaminy.
+[17:30:43] [Dziekan] Student nr 117 (PID: 43098) -> Komisja B: 34%
+[17:30:43] [Dziekan] Kandydat nr 117 (PID: 43098) zakonczyl egzaminy.
+[17:30:45] [Dziekan] Student nr 121 (PID: 43102) -> Komisja A: 57%
+[17:30:45] [Dziekan] Student nr 120 (PID: 43101) -> Komisja A: 54%
+[17:30:46] [Dziekan] Student nr 119 (PID: 43100) -> Komisja A: 52%
+[17:30:51] [Dziekan] Student nr 121 (PID: 43102) -> Komisja B: 35%
+[17:30:51] [Dziekan] Kandydat nr 121 (PID: 43102) zakonczyl egzaminy.
+[17:30:52] [Dziekan] Student nr 119 (PID: 43100) -> Komisja B: 82%
+[17:30:52] [Dziekan] Kandydat nr 119 (PID: 43100) zakonczyl egzaminy.
+[17:30:52] [Dziekan] Student nr 120 (PID: 43101) -> Komisja B: 55%
+[17:30:52] [Dziekan] Kandydat nr 120 (PID: 43101) zakonczyl egzaminy.
+[17:30:54] [Dziekan] Student nr 122 (PID: 43103) -> Komisja A: 62%
+[17:30:55] [Dziekan] Student nr 123 (PID: 43104) -> Komisja A: 46%
+[17:30:55] [Dziekan] Student nr 124 (PID: 43105) -> Komisja A: 45%
+[17:31:01] [Dziekan] Student nr 122 (PID: 43103) -> Komisja B: 49%
+[17:31:01] [Dziekan] Kandydat nr 122 (PID: 43103) zakonczyl egzaminy.
+[17:31:02] [Dziekan] Student nr 124 (PID: 43105) -> Komisja B: 61%
+[17:31:02] [Dziekan] Kandydat nr 123 (PID: 43104) zakonczyl egzaminy.
+[17:31:02] [Dziekan] Student nr 123 (PID: 43104) -> Komisja B: 48%
+[17:31:02] [Dziekan] Kandydat nr 124 (PID: 43105) zakonczyl egzaminy.
+[17:31:04] [Dziekan] Student nr 126 (PID: 43107) -> Komisja A: 19%
+[17:31:04] [Dziekan] Kandydat nr 126 (PID: 43107) zakonczyl egzaminy.
+[17:31:04] [Dziekan] Student nr 127 (PID: 43108) -> Komisja A: 45%
+[17:31:05] [Dziekan] Student nr 125 (PID: 43106) -> Komisja A: 56%
+[17:31:10] [Dziekan] Student nr 125 (PID: 43106) -> Komisja B: 38%
+[17:31:10] [Dziekan] Kandydat nr 125 (PID: 43106) zakonczyl egzaminy.
+[17:31:12] [Dziekan] Student nr 127 (PID: 43108) -> Komisja B: 49%
+[17:31:12] [Dziekan] Kandydat nr 127 (PID: 43108) zakonczyl egzaminy.
+[17:31:13] [Dziekan] Student nr 130 (PID: 43111) -> Komisja A: 48%
+[17:31:13] [Dziekan] Student nr 131 (PID: 43112) -> Komisja A: 61%
+[17:31:15] [Dziekan] Student nr 128 (PID: 43109) -> Komisja A: 45%
+[17:31:19] [Dziekan] Student nr 131 (PID: 43112) -> Komisja B: 63%
+[17:31:19] [Dziekan] Kandydat nr 131 (PID: 43112) zakonczyl egzaminy.
+[17:31:20] [Dziekan] Student nr 130 (PID: 43111) -> Komisja B: 53%
+[17:31:20] [Dziekan] Kandydat nr 130 (PID: 43111) zakonczyl egzaminy.
+[17:31:21] [Dziekan] Student nr 128 (PID: 43109) -> Komisja B: 22%
+[17:31:21] [Dziekan] Kandydat nr 128 (PID: 43109) zakonczyl egzaminy.
+[17:31:22] [Dziekan] Student nr 129 (PID: 43110) -> Komisja A: 40%
+[17:31:23] [Dziekan] Student nr 132 (PID: 43113) -> Komisja A: 72%
+[17:31:23] [Dziekan] Student nr 133 (PID: 43114) -> Komisja A: 48%
+[17:31:29] [Dziekan] Student nr 133 (PID: 43114) -> Komisja B: 46%
+[17:31:29] [Dziekan] Kandydat nr 129 (PID: 43110) zakonczyl egzaminy.
+[17:31:29] [Dziekan] Student nr 129 (PID: 43110) -> Komisja B: 50%
+[17:31:29] [Dziekan] Kandydat nr 133 (PID: 43114) zakonczyl egzaminy.
+[17:31:30] [Dziekan] Student nr 132 (PID: 43113) -> Komisja B: 49%
+[17:31:30] [Dziekan] Kandydat nr 132 (PID: 43113) zakonczyl egzaminy.
+[17:31:32] [Dziekan] Student nr 137 (PID: 43118) -> Komisja A: 41%
+[17:31:32] [Dziekan] Student nr 134 (PID: 43115) -> Komisja A: 44%
+[17:31:34] [Dziekan] Student nr 135 (PID: 43116) -> Komisja A: 66%
+[17:31:38] [Dziekan] Student nr 134 (PID: 43115) -> Komisja B: 37%
+[17:31:38] [Dziekan] Kandydat nr 134 (PID: 43115) zakonczyl egzaminy.
+[17:31:39] [Dziekan] Student nr 137 (PID: 43118) -> Komisja B: 42%
+[17:31:39] [Dziekan] Kandydat nr 137 (PID: 43118) zakonczyl egzaminy.
+[17:31:40] [Dziekan] Student nr 135 (PID: 43116) -> Komisja B: 34%
+[17:31:40] [Dziekan] Kandydat nr 135 (PID: 43116) zakonczyl egzaminy.
+[17:31:41] [Dziekan] Student nr 136 (PID: 43117) -> Komisja A: 60%
+[17:31:42] [Dziekan] Student nr 139 (PID: 43120) -> Komisja A: 51%
+[17:31:44] [Dziekan] Student nr 140 (PID: 43121) -> Komisja A: 61%
+[17:31:47] [Dziekan] Student nr 136 (PID: 43117) -> Komisja B: 12%
+[17:31:47] [Dziekan] Kandydat nr 136 (PID: 43117) zakonczyl egzaminy.
+[17:31:47] [Dziekan] Student nr 139 (PID: 43120) -> Komisja B: 53%
+[17:31:47] [Dziekan] Kandydat nr 139 (PID: 43120) zakonczyl egzaminy.
+[17:31:50] [Dziekan] Student nr 138 (PID: 43119) -> Komisja A: 62%
+[17:31:50] [Dziekan] Student nr 144 (PID: 43125) -> Komisja A: 70%
+[17:31:51] [Dziekan] Student nr 140 (PID: 43121) -> Komisja B: 53%
+[17:31:51] [Dziekan] Kandydat nr 140 (PID: 43121) zakonczyl egzaminy.
+[17:31:54] [Dziekan] Student nr 141 (PID: 43122) -> Komisja A: 69%
+[17:31:54] [Dziekan] Kandydat nr 144 (PID: 43125) zakonczyl egzaminy.
+[17:31:54] [Dziekan] Student nr 144 (PID: 43125) -> Komisja B: 43%
+[17:31:55] [Dziekan] Student nr 138 (PID: 43119) -> Komisja B: 77%
+[17:31:55] [Dziekan] Kandydat nr 138 (PID: 43119) zakonczyl egzaminy.
+[17:31:58] [Dziekan] Student nr 141 (PID: 43122) -> Komisja B: 45%
+[17:31:58] [Dziekan] Kandydat nr 141 (PID: 43122) zakonczyl egzaminy.
+[17:31:59] [Dziekan] Student nr 142 (PID: 43123) -> Komisja A: 52%
+[17:32:00] [Dziekan] Student nr 143 (PID: 43124) -> Komisja A: 36%
+[17:32:03] [Dziekan] Student nr 147 (PID: 43128) -> Komisja A: 55%
+[17:32:05] [Dziekan] Student nr 143 (PID: 43124) -> Komisja B: 56%
+[17:32:05] [Dziekan] Kandydat nr 142 (PID: 43123) zakonczyl egzaminy.
+[17:32:05] [Dziekan] Student nr 142 (PID: 43123) -> Komisja B: 25%
+[17:32:05] [Dziekan] Kandydat nr 143 (PID: 43124) zakonczyl egzaminy.
+[17:32:07] [Dziekan] Student nr 145 (PID: 43126) -> Komisja A: 45%
+[17:32:09] [Dziekan] Student nr 148 (PID: 43129) -> Komisja A: 54%
+[17:32:10] [Dziekan] Student nr 147 (PID: 43128) -> Komisja B: 37%
+[17:32:10] [Dziekan] Kandydat nr 147 (PID: 43128) zakonczyl egzaminy.
+[17:32:12] [Dziekan] Student nr 149 (PID: 43130) -> Komisja A: 39%
+[17:32:14] [Dziekan] Student nr 145 (PID: 43126) -> Komisja B: 27%
+[17:32:14] [Dziekan] Kandydat nr 145 (PID: 43126) zakonczyl egzaminy.
+[17:32:16] [Dziekan] Student nr 148 (PID: 43129) -> Komisja B: 39%
+[17:32:16] [Dziekan] Kandydat nr 148 (PID: 43129) zakonczyl egzaminy.
+[17:32:18] [Dziekan] Student nr 149 (PID: 43130) -> Komisja B: 50%
+[17:32:18] [Dziekan] Kandydat nr 149 (PID: 43130) zakonczyl egzaminy.
+[17:32:19] [Dziekan] Student nr 150 (PID: 43131) -> Komisja A: 56%
+[17:32:19] [Dziekan] Student nr 146 (PID: 43127) -> Komisja A: 45%
+[17:32:24] [Dziekan] Student nr 146 (PID: 43127) -> Komisja B: 63%
+[17:32:24] [Dziekan] Kandydat nr 146 (PID: 43127) zakonczyl egzaminy.
+[17:32:25] [Dziekan] Student nr 150 (PID: 43131) -> Komisja B: 44%
+[17:32:25] [Dziekan] Kandydat nr 150 (PID: 43131) zakonczyl egzaminy.
+[17:32:25] [Dziekan] Wszyscy kandydaci (i odrzuceni) opuscili system.
+[17:32:26] 
  [Dziekan] KONIEC EGZAMINU. PUBLIKACJA WYNIKOW
 
 ======================================================================
 | NR   | PID        | MATURA   | KOMISJA A | KOMISJA B | STATUS                   |
 ======================================================================
-| 1    | 60012      | ZALICZONA | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 2    | 60026      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 3    | 60027      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 4    | 60028      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 5    | 60029      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 6    | 60030      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 7    | 60031      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 8    | 60032      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 9    | 60033      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 10   | 60034      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 11   | 60035      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 12   | 60036      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 13   | 60037      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 14   | 60038      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 15   | 60039      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 16   | 60040      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 17   | 60041      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 18   | 60042      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 19   | 60043      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 20   | 60044      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 21   | 60045      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 22   | 60052      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 23   | 60053      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 24   | 60054      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 25   | 60055      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 26   | 60056      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 27   | 60057      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 28   | 60058      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 29   | 60059      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 30   | 60060      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 31   | 60061      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 32   | 60062      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 33   | 60063      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 34   | 60064      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 35   | 60065      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 36   | 60066      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 37   | 60067      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 38   | 60068      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 39   | 60069      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 40   | 60070      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 41   | 60071      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 42   | 60072      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 43   | 60073      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 44   | 60074      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 45   | 60075      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 46   | 60076      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 47   | 60088      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 48   | 60089      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 49   | 60090      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 50   | 60091      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 51   | 60092      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 52   | 60093      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 53   | 60094      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 54   | 60095      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 55   | 60096      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 56   | 60097      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 57   | 60098      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 58   | 60099      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 59   | 60100      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 60   | 60101      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 61   | 60102      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 62   | 60103      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 63   | 60104      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 64   | 60105      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 65   | 60106      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 66   | 60107      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 67   | 60108      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 68   | 60109      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 69   | 60110      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 70   | 60111      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 71   | 60112      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 72   | 60113      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 73   | 60114      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 74   | 60115      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 75   | 60116      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 76   | 60117      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 77   | 60118      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 78   | 60119      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 79   | 60120      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 80   | 60121      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 81   | 60122      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 82   | 60123      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 83   | 60124      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 84   | 60125      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 85   | 60126      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 86   | 60127      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 87   | 60128      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 88   | 60129      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 89   | 60130      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 90   | 60131      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 91   | 60132      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 92   | 60133      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 93   | 60134      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 94   | 60135      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 95   | 60136      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 96   | 60137      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 97   | 60138      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 98   | 60139      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 99   | 60140      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 100  | 60141      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 101  | 60142      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 102  | 60143      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 103  | 60144      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 104  | 60145      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 105  | 60146      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 106  | 60147      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 107  | 60148      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 108  | 60149      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 109  | 60150      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 110  | 60151      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 111  | 60152      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 112  | 60153      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 113  | 60154      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 114  | 60155      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 115  | 60156      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 116  | 60157      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 117  | 60158      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 118  | 60159      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 119  | 60160      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
-| 120  | 60161      | ---      | ---      | ---      | PRZERWANY - EWAKUACJA    |
+| 1    | 42955      | ZALICZONA | 22%      | ---      | NIEZDAL (KOMISJA A)      |
+| 2    | 42971      | ZALICZONA | 45%      | 39%      | PRZYJETY                 |
+| 3    | 42972      | ZALICZONA | 57%      | 42%      | PRZYJETY                 |
+| 4    | 42973      | ZALICZONA | 64%      | 42%      | PRZYJETY                 |
+| 5    | 42974      | ZALICZONA | 49%      | 41%      | PRZYJETY                 |
+| 6    | 42976      | ZALICZONA | 55%      | 41%      | PRZYJETY                 |
+| 7    | 42977      | ZALICZONA | 39%      | 42%      | PRZYJETY                 |
+| 8    | 42978      | ZALICZONA | 64%      | 21%      | NIEZDAL (KOMISJA B)      |
+| 9    | 42979      | ZALICZONA | 40%      | 53%      | PRZYJETY                 |
+| 10   | 42980      | ZALICZONA | 71%      | 80%      | PRZYJETY                 |
+| 11   | 42981      | ZALICZONA | 37%      | 63%      | PRZYJETY                 |
+| 12   | 42982      | ZALICZONA | 63%      | 50%      | PRZYJETY                 |
+| 13   | 42983      | ZALICZONA | 66%      | 63%      | PRZYJETY                 |
+| 14   | 42984      | ZALICZONA | 49%      | 60%      | PRZYJETY                 |
+| 15   | 42985      | ZALICZONA | 42%      | 75%      | PRZYJETY                 |
+| 16   | 42986      | ZALICZONA | 66%      | 39%      | PRZYJETY                 |
+| 17   | 42987      | ZALICZONA | 42%      | 23%      | NIEZDAL (KOMISJA B)      |
+| 18   | 42988      | ZALICZONA | 51%      | 19%      | NIEZDAL (KOMISJA B)      |
+| 19   | 42989      | ZALICZONA | 54%      | 80%      | PRZYJETY                 |
+| 20   | 42990      | ZALICZONA | 62%      | 57%      | PRZYJETY                 |
+| 21   | 42991      | ZALICZONA | 35%      | 62%      | PRZYJETY                 |
+| 22   | 42992      | ZALICZONA | 66%      | 54%      | PRZYJETY                 |
+| 23   | 42993      | ZALICZONA | 49%      | 51%      | PRZYJETY                 |
+| 24   | 42994      | ZALICZONA | 35%      | 68%      | PRZYJETY                 |
+| 25   | 42995      | ZALICZONA | 38%      | 46%      | PRZYJETY                 |
+| 26   | 42996      | ZALICZONA | 64%      | 56%      | PRZYJETY                 |
+| 27   | 42997      | ZALICZONA | 54%      | 19%      | NIEZDAL (KOMISJA B)      |
+| 28   | 42998      | ZALICZONA | 33%      | 66%      | PRZYJETY                 |
+| 29   | 42999      | ZALICZONA | 38%      | 54%      | PRZYJETY                 |
+| 30   | 43000      | ZALICZONA | 49%      | 54%      | PRZYJETY                 |
+| 31   | 43001      | ZALICZONA | 38%      | 49%      | PRZYJETY                 |
+| 32   | 43002      | ZALICZONA | 73%      | 28%      | NIEZDAL (KOMISJA B)      |
+| 33   | 43003      | ZALICZONA | 46%      | 73%      | PRZYJETY                 |
+| 34   | 43004      | ZALICZONA | 57%      | 53%      | PRZYJETY                 |
+| 35   | 43005      | ZALICZONA | 51%      | 52%      | PRZYJETY                 |
+| 36   | 43006      | ZALICZONA | 49%      | 52%      | PRZYJETY                 |
+| 37   | 43007      | ZALICZONA | 71%      | 18%      | NIEZDAL (KOMISJA B)      |
+| 38   | 43008      | ZALICZONA | 45%      | 41%      | PRZYJETY                 |
+| 39   | 43009      | ZALICZONA | 67%      | 61%      | PRZYJETY                 |
+| 40   | 43010      | ZALICZONA | 39%      | 62%      | PRZYJETY                 |
+| 41   | 43011      | ZALICZONA | 40%      | 35%      | PRZYJETY                 |
+| 42   | 43012      | ZALICZONA | 66%      | 55%      | PRZYJETY                 |
+| 43   | 43013      | ZALICZONA | 53%      | 44%      | PRZYJETY                 |
+| 44   | 43014      | ZALICZONA | 51%      | 42%      | PRZYJETY                 |
+| 45   | 43015      | ZALICZONA | 49%      | 16%      | NIEZDAL (KOMISJA B)      |
+| 46   | 43016      | ZALICZONA | 19%      | ---      | NIEZDAL (KOMISJA A)      |
+| 47   | 43017      | ZALICZONA | 38%      | 58%      | PRZYJETY                 |
+| 48   | 43018      | ZALICZONA | 66%      | 72%      | PRZYJETY                 |
+| 49   | 43019      | ZALICZONA | 54%      | 15%      | NIEZDAL (KOMISJA B)      |
+| 50   | 43020      | ZALICZONA | 51%      | 28%      | NIEZDAL (KOMISJA B)      |
+| 51   | 43021      | ZALICZONA | 37%      | 75%      | PRZYJETY                 |
+| 52   | 43022      | ZALICZONA | 77%      | 65%      | PRZYJETY                 |
+| 53   | 43023      | ZALICZONA | 32%      | 31%      | PRZYJETY                 |
+| 54   | 43024      | ZALICZONA | 30%      | 41%      | PRZYJETY                 |
+| 55   | 43025      | ZALICZONA | 47%      | 57%      | PRZYJETY                 |
+| 56   | 43026      | ZALICZONA | 61%      | 25%      | NIEZDAL (KOMISJA B)      |
+| 57   | 43027      | ZALICZONA | 35%      | 6%       | NIEZDAL (KOMISJA B)      |
+| 58   | 43028      | ZALICZONA | 56%      | 45%      | PRZYJETY                 |
+| 59   | 43029      | ZALICZONA | 40%      | 50%      | PRZYJETY                 |
+| 60   | 43030      | ZALICZONA | 42%      | 53%      | PRZYJETY                 |
+| 61   | 43031      | ZALICZONA | 31%      | 54%      | PRZYJETY                 |
+| 62   | 43032      | ZALICZONA | 48%      | 33%      | PRZYJETY                 |
+| 63   | 43033      | ZALICZONA | 47%      | 36%      | PRZYJETY                 |
+| 64   | 43034      | ZALICZONA | 52%      | 35%      | PRZYJETY                 |
+| 65   | 43035      | ZALICZONA | 71%      | 31%      | PRZYJETY                 |
+| 66   | 43036      | ZALICZONA | 68%      | 52%      | PRZYJETY                 |
+| 67   | 43037      | ZALICZONA | 66%      | 77%      | PRZYJETY                 |
+| 68   | 43038      | ZALICZONA | 73%      | 58%      | PRZYJETY                 |
+| 69   | 43039      | ZALICZONA | 31%      | 74%      | PRZYJETY                 |
+| 70   | 43040      | ZALICZONA | 100%     | 43%      | PRZYJETY                 |
+| 71   | 43041      | ZALICZONA | 18%      | ---      | NIEZDAL (KOMISJA A)      |
+| 72   | 43042      | ZALICZONA | 26%      | ---      | NIEZDAL (KOMISJA A)      |
+| 73   | 43043      | ZALICZONA | 37%      | 68%      | PRZYJETY                 |
+| 74   | 43044      | ZALICZONA | 31%      | 47%      | PRZYJETY                 |
+| 75   | 43045      | ZALICZONA | 48%      | 62%      | PRZYJETY                 |
+| 76   | 43046      | ZALICZONA | 25%      | ---      | NIEZDAL (KOMISJA A)      |
+| 77   | 43047      | ZALICZONA | 75%      | 51%      | PRZYJETY                 |
+| 78   | 43048      | ZALICZONA | 39%      | 35%      | PRZYJETY                 |
+| 79   | 43049      | ZALICZONA | 45%      | 74%      | PRZYJETY                 |
+| 80   | 43050      | ZALICZONA | 57%      | 26%      | NIEZDAL (KOMISJA B)      |
+| 81   | 43051      | ZALICZONA | 30%      | 51%      | PRZYJETY                 |
+| 82   | 43052      | ZALICZONA | 41%      | 37%      | PRZYJETY                 |
+| 83   | 43053      | ZALICZONA | 55%      | 62%      | PRZYJETY                 |
+| 84   | 43054      | ZALICZONA | 47%      | 33%      | PRZYJETY                 |
+| 85   | 43055      | ZALICZONA | 47%      | 60%      | PRZYJETY                 |
+| 86   | 43056      | ZALICZONA | 59%      | 41%      | PRZYJETY                 |
+| 87   | 43057      | ZALICZONA | 36%      | 43%      | PRZYJETY                 |
+| 88   | 43058      | ZALICZONA | 52%      | 46%      | PRZYJETY                 |
+| 89   | 43059      | ZALICZONA | 54%      | 30%      | PRZYJETY                 |
+| 90   | 43060      | ZALICZONA | 51%      | 65%      | PRZYJETY                 |
+| 91   | 43061      | ZALICZONA | 71%      | 72%      | PRZYJETY                 |
+| 92   | 43062      | ZALICZONA | 31%      | 68%      | PRZYJETY                 |
+| 93   | 43063      | ZALICZONA | 68%      | 55%      | PRZYJETY                 |
+| 94   | 43064      | ZALICZONA | 56%      | 51%      | PRZYJETY                 |
+| 95   | 43065      | ZALICZONA | 63%      | 42%      | PRZYJETY                 |
+| 96   | 43066      | ZALICZONA | 36%      | 53%      | PRZYJETY                 |
+| 97   | 43067      | ZALICZONA | 37%      | 38%      | PRZYJETY                 |
+| 98   | 43068      | ZALICZONA | 28%      | ---      | NIEZDAL (KOMISJA A)      |
+| 99   | 43069      | ZALICZONA | 38%      | 34%      | PRZYJETY                 |
+| 100  | 43070      | ZALICZONA | 54%      | 24%      | NIEZDAL (KOMISJA B)      |
+| 101  | 43071      | ZALICZONA | 65%      | 36%      | PRZYJETY                 |
+| 102  | 43083      | ZALICZONA | 47%      | 61%      | PRZYJETY                 |
+| 103  | 43084      | NIEZALICZONA | ---      | ---      | ODRZUCONY NA WSTEPIE - BRAK MATURY |
+| 104  | 43085      | ZALICZONA | 72%      | 72%      | PRZYJETY                 |
+| 105  | 43086      | ZALICZONA | 57%      | 35%      | PRZYJETY                 |
+| 106  | 43087      | ZALICZONA | 68%      | 39%      | PRZYJETY                 |
+| 107  | 43088      | ZALICZONA | 77%      | 76%      | PRZYJETY                 |
+| 108  | 43089      | ZALICZONA | 35%      | 29%      | NIEZDAL (KOMISJA B)      |
+| 109  | 43090      | ZALICZONA | 52%      | 60%      | PRZYJETY                 |
+| 110  | 43091      | ZALICZONA | 53%      | 73%      | PRZYJETY                 |
+| 111  | 43092      | ZALICZONA | 57%      | 21%      | NIEZDAL (KOMISJA B)      |
+| 112  | 43093      | NIEZALICZONA | ---      | ---      | ODRZUCONY NA WSTEPIE - BRAK MATURY |
+| 113  | 43094      | ZALICZONA | 73%      | 28%      | NIEZDAL (KOMISJA B)      |
+| 114  | 43095      | ZALICZONA | 47%      | 54%      | PRZYJETY                 |
+| 115  | 43096      | ZALICZONA | 44%      | 55%      | PRZYJETY                 |
+| 116  | 43097      | ZALICZONA | 22%      | ---      | NIEZDAL (KOMISJA A)      |
+| 117  | 43098      | ZALICZONA | 38%      | 34%      | PRZYJETY                 |
+| 118  | 43099      | ZALICZONA | 41%      | 38%      | PRZYJETY                 |
+| 119  | 43100      | ZALICZONA | 52%      | 82%      | PRZYJETY                 |
+| 120  | 43101      | ZALICZONA | 54%      | 55%      | PRZYJETY                 |
+| 121  | 43102      | ZALICZONA | 57%      | 35%      | PRZYJETY                 |
+| 122  | 43103      | ZALICZONA | 62%      | 49%      | PRZYJETY                 |
+| 123  | 43104      | ZALICZONA | 46%      | 48%      | PRZYJETY                 |
+| 124  | 43105      | ZALICZONA | 45%      | 61%      | PRZYJETY                 |
+| 125  | 43106      | ZALICZONA | 56%      | 38%      | PRZYJETY                 |
+| 126  | 43107      | ZALICZONA | 19%      | ---      | NIEZDAL (KOMISJA A)      |
+| 127  | 43108      | ZALICZONA | 45%      | 49%      | PRZYJETY                 |
+| 128  | 43109      | ZALICZONA | 45%      | 22%      | NIEZDAL (KOMISJA B)      |
+| 129  | 43110      | ZALICZONA | 40%      | 50%      | PRZYJETY                 |
+| 130  | 43111      | ZALICZONA | 48%      | 53%      | PRZYJETY                 |
+| 131  | 43112      | ZALICZONA | 61%      | 63%      | PRZYJETY                 |
+| 132  | 43113      | ZALICZONA | 72%      | 49%      | PRZYJETY                 |
+| 133  | 43114      | ZALICZONA | 48%      | 46%      | PRZYJETY                 |
+| 134  | 43115      | ZALICZONA | 44%      | 37%      | PRZYJETY                 |
+| 135  | 43116      | ZALICZONA | 66%      | 34%      | PRZYJETY                 |
+| 136  | 43117      | ZALICZONA | 60%      | 12%      | NIEZDAL (KOMISJA B)      |
+| 137  | 43118      | ZALICZONA | 41%      | 42%      | PRZYJETY                 |
+| 138  | 43119      | ZALICZONA | 62%      | 77%      | PRZYJETY                 |
+| 139  | 43120      | ZALICZONA | 51%      | 53%      | PRZYJETY                 |
+| 140  | 43121      | ZALICZONA | 61%      | 53%      | PRZYJETY                 |
+| 141  | 43122      | ZALICZONA | 69%      | 45%      | PRZYJETY                 |
+| 142  | 43123      | ZALICZONA | 52%      | 25%      | NIEZDAL (KOMISJA B)      |
+| 143  | 43124      | ZALICZONA | 36%      | 56%      | PRZYJETY                 |
+| 144  | 43125      | ZALICZONA | 70%      | 43%      | PRZYJETY                 |
+| 145  | 43126      | ZALICZONA | 45%      | 27%      | NIEZDAL (KOMISJA B)      |
+| 146  | 43127      | ZALICZONA | 45%      | 63%      | PRZYJETY                 |
+| 147  | 43128      | ZALICZONA | 55%      | 37%      | PRZYJETY                 |
+| 148  | 43129      | ZALICZONA | 54%      | 39%      | PRZYJETY                 |
+| 149  | 43130      | ZALICZONA | 39%      | 50%      | PRZYJETY                 |
+| 150  | 43131      | ZALICZONA | 56%      | 44%      | PRZYJETY                 |
 ======================================================================
-[22:23:16] [Dziekan] Zamykanie systemu i sprzatanie zasobow IPC...
+[17:32:26] [Dziekan] Zamykanie systemu i sprzatanie zasobow IPC...

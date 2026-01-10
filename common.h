@@ -39,7 +39,7 @@ typedef struct {
     pid_t nadawca_pid;      // PID procesu wysyłającego (żeby wiedzieć komu odpisać)
     int dane_int;           // Np. ocena, status 
     int status_specjalny;   // 0=zwykły, 1=poprawkowicz
-    char tresc[256];        // Opcjonalny tekst (np. do raportu)
+    char tresc[64];        // Opcjonalny tekst (np. do raportu)
 } Komunikat;
 
 // Indeksy semaforów w zbiorze

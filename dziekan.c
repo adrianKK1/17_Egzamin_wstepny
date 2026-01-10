@@ -70,7 +70,7 @@ int znajdz_lub_dodaj_studenta(pid_t pid) {
             return i; //znaleziono
         }
     }
-    //nie znaleziono, dodajemy nowego
+    //nie znaleziono, dodajemy nowego !!!!!!!!!!!
     for (int i = 0; i < liczba_kandydatow; i++) {
         if (baza_wynikow[i].pid == 0) {
             baza_wynikow[i].pid = pid;
@@ -84,6 +84,55 @@ int znajdz_lub_dodaj_studenta(pid_t pid) {
     return -1; //brak miejsca
 }
 
+void drukuj_listy_startowe() {
+    loguj("\n[Dziekan] ZAKONCZONO WERYFIKACJE MATUR. PUBLIKACJA LIST STARTOWYCH.");
+
+    //1 lista niedopuszczonych
+    if (plik_raportu) {
+        fprintf(plik_raportu, "\n===LISTA NIEDOPUSZCZONYCH (BRAK MATURY) ===\n");
+        printf("\n--- LISTA OSOB NIEDOPUSZCZONYCH (BRAK MATURY) ---\n");
+    }
+
+    int brak_matury_count = 0;
+    for (int i = 0; i < liczba_kandydatow; i++) {
+        if(baza_wynikow[i].matura_zdana == 0) {
+            char bufor[100];
+            snprintf(bufor, sizeof(bufor), "Kandydat nr %d (PID: %d) - BRAK MATURY", baza_wynikow[i].id, baza_wynikow[i].pid);
+            printf("%s\n", bufor);
+            if (plik_raportu) {
+                fprintf(plik_raportu, "%s\n", bufor);
+                brak_matury_count++;
+            }
+        }
+    }
+    if (brak_matury_count == 0) {
+            printf("BRAK OSOB NIEDOPUSZCZONYCH\n");
+            if (plik_raportu) {
+                fprintf(plik_raportu, "BRAK OSOB NIEDOPUSZCZONYCH\n");
+            }
+        }
+    //2 lista dopuszczonych
+    if (plik_raportu) {
+        fprintf(plik_raportu, "\n===LISTA DOPUSZCZONYCH DO EGZAMINU ===\n");
+        printf("\n--- LISTA OSOB DOPUSZCZONYCH DO EGZAMINU ---\n");
+    }
+    int dopuszczeni_count = 0;
+        for (int i = 0; i < liczba_kandydatow; i++) {
+            if(baza_wynikow[i].matura_zdana == 1) {
+                char bufor[100];
+                snprintf(bufor, sizeof(bufor), "Student nr %d (PID: %d) - DOPUSZCZONY", baza_wynikow[i].id, baza_wynikow[i].pid);
+                printf("%s\n", bufor);
+                if (plik_raportu) {
+                    fprintf(plik_raportu, "%s\n", bufor);
+                    dopuszczeni_count++;
+                }
+            }
+        }
+        loguj("[Dziekan] Statystyki wstepne: Dopuszczeni: %d, Odrzuceni: %d. Rozpoczynamy egzaminy.", dopuszczeni_count, brak_matury_count);
+    if (plik_raportu) fprintf(plik_raportu, "--------------------------------------------------\n\n");
+
+}
+
 //funkcja tworzaca koncowy rangking
 void generuj_ranking() {
     loguj("\n [Dziekan] KONIEC EGZAMINU. PUBLIKACJA WYNIKOW");
@@ -94,7 +143,7 @@ void generuj_ranking() {
         fprintf(plik_raportu, "======================================================================\n");
     }
 
-    printf("\nLISTA RANKINGOWA\n");
+    printf("\n====LISTA RANKINGOWA=====\n");
     printf("| %-4s | %-10s | %-8s | %-8s | %-8s | %-24s |\n", "NR", "PID", "MATURA", "OCENA A", "OCENA B", "STATUS");
 
     for (int i = 0; i < liczba_kandydatow; i++) {
@@ -133,7 +182,7 @@ void generuj_ranking() {
         //status końcowy
         if (s.matura_zdana == 0) {
             // 1 Odrzucony przez brak matury
-            strcpy(status, "ODRZUCONY - BRAK MATURY");
+            strcpy(status, "ODRZUCONY NA WSTEPIE - BRAK MATURY");
         } 
         else if (s.ocena_A != -1 && s.ocena_A < 30) { 
             // 2 Oblal egzamin A (ma ocene i jest < 30)
@@ -264,7 +313,7 @@ int main(int argc, char *argv[]) {
     arg.val = 0;
     semctl(semid, SEM_START_IDX, SETVAL, arg);//semafor startu na 0
     
-    loguj("[Dziekan] Uczelnia otwarta. Liczba miejsc: %d. Kandydatow: %d.", M_MIEJSC, M);
+    loguj("[Dziekan] Uczelnia otwarta. Kandydatow: %d. Czekam na zebranie sie wszystkich przed wejsciem...", M);
 
     //uruchomienie komisji
     //komisja A
@@ -297,43 +346,48 @@ int main(int argc, char *argv[]) {
         pids_kandydatow[i] = pid;
         baza_wynikow[i].pid = pid;
 
-        if (i % 5 == 0) {
+        if (i % 10 == 0) {
             usleep(100000); //chwila przerwy co 5 kandydatow
         }
     }
-    loguj("[Dziekan] Wpuszczono %d kandydatow (Nr 1-%d). Czekam na wyniki.", M, M);
+    loguj("[Dziekan] Wszyscy kandydaci zgromadzeni. Wybija godzina T. Rozpoczynam weryfikacje matur.");
 
-    //glowna petla obslugi
-
+    //etap 1 wryfikacja matur
     Komunikat msg;
-    int zakonczonych_procesow = 0;    
-    
-    while(1){
-        //zapytaniao mature
-        if (msgrcv(msgid, &msg, sizeof(Komunikat) - sizeof(long), MSG_MATURA_REQ, IPC_NOWAIT) != -1) {
+
+    for (int i = 0; i < M; i++){
+        //matura od kazdego kandydata
+        if (msgrcv(msgid, &msg, sizeof(Komunikat) - sizeof(long), MSG_MATURA_REQ, 0) != -1) {
             int idx = znajdz_lub_dodaj_studenta(msg.nadawca_pid);
-            int nr_studenta = (idx != -1) ? baza_wynikow[idx].id : -1;
-
+            if (idx == -1) {
+                loguj("BLAD: Nieznany PID kandydata: %d", msg.nadawca_pid);
+                continue;
+            }
             Komunikat odp;
-            odp.mtype = msg.nadawca_pid; //odpowiedz do kandydata
-
-            //2%szans na brak matury
+            odp.mtype = msg.nadawca_pid;
+            
+            //losowanie matury (2% szans na brak)
             if (losuj(1,100) <= 2) {
-                odp.dane_int = 0;
-                if(idx != -1) {
-                    baza_wynikow[idx].matura_zdana = 0;
-                }
-                loguj("[Dziekan] Kandydat nr %d (PID: %d) nie posiada matury. Odrzucenie.", nr_studenta, msg.nadawca_pid);
+                baza_wynikow[idx].matura_zdana = 0;
+                odp.dane_int = 0; //niezdal
+                loguj("[Weryfikacja] Kandydat nr %d (PID: %d) -> BRAK MATURY. Odrzucony.", baza_wynikow[idx].id, msg.nadawca_pid);
             } else {
-                odp.dane_int = 1;
-                if(idx != -1) {
-                    baza_wynikow[idx].matura_zdana = 1;
-                    loguj("[Dziekan] Kandydat nr %d (PID: %d) posiada matura. Akceptacja.", nr_studenta, msg.nadawca_pid);
-                }
+                baza_wynikow[idx].matura_zdana = 1;
+                odp.dane_int = 1; //zdal
+                loguj("[Weryfikacja] Kandydat nr %d (PID: %d) -> MATURA ZALICZONA. Dopuszczony do egzaminu.", baza_wynikow[idx].id, msg.nadawca_pid);
             }
             msgsnd(msgid, &odp, sizeof(Komunikat) - sizeof(long), 0);
         }
-        
+    }
+
+    //drukowanie list startowych
+    drukuj_listy_startowe();
+
+    //etap 2 egzamin wlasciwy
+    //glowna petla obslugi
+    int zakonczonych_procesow = 0;    
+    
+    while(1){        
         //obsulga wynikow z komisji 
         if (msgrcv(msgid, &msg, sizeof(Komunikat) - sizeof(long), MSG_WYNIKI, IPC_NOWAIT) != -1) {
             char typ;
@@ -357,23 +411,23 @@ int main(int argc, char *argv[]) {
         if (zakonczony_pid > 0) {
             // Czy to byl kandydat?
             int idx = znajdz_lub_dodaj_studenta(zakonczony_pid);
-            
-            // Sprawdzamy czy to jeden z naszych kandydatow (czy jest w bazie)
-            int czy_kandydat = 0;
-            if(idx != -1) czy_kandydat = 1;
-
-            if (czy_kandydat) {
+            if (idx != -1) {
                 zakonczonych_procesow++;
-                int nr = (idx != -1) ? baza_wynikow[idx].id : -1;
-                loguj("[Dziekan] Kandydat nr %d (PID: %d) zakonczyl proces. (%d/%d)", nr, zakonczony_pid, zakonczonych_procesow, liczba_kandydatow);
+                
+                // Mozemy sprawdzic dlaczego skonczyl
+                if (baza_wynikow[idx].matura_zdana == 0) {
+                    loguj("[Dziekan] Kandydat nr %d (PID: %d) zakonczyl proces - ODRZUCONY (BRAK MATURY).", baza_wynikow[idx].id, zakonczony_pid);
+                } else {
+                    loguj("[Dziekan] Kandydat nr %d (PID: %d) zakonczyl egzaminy.", baza_wynikow[idx].id, zakonczony_pid);
+                }
 
                 if (zakonczonych_procesow == liczba_kandydatow) {
-                    loguj("[Dziekan] Wszyscy kandydaci zakonczyli egzamin.");
+                    loguj("[Dziekan] Wszyscy kandydaci (i odrzuceni) opuscili system.");
                     break;
                 }
             }
         }
-        usleep(100000); //chwila przerwy
+        usleep(50000); //chwila przerwy
     }
 
     //koniec symulacji
