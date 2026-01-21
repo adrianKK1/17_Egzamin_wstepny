@@ -35,7 +35,7 @@ int main() {
     //1 podlacznie do IPC, dziekan już stworzył kolejke i semafory
     key_t key = ftok(PROG_SCIEZKA, PROG_ID);
     msgid = msgget(key, 0);//0 = podłączenie do istniejącej kolejki
-    semid = semget(key, 3, 0); //0 = podłączenie do istniejącego zbioru semaforów
+    semid = semget(key, 4, 0); //0 = podłączenie do istniejącego zbioru semaforów
 
     if (msgid == -1 || semid == -1) {
         printf("[KANDYDAT %d] Blad podlaczenia do IPC - uczelnia zamknieta.\n",moj_pid);
@@ -47,13 +47,13 @@ int main() {
 
     // etap 1 - weryfikacja matury
     printf("[KANDYDAT %d] Idę do Dziekana sprawdzić maturę.\n", moj_pid);
-
+    operacja_semafor(SEM_DOSTEP_IDX, -1);
     Komunikat msg;
     msg.mtype = MSG_MATURA_REQ;
     msg.nadawca_pid = moj_pid;
     msg.status_specjalny = czy_poprawkowicz;
     msg.dane_int = 0; //brak danych dodatkowych
-    sprintf(msg.tresc, "Proszę o weryfikację matury.");
+    
 
     //wyslanie zapytania do dziekana
     if (msgsnd(msgid, &msg, sizeof(Komunikat) - sizeof(long), 0) == -1) {
@@ -65,6 +65,8 @@ int main() {
         perror("[KANDYDAT] Blad odbioru odpowiedzi od Dziekana");
         exit(1);
     }
+
+    operacja_semafor(SEM_DOSTEP_IDX, 1);
 
     if(msg.dane_int == 0) {
         printf("[KANDYDAT %d] Matura niezaliczona. Kończę proces.\n", moj_pid);
@@ -80,8 +82,8 @@ int main() {
     operacja_semafor(SEM_KOMISJA_A_IDX, -1); //P(SEM_KOMISJA_A_IDX)
     printf("[KANDYDAT %d] Zajmuję miejsce w sali Komisji A.\n", moj_pid);
 
-    int czas_Ti = losuj(1, 2); 
-    sleep(czas_Ti); //symulacja czasu dotarcia do komisji
+    //int czas_Ti = losuj(1, 2); 
+    //sleep(czas_Ti); //symulacja czasu dotarcia do komisji
 
     // b) wysyłanie komunikatu do Komisji A
     msg.mtype = MSG_WEJSCIE_A;
@@ -116,7 +118,7 @@ int main() {
     operacja_semafor(SEM_KOMISJA_B_IDX, -1); 
     printf("[KANDYDAT %d] Zajmuję miejsce w sali Komisji B.\n", moj_pid);
     
-    sleep(losuj(1, 2));
+    //sleep(losuj(1, 2));
     // b) wysyłanie komunikatu do Komisji B
     msg.mtype = MSG_WEJSCIE_B;  
     msg.nadawca_pid = moj_pid;
@@ -131,7 +133,7 @@ int main() {
         exit(1);
     }
     
-    int ocena_b = msg.dane_int;
+    int ocena_b = msg.dane_int; 
     printf("[KANDYDAT %d] Otrzymałem wynik z Komisji B: %d%%\n", moj_pid, ocena_b);
 
     // d) zwalnianie miejsca w semaforze Komisji B (operacja V)

@@ -19,6 +19,7 @@
 #define LIMIT_SALA 3        // Max osób w sali (wymóg tematu)
 #define PROG_SCIEZKA "."    // Ścieżka do generowania klucza ftok
 #define PROG_ID 'E'         // ID projektu do ftok
+#define SHM_ID 'S'          // ID segmentu pamięci współdzielonej
 
 // Klucze do IPC (zostaną wygenerowane przez ftok)
 // Użyjemy jednego klucza bazowego, a różne mechanizmy (sem, msg) pobiorą go sobie
@@ -33,18 +34,29 @@
 #define MSG_WYNIKI        7   // Komisja -> Dziekan (Raport końcowy)
 #define MSG_KONIEC        99  // Sygnał zakończenia
 
-// Struktura komunikatu (wymóg: long mtype na początku) [cite: 762, 1367]
+// Struktura komunikatu 
 typedef struct {
     long mtype;             // Typ komunikatu
     pid_t nadawca_pid;      // PID procesu wysyłającego (żeby wiedzieć komu odpisać)
     int dane_int;           // Np. ocena, status 
     int status_specjalny;   // 0=zwykły, 1=poprawkowicz
-    char tresc[64];        // Opcjonalny tekst (np. do raportu)
+            // Opcjonalny tekst (np. do raportu)
 } Komunikat;
+
+typedef struct {
+    int id;
+    pid_t pid;
+    int matura_zdana; 
+    int ocena_A;   
+    int ocena_B;   
+    int suma_ocen;
+    int odrzucony;
+} StudentWynik;
 
 // Indeksy semaforów w zbiorze
 #define SEM_KOMISJA_A_IDX 0 // Licznik wolnych miejsc w A
 #define SEM_KOMISJA_B_IDX 1 // Licznik wolnych miejsc w B
 #define SEM_START_IDX     2 // Semafor startowy (Dziekan podnosi o godzinie T)
+#define SEM_DOSTEP_IDX   3 
 
 #endif // COMMON_H

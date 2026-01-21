@@ -4,8 +4,12 @@
 
 //zmienne globalne dla wątków
 int msgid = -1;
+int shmid = -1;
 char typ_komisji; // 'A' lub 'B'
 int liczba_egzaminatorow; 
+int max_studentow = 0;
+
+StudentWynik *baza_shm = NULL;
 
 //struktura kolejaki wewnętrznej dla wątków (watek glowny -> watki robocze)
 //to jest bufor w ktorym wątek główny będzie przekazywał zadania do wątków roboczych (recepcja zostawia studentow dla egzaminatorow)
@@ -27,7 +31,6 @@ void dodaj_do_kolejki_wew(Komunikat msg){
     if(!nowy){ perror("Blad alokacji pamieci dla wezla kolejki wewnetrznej"); exit(1);}
     nowy->dane_studenta = msg;
     nowy->next = NULL;
-
     //sekcja krytyczna - ochrona muteksem 
     pthread_mutex_lock(&mutex_kolejki);
     if(tail == NULL){ //kolejka pusta
@@ -36,7 +39,6 @@ void dodaj_do_kolejki_wew(Komunikat msg){
         tail->next = nowy;
         tail = nowy;
     }
-
     //sygnalizacja ze jest nowy student w kolejce - budzimy jednego z oczekujacych egzaminatorow
     pthread_cond_signal(&cond_kolejki);
     pthread_mutex_unlock(&mutex_kolejki);
@@ -75,7 +77,7 @@ void* watek_egzaminatora(void* arg) {
         } else {
             int suma_ocen = 0;
             for (int i = 0; i < liczba_egzaminatorow; i++) {
-                sleep(losuj(1, 2)); 
+                //sleep(losuj(1, 2)); 
                 suma_ocen += losuj(0, 100);
             }
             ocena_koncowa = suma_ocen / liczba_egzaminatorow;
@@ -83,18 +85,17 @@ void* watek_egzaminatora(void* arg) {
         
 
         //4. Wsylanie wyniku do dziekana (do rankingu)
-        Komunikat wynik_dla_dziekana;
-        wynik_dla_dziekana.mtype = MSG_WYNIKI; //typ komunikatu dla dziekana
-        wynik_dla_dziekana.nadawca_pid = student.nadawca_pid; //ID studenta
-        wynik_dla_dziekana.dane_int = ocena_koncowa; //ocena
-
-        if (student.status_specjalny == 1)
-            snprintf(wynik_dla_dziekana.tresc, 50, "%c:%d (POPRAWKOWICZ)", typ_komisji, ocena_koncowa);
-        else
-            snprintf(wynik_dla_dziekana.tresc, 50, "%c:%d", typ_komisji, ocena_koncowa);
-
-        if (msgsnd(msgid, &wynik_dla_dziekana, sizeof(Komunikat) - sizeof(long), 0) == -1) {
-            perror("Bład wysylania wyniku do Dziekana");
+        int znaleziono = 0;
+        for(int i=0; i<max_studentow; i++) {
+            if (baza_shm[i].pid == student.nadawca_pid) {
+                if (typ_komisji == 'A') baza_shm[i].ocena_A = ocena_koncowa;
+                else baza_shm[i].ocena_B = ocena_koncowa;
+                znaleziono = 1;
+                break;
+            }
+        }
+        if (!znaleziono) {
+            printf("[Komisja %c] BLAD: Nie znaleziono studenta PID %d w SHM!\n", typ_komisji, student.nadawca_pid);
         }
         
         
@@ -103,7 +104,7 @@ void* watek_egzaminatora(void* arg) {
         Komunikat wynik_dla_studenta;
         wynik_dla_studenta.mtype = student.nadawca_pid; //typ
         wynik_dla_studenta.dane_int = ocena_koncowa; //ocena
-        snprintf(wynik_dla_studenta.tresc, 256, "Komisja %c zakonczona. Ocena: %d%%", typ_komisji, ocena_koncowa);
+        //snprintf(wynik_dla_studenta.tresc, sizeof(wynik_dla_studenta.tresc), "Komisja %c zakonczona. Ocena: %d%%", typ_komisji, ocena_koncowa);
 
         if (msgsnd(msgid, &wynik_dla_studenta, sizeof(Komunikat) - sizeof(long), 0) == -1) {
             perror("Blad wysylania wyniku do studenta");
@@ -119,12 +120,13 @@ void* watek_egzaminatora(void* arg) {
 
 int main(int argc, char* argv[]) {
     //sprawdzenie argumentow
-    if (argc != 2){ 
-        fprintf(stderr, "Uzycie: %s <typ_komisji: A|B>\n", argv[0]);
+    if (argc != 3){ 
+        fprintf(stderr, "Uzycie: %s <typ: A|B> <liczba_kandydatow>\n", argv[0]);
         exit(1);
     }
     //ustawienie typu komisji i liczby egzaminatorów
     typ_komisji = argv[1][0];
+    max_studentow = atoi(argv[2]);
     if (typ_komisji == 'A'){
         liczba_egzaminatorow = 5;
     } else if (typ_komisji == 'B'){
@@ -137,6 +139,13 @@ int main(int argc, char* argv[]) {
     key_t key = ftok(PROG_SCIEZKA, PROG_ID);
     msgid = msgget(key, 0);//0 = podłączenie do istniejącej kolejki
     check_error(msgid, "[KOMISJA] blad msgget - czy dziekan jest uruchomiony?");
+
+    shmid = shmget(key, sizeof(StudentWynik) * max_studentow, 0); // 0 = istniejaca
+    check_error(shmid, "[KOMISJA] Blad shmget");
+    
+    baza_shm = (StudentWynik*)shmat(shmid, NULL, 0);
+    if (baza_shm == (void*)-1) { perror("Blad shmat"); exit(1); }
+
     
     printf("[KOMISJA %c] Start systemu. Uruchamiam %d watkow egzaminatorow.\n", typ_komisji, liczba_egzaminatorow);
 
