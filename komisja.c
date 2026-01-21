@@ -11,6 +11,8 @@ int max_studentow = 0;
 
 StudentWynik *baza_shm = NULL;
 
+const char* KOM_COLOR = ANSI_RESET;
+
 //struktura kolejaki wewnętrznej dla wątków (watek glowny -> watki robocze)
 //to jest bufor w ktorym wątek główny będzie przekazywał zadania do wątków roboczych (recepcja zostawia studentow dla egzaminatorow)
 typedef struct Wezel {
@@ -63,12 +65,12 @@ Komunikat pobierz_z_kolejki_wew(){
 void* watek_egzaminatora(void* arg) {
     int id_egzaminatora = *((int*)arg);
     free(arg); //zwalniamy pamiec po id egzaminatora
-    printf("[Komisja %c] Egzaminator %d gotowy do pracy .\n", typ_komisji, id_egzaminatora);
+    printf("%s[Komisja %c] Egzaminator %d gotowy do pracy.%s\n", KOM_COLOR, typ_komisji, id_egzaminatora, ANSI_RESET);
 
     while(1) {
         //1. Czekaj na studenta - Pobierz studenta z kolejki wewnętrznej
         Komunikat student = pobierz_z_kolejki_wew();
-        printf("[Komisja %c] Egzaminator %d rozpoczyna egzamin studenta PID: %d.\n", typ_komisji, id_egzaminatora, student.nadawca_pid);
+        printf("%s[Komisja %c] Egzaminator %d rozpoczyna egzamin studenta PID: %d.%s\n", KOM_COLOR, typ_komisji, id_egzaminatora, student.nadawca_pid, ANSI_RESET);
         
         //egzamin
         int ocena_koncowa = 0;
@@ -77,7 +79,7 @@ void* watek_egzaminatora(void* arg) {
         } else {
             int suma_ocen = 0;
             for (int i = 0; i < liczba_egzaminatorow; i++) {
-                //sleep(losuj(1, 2)); 
+                sleep(losuj(1, 2)); 
                 suma_ocen += losuj(0, 100);
             }
             ocena_koncowa = suma_ocen / liczba_egzaminatorow;
@@ -95,7 +97,7 @@ void* watek_egzaminatora(void* arg) {
             }
         }
         if (!znaleziono) {
-            printf("[Komisja %c] BLAD: Nie znaleziono studenta PID %d w SHM!\n", typ_komisji, student.nadawca_pid);
+            printf(ANSI_RED"[Komisja %c] BLAD: Nie znaleziono studenta PID %d w SHM!" ANSI_RESET "\n", typ_komisji, student.nadawca_pid);
         }
         
         
@@ -110,10 +112,7 @@ void* watek_egzaminatora(void* arg) {
             perror("Blad wysylania wyniku do studenta");
         }
 
-        printf("[KOMISJA %c] Egzaminator %d: Zakończono egzamin PID=%d, Ocena=%d%%\n", 
-               typ_komisji, id_egzaminatora, student.nadawca_pid, ocena_koncowa);
-
-        
+        printf("%s[KOMISJA %c] Egzaminator %d: Zakończono egzamin PID=%d, Ocena=%d%%%s\n",KOM_COLOR, typ_komisji, id_egzaminatora, student.nadawca_pid, ocena_koncowa, ANSI_RESET); 
     }
     return NULL;
 }
@@ -127,10 +126,13 @@ int main(int argc, char* argv[]) {
     //ustawienie typu komisji i liczby egzaminatorów
     typ_komisji = argv[1][0];
     max_studentow = atoi(argv[2]);
+
     if (typ_komisji == 'A'){
         liczba_egzaminatorow = 5;
+        KOM_COLOR = ANSI_BLUE;   
     } else if (typ_komisji == 'B'){
         liczba_egzaminatorow = 3;
+        KOM_COLOR = ANSI_ORANGE;
     } else {
         fprintf(stderr, "Nieprawidlowy typ komisji. Uzyj 'A' lub 'B'.\n");
         exit(1);
@@ -147,7 +149,7 @@ int main(int argc, char* argv[]) {
     if (baza_shm == (void*)-1) { perror("Blad shmat"); exit(1); }
 
     
-    printf("[KOMISJA %c] Start systemu. Uruchamiam %d watkow egzaminatorow.\n", typ_komisji, liczba_egzaminatorow);
+    printf("%s[KOMISJA %c] Start systemu. Uruchamiam %d watkow.%s\n", KOM_COLOR, typ_komisji, liczba_egzaminatorow, ANSI_RESET);
 
     //2. tworzenie puli watkow 
     pthread_t* watki=malloc(sizeof(pthread_t) * liczba_egzaminatorow);
@@ -168,9 +170,7 @@ int main(int argc, char* argv[]) {
     while(1) {
         //msgrcv z flaga 0 - blokujace oczekiwanie na studenta
         if (msgrcv(msgid, &msg, sizeof(Komunikat) - sizeof(long), typ_odbioru, 0) != -1) {
-            printf("[KOMISJA %c] Otrzymano studenta PID=%d. Przekazuje do kolejki.\n", typ_komisji, msg.nadawca_pid);
-
-            //przekazanie do watkow 
+            printf("%s[KOMISJA %c] Otrzymano studenta PID=%d.%s\n", KOM_COLOR, typ_komisji, msg.nadawca_pid, ANSI_RESET);
             dodaj_do_kolejki_wew(msg);
         } else {
             //blad odbioru msgrcv (np, dziekan usunal kolejke - koniec symulacji)
