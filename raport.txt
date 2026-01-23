@@ -1,46 +1,324 @@
-[19:17:02] [Dziekan] Uczelnia otwarta. Miejsc: 1. Przewidywana liczba kandydatow: 10.
-[19:17:02] [Dziekan] Komisja A (PID: 188581) i komisja B (PID: 188582) rozpoczynaja prace.
-[19:17:03] [Dziekan] Wszyscy kandydaci (10) zgromadzeni. Wybija godzina T. Rozpoczynam weryfikacje matur.
-[19:17:03] 
+[20:19:54] [Dziekan] Uczelnia otwarta. Miejsc: 10. Przewidywana liczba kandydatow: 100.
+[20:19:54] [Dziekan] Komisja A (PID: 32719) i komisja B (PID: 32720) rozpoczynaja prace.
+[20:19:55] [Dziekan] Wszyscy kandydaci (100) zgromadzeni. Wybija godzina T. Rozpoczynam weryfikacje matur.
+[20:19:55] 
 [Dziekan] ZAKONCZONO WERYFIKACJE MATUR. PUBLIKACJA LIST STARTOWYCH.
 
 ===LISTA NIEDOPUSZCZONYCH (BRAK MATURY) ===
 BRAK OSOB NIEDOPUSZCZONYCH
 
 ===LISTA DOPUSZCZONYCH DO EGZAMINU ===
-Student nr 1 (PID: 188603) - DOPUSZCZONY
-Student nr 2 (PID: 188604) - DOPUSZCZONY
-Student nr 3 (PID: 188605) - DOPUSZCZONY
-Student nr 4 (PID: 188606) - DOPUSZCZONY
-Student nr 5 (PID: 188607) - DOPUSZCZONY
-Student nr 6 (PID: 188608) - DOPUSZCZONY
-Student nr 7 (PID: 188609) - DOPUSZCZONY
-Student nr 8 (PID: 188610) - DOPUSZCZONY
-Student nr 9 (PID: 188611) - DOPUSZCZONY
-Student nr 10 (PID: 188612) - DOPUSZCZONY
-[19:17:03] [Dziekan] Statystyki wstepne: Miejsc: 1, Kandydatow: 10, Dopuszczeni: 10. Start egzaminow.
+Student nr 1 (PID: 32737) - DOPUSZCZONY
+Student nr 2 (PID: 32739) - DOPUSZCZONY
+Student nr 3 (PID: 32740) - DOPUSZCZONY
+Student nr 4 (PID: 32741) - DOPUSZCZONY
+Student nr 5 (PID: 32742) - DOPUSZCZONY
+Student nr 6 (PID: 32743) - DOPUSZCZONY
+Student nr 7 (PID: 32744) - DOPUSZCZONY
+Student nr 8 (PID: 32745) - DOPUSZCZONY
+Student nr 9 (PID: 32746) - DOPUSZCZONY
+Student nr 10 (PID: 32747) - DOPUSZCZONY
+Student nr 11 (PID: 32748) - DOPUSZCZONY
+Student nr 12 (PID: 32749) - DOPUSZCZONY
+Student nr 13 (PID: 32750) - DOPUSZCZONY
+Student nr 14 (PID: 32751) - DOPUSZCZONY
+Student nr 15 (PID: 32752) - DOPUSZCZONY
+Student nr 16 (PID: 32753) - DOPUSZCZONY
+Student nr 17 (PID: 32754) - DOPUSZCZONY
+Student nr 18 (PID: 32755) - DOPUSZCZONY
+Student nr 19 (PID: 32757) - DOPUSZCZONY
+Student nr 20 (PID: 32758) - DOPUSZCZONY
+Student nr 21 (PID: 32759) - DOPUSZCZONY
+Student nr 22 (PID: 32762) - DOPUSZCZONY
+Student nr 23 (PID: 32763) - DOPUSZCZONY
+Student nr 24 (PID: 32764) - DOPUSZCZONY
+Student nr 25 (PID: 32765) - DOPUSZCZONY
+Student nr 26 (PID: 32766) - DOPUSZCZONY
+Student nr 27 (PID: 32767) - DOPUSZCZONY
+Student nr 28 (PID: 32768) - DOPUSZCZONY
+Student nr 29 (PID: 32769) - DOPUSZCZONY
+Student nr 30 (PID: 32770) - DOPUSZCZONY
+Student nr 31 (PID: 32771) - DOPUSZCZONY
+Student nr 32 (PID: 32772) - DOPUSZCZONY
+Student nr 33 (PID: 32773) - DOPUSZCZONY
+Student nr 34 (PID: 32774) - DOPUSZCZONY
+Student nr 35 (PID: 32775) - DOPUSZCZONY
+Student nr 36 (PID: 32776) - DOPUSZCZONY
+Student nr 37 (PID: 32777) - DOPUSZCZONY
+Student nr 38 (PID: 32778) - DOPUSZCZONY
+Student nr 39 (PID: 32779) - DOPUSZCZONY
+Student nr 40 (PID: 32780) - DOPUSZCZONY
+Student nr 41 (PID: 32781) - DOPUSZCZONY
+Student nr 42 (PID: 32782) - DOPUSZCZONY
+Student nr 43 (PID: 32783) - DOPUSZCZONY
+Student nr 44 (PID: 32784) - DOPUSZCZONY
+Student nr 45 (PID: 32785) - DOPUSZCZONY
+Student nr 46 (PID: 32786) - DOPUSZCZONY
+Student nr 47 (PID: 32787) - DOPUSZCZONY
+Student nr 48 (PID: 32788) - DOPUSZCZONY
+Student nr 49 (PID: 32789) - DOPUSZCZONY
+Student nr 50 (PID: 32790) - DOPUSZCZONY
+Student nr 51 (PID: 32791) - DOPUSZCZONY
+Student nr 52 (PID: 32792) - DOPUSZCZONY
+Student nr 53 (PID: 32793) - DOPUSZCZONY
+Student nr 54 (PID: 32794) - DOPUSZCZONY
+Student nr 55 (PID: 32795) - DOPUSZCZONY
+Student nr 56 (PID: 32796) - DOPUSZCZONY
+Student nr 57 (PID: 32797) - DOPUSZCZONY
+Student nr 58 (PID: 32798) - DOPUSZCZONY
+Student nr 59 (PID: 32799) - DOPUSZCZONY
+Student nr 60 (PID: 32800) - DOPUSZCZONY
+Student nr 61 (PID: 32801) - DOPUSZCZONY
+Student nr 62 (PID: 32802) - DOPUSZCZONY
+Student nr 63 (PID: 32803) - DOPUSZCZONY
+Student nr 64 (PID: 32804) - DOPUSZCZONY
+Student nr 65 (PID: 32805) - DOPUSZCZONY
+Student nr 66 (PID: 32806) - DOPUSZCZONY
+Student nr 67 (PID: 32807) - DOPUSZCZONY
+Student nr 68 (PID: 32808) - DOPUSZCZONY
+Student nr 69 (PID: 32809) - DOPUSZCZONY
+Student nr 70 (PID: 32810) - DOPUSZCZONY
+Student nr 71 (PID: 32811) - DOPUSZCZONY
+Student nr 72 (PID: 32812) - DOPUSZCZONY
+Student nr 73 (PID: 32813) - DOPUSZCZONY
+Student nr 74 (PID: 32814) - DOPUSZCZONY
+Student nr 75 (PID: 32815) - DOPUSZCZONY
+Student nr 76 (PID: 32816) - DOPUSZCZONY
+Student nr 77 (PID: 32817) - DOPUSZCZONY
+Student nr 78 (PID: 32818) - DOPUSZCZONY
+Student nr 79 (PID: 32819) - DOPUSZCZONY
+Student nr 80 (PID: 32820) - DOPUSZCZONY
+Student nr 81 (PID: 32821) - DOPUSZCZONY
+Student nr 82 (PID: 32822) - DOPUSZCZONY
+Student nr 83 (PID: 32823) - DOPUSZCZONY
+Student nr 84 (PID: 32824) - DOPUSZCZONY
+Student nr 85 (PID: 32825) - DOPUSZCZONY
+Student nr 86 (PID: 32826) - DOPUSZCZONY
+Student nr 87 (PID: 32827) - DOPUSZCZONY
+Student nr 88 (PID: 32828) - DOPUSZCZONY
+Student nr 89 (PID: 32829) - DOPUSZCZONY
+Student nr 90 (PID: 32830) - DOPUSZCZONY
+Student nr 91 (PID: 32831) - DOPUSZCZONY
+Student nr 92 (PID: 32832) - DOPUSZCZONY
+Student nr 93 (PID: 32833) - DOPUSZCZONY
+Student nr 94 (PID: 32834) - DOPUSZCZONY
+Student nr 95 (PID: 32835) - DOPUSZCZONY
+Student nr 96 (PID: 32836) - DOPUSZCZONY
+Student nr 97 (PID: 32837) - DOPUSZCZONY
+Student nr 98 (PID: 32838) - DOPUSZCZONY
+Student nr 99 (PID: 32839) - DOPUSZCZONY
+Student nr 100 (PID: 32840) - DOPUSZCZONY
+[20:19:55] [Dziekan] Statystyki wstepne: Miejsc: 10, Kandydatow: 100, Dopuszczeni: 100. Start egzaminow.
 
 --------------------------------------------------
 
-[19:17:15] [Dziekan] Student 3 (PID: 188605) skonczyl. A: 31%, B: 62%
-[19:17:16] [Dziekan] Student 5 (PID: 188607) skonczyl. A: 45%, B: 28%
-[19:17:17] [Dziekan] Student 1 (PID: 188603) skonczyl. A: 49%, B: 39%
-[19:17:17] 
+[20:19:55] [Dziekan] Student 2 (PID: 32739) skonczyl. A: 26%, B: -1%
+[20:19:56] [Dziekan] Student 1 (PID: 32737) skonczyl. A: 43%, B: 67%
+[20:19:56] [Dziekan] Student 6 (PID: 32743) skonczyl. A: 44%, B: 49%
+[20:19:56] [Dziekan] Student 8 (PID: 32745) skonczyl. A: 35%, B: 43%
+[20:19:56] [Dziekan] Student 4 (PID: 32741) skonczyl. A: 81%, B: 12%
+[20:19:56] [Dziekan] Student 3 (PID: 32740) skonczyl. A: 45%, B: 76%
+[20:19:57] [Dziekan] Student 5 (PID: 32742) skonczyl. A: 62%, B: 45%
+[20:19:57] [Dziekan] Student 7 (PID: 32744) skonczyl. A: 58%, B: 89%
+[20:19:57] [Dziekan] Student 10 (PID: 32747) skonczyl. A: 67%, B: 65%
+[20:19:58] [Dziekan] Student 11 (PID: 32748) skonczyl. A: 50%, B: 34%
+[20:19:58] [Dziekan] Student 13 (PID: 32750) skonczyl. A: 28%, B: -1%
+[20:19:58] [Dziekan] Student 14 (PID: 32751) skonczyl. A: 32%, B: 42%
+[20:19:58] [Dziekan] Student 9 (PID: 32746) skonczyl. A: 33%, B: 58%
+[20:19:59] [Dziekan] Student 18 (PID: 32755) skonczyl. A: 50%, B: 47%
+[20:19:59] [Dziekan] Student 15 (PID: 32752) skonczyl. A: 34%, B: 64%
+[20:19:59] [Dziekan] Student 16 (PID: 32753) skonczyl. A: 60%, B: 49%
+[20:19:59] [Dziekan] Student 19 (PID: 32757) skonczyl. A: 65%, B: 33%
+[20:20:00] [Dziekan] Student 12 (PID: 32749) skonczyl. A: 45%, B: 62%
+[20:20:00] [Dziekan] Student 17 (PID: 32754) skonczyl. A: 56%, B: 29%
+[20:20:00] [Dziekan] Student 20 (PID: 32758) skonczyl. A: 53%, B: 50%
+[20:20:00] [Dziekan] Student 24 (PID: 32764) skonczyl. A: 29%, B: -1%
+[20:20:00] [Dziekan] Student 23 (PID: 32763) skonczyl. A: 76%, B: 44%
+[20:20:00] [Dziekan] Student 21 (PID: 32759) skonczyl. A: 61%, B: 92%
+[20:20:01] [Dziekan] Student 22 (PID: 32762) skonczyl. A: 55%, B: 51%
+[20:20:02] [Dziekan] Student 26 (PID: 32766) skonczyl. A: 56%, B: 45%
+[20:20:02] [Dziekan] Student 30 (PID: 32770) skonczyl. A: 65%, B: 48%
+[20:20:02] [Dziekan] Student 25 (PID: 32765) skonczyl. A: 56%, B: 21%
+[20:20:02] [Dziekan] Student 33 (PID: 32773) skonczyl. A: 23%, B: -1%
+[20:20:02] [Dziekan] Student 27 (PID: 32767) skonczyl. A: 56%, B: 46%
+[20:20:03] [Dziekan] Student 29 (PID: 32769) skonczyl. A: 51%, B: 52%
+[20:20:03] [Dziekan] Student 28 (PID: 32768) skonczyl. A: 50%, B: 67%
+[20:20:03] [Dziekan] Student 31 (PID: 32771) skonczyl. A: 46%, B: 36%
+[20:20:03] [Dziekan] Student 32 (PID: 32772) skonczyl. A: 63%, B: 52%
+[20:20:04] [Dziekan] Student 36 (PID: 32776) skonczyl. A: 47%, B: 66%
+[20:20:04] [Dziekan] Student 40 (PID: 32780) skonczyl. A: 34%, B: 30%
+[20:20:04] [Dziekan] Student 37 (PID: 32777) skonczyl. A: 44%, B: 62%
+[20:20:04] [Dziekan] Student 35 (PID: 32775) skonczyl. A: 43%, B: 48%
+[20:20:05] [Dziekan] Student 38 (PID: 32778) skonczyl. A: 32%, B: 59%
+[20:20:05] [Dziekan] Student 41 (PID: 32781) skonczyl. A: 38%, B: 81%
+[20:20:05] [Dziekan] Student 42 (PID: 32782) skonczyl. A: 61%, B: 72%
+[20:20:05] [Dziekan] Student 34 (PID: 32774) skonczyl. A: 54%, B: 52%
+[20:20:06] [Dziekan] Student 39 (PID: 32779) skonczyl. A: 71%, B: 55%
+[20:20:06] [Dziekan] Student 45 (PID: 32785) skonczyl. A: 54%, B: 45%
+[20:20:06] [Dziekan] Student 46 (PID: 32786) skonczyl. A: 41%, B: 53%
+[20:20:06] [Dziekan] Student 47 (PID: 32787) skonczyl. A: 25%, B: -1%
+[20:20:07] [Dziekan] Student 44 (PID: 32784) skonczyl. A: 33%, B: 45%
+[20:20:07] [Dziekan] Student 48 (PID: 32788) skonczyl. A: 43%, B: 68%
+[20:20:07] [Dziekan] Student 51 (PID: 32791) skonczyl. A: 54%, B: 39%
+[20:20:07] [Dziekan] Student 43 (PID: 32783) skonczyl. A: 40%, B: 46%
+[20:20:07] [Dziekan] Student 54 (PID: 32794) skonczyl. A: 74%, B: 38%
+[20:20:08] [Dziekan] Student 50 (PID: 32790) skonczyl. A: 47%, B: 29%
+[20:20:08] [Dziekan] Student 49 (PID: 32789) skonczyl. A: 41%, B: 71%
+[20:20:08] [Dziekan] Student 52 (PID: 32792) skonczyl. A: 29%, B: -1%
+[20:20:08] [Dziekan] Student 55 (PID: 32795) skonczyl. A: 49%, B: 82%
+[20:20:08] [Dziekan] Student 58 (PID: 32798) skonczyl. A: 68%, B: 32%
+[20:20:09] [Dziekan] Student 60 (PID: 32800) skonczyl. A: 29%, B: -1%
+[20:20:09] [Dziekan] Student 53 (PID: 32793) skonczyl. A: 59%, B: 45%
+[20:20:09] [Dziekan] Student 57 (PID: 32797) skonczyl. A: 37%, B: 64%
+[20:20:09] [Dziekan] Student 61 (PID: 32801) skonczyl. A: 59%, B: 30%
+[20:20:10] [Dziekan] Student 62 (PID: 32802) skonczyl. A: 51%, B: 40%
+[20:20:10] [Dziekan] Student 56 (PID: 32796) skonczyl. A: 54%, B: 48%
+[20:20:10] [Dziekan] Student 63 (PID: 32803) skonczyl. A: 48%, B: 72%
+[20:20:11] [Dziekan] Student 68 (PID: 32808) skonczyl. A: 40%, B: 44%
+[20:20:11] [Dziekan] Student 65 (PID: 32805) skonczyl. A: 43%, B: 43%
+[20:20:11] [Dziekan] Student 59 (PID: 32799) skonczyl. A: 63%, B: 23%
+[20:20:11] [Dziekan] Student 66 (PID: 32806) skonczyl. A: 53%, B: 49%
+[20:20:12] [Dziekan] Student 67 (PID: 32807) skonczyl. A: 37%, B: 36%
+[20:20:12] [Dziekan] Student 64 (PID: 32804) skonczyl. A: 58%, B: 51%
+[20:20:12] [Dziekan] Student 72 (PID: 32812) skonczyl. A: 46%, B: 65%
+[20:20:12] [Dziekan] Student 70 (PID: 32810) skonczyl. A: 60%, B: 41%
+[20:20:13] [Dziekan] Student 71 (PID: 32811) skonczyl. A: 33%, B: 42%
+[20:20:13] [Dziekan] Student 69 (PID: 32809) skonczyl. A: 46%, B: 25%
+[20:20:13] [Dziekan] Student 77 (PID: 32817) skonczyl. A: 44%, B: 41%
+[20:20:14] [Dziekan] Student 76 (PID: 32816) skonczyl. A: 38%, B: 60%
+[20:20:14] [Dziekan] Student 75 (PID: 32815) skonczyl. A: 44%, B: 64%
+[20:20:14] [Dziekan] Student 78 (PID: 32818) skonczyl. A: 31%, B: 76%
+[20:20:15] [Dziekan] Student 74 (PID: 32814) skonczyl. A: 59%, B: 53%
+[20:20:15] [Dziekan] Student 81 (PID: 32821) skonczyl. A: 51%, B: 56%
+[20:20:15] [Dziekan] Student 83 (PID: 32823) skonczyl. A: 100%, B: 27%
+[20:20:15] [Dziekan] Student 84 (PID: 32824) skonczyl. A: 29%, B: -1%
+[20:20:15] [Dziekan] Student 73 (PID: 32813) skonczyl. A: 41%, B: 38%
+[20:20:15] [Dziekan] Student 79 (PID: 32819) skonczyl. A: 33%, B: 65%
+[20:20:15] [Dziekan] Student 82 (PID: 32822) skonczyl. A: 39%, B: 49%
+[20:20:16] [Dziekan] Student 80 (PID: 32820) skonczyl. A: 59%, B: 43%
+[20:20:16] [Dziekan] Student 91 (PID: 32831) skonczyl. A: 31%, B: 51%
+[20:20:16] [Dziekan] Student 87 (PID: 32827) skonczyl. A: 72%, B: 29%
+[20:20:17] [Dziekan] Student 88 (PID: 32828) skonczyl. A: 75%, B: 45%
+[20:20:17] [Dziekan] Student 89 (PID: 32829) skonczyl. A: 60%, B: 14%
+[20:20:17] [Dziekan] Student 85 (PID: 32825) skonczyl. A: 67%, B: 73%
+[20:20:18] [Dziekan] Student 93 (PID: 32833) skonczyl. A: 30%, B: 78%
+[20:20:18] [Dziekan] Student 86 (PID: 32826) skonczyl. A: 39%, B: 35%
+[20:20:18] [Dziekan] Student 94 (PID: 32834) skonczyl. A: 49%, B: 50%
+[20:20:18] [Dziekan] Student 99 (PID: 32839) skonczyl. A: 19%, B: -1%
+[20:20:18] [Dziekan] Student 95 (PID: 32835) skonczyl. A: 68%, B: 54%
+[20:20:18] [Dziekan] Student 96 (PID: 32836) skonczyl. A: 100%, B: 59%
+[20:20:18] [Dziekan] Student 92 (PID: 32832) skonczyl. A: 62%, B: 56%
+[20:20:18] [Dziekan] Student 100 (PID: 32840) skonczyl. A: 27%, B: -1%
+[20:20:19] [Dziekan] Student 90 (PID: 32830) skonczyl. A: 44%, B: 58%
+[20:20:19] [Dziekan] Student 98 (PID: 32838) skonczyl. A: 49%, B: 60%
+[20:20:19] [Dziekan] Student 97 (PID: 32837) skonczyl. A: 57%, B: 41%
+[20:20:19] [Dziekan] Wszyscy kandydaci (i odrzuceni) opuscili system.
+[20:20:20] 
  [Dziekan] KONIEC EGZAMINU. OBLICZANIE RANKINGU I PUBLIKACJA WYNIKOW
 
 =================================================================================
 | NR   | PID        | MATURA   | KOM A    | KOM B    | SUMA  | STATUS                   |
 =================================================================================
-| 3    | 188605     | OK       | 31%      | 62%      | 93    | PRZYJETY                 |
-| 1    | 188603     | OK       | 49%      | 39%      | 88    | ODRZUCONY - BRAK MIEJSC  |
-| 2    | 188604     | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 4    | 188606     | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 5    | 188607     | OK       | 45%      | 28%      | 73    | NIEZDAL (KOMISJA B)      |
-| 6    | 188608     | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 7    | 188609     | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 8    | 188610     | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 9    | 188611     | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 10   | 188612     | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 96   | 32836      | OK       | 100%     | 59%      | 159   | PRZYJETY                 |
+| 21   | 32759      | OK       | 61%      | 92%      | 153   | PRZYJETY                 |
+| 7    | 32744      | OK       | 58%      | 89%      | 147   | PRZYJETY                 |
+| 85   | 32825      | OK       | 67%      | 73%      | 140   | PRZYJETY                 |
+| 42   | 32782      | OK       | 61%      | 72%      | 133   | PRZYJETY                 |
+| 10   | 32747      | OK       | 67%      | 65%      | 132   | PRZYJETY                 |
+| 55   | 32795      | OK       | 49%      | 82%      | 131   | PRZYJETY                 |
+| 39   | 32779      | OK       | 71%      | 55%      | 126   | PRZYJETY                 |
+| 95   | 32835      | OK       | 68%      | 54%      | 122   | PRZYJETY                 |
+| 3    | 32740      | OK       | 45%      | 76%      | 121   | PRZYJETY                 |
+| 23   | 32763      | OK       | 76%      | 44%      | 120   | ODRZUCONY - BRAK MIEJSC  |
+| 63   | 32803      | OK       | 48%      | 72%      | 120   | ODRZUCONY - BRAK MIEJSC  |
+| 88   | 32828      | OK       | 75%      | 45%      | 120   | ODRZUCONY - BRAK MIEJSC  |
+| 41   | 32781      | OK       | 38%      | 81%      | 119   | ODRZUCONY - BRAK MIEJSC  |
+| 92   | 32832      | OK       | 62%      | 56%      | 118   | ODRZUCONY - BRAK MIEJSC  |
+| 28   | 32768      | OK       | 50%      | 67%      | 117   | ODRZUCONY - BRAK MIEJSC  |
+| 32   | 32772      | OK       | 63%      | 52%      | 115   | ODRZUCONY - BRAK MIEJSC  |
+| 30   | 32770      | OK       | 65%      | 48%      | 113   | ODRZUCONY - BRAK MIEJSC  |
+| 36   | 32776      | OK       | 47%      | 66%      | 113   | ODRZUCONY - BRAK MIEJSC  |
+| 49   | 32789      | OK       | 41%      | 71%      | 112   | ODRZUCONY - BRAK MIEJSC  |
+| 54   | 32794      | OK       | 74%      | 38%      | 112   | ODRZUCONY - BRAK MIEJSC  |
+| 74   | 32814      | OK       | 59%      | 53%      | 112   | ODRZUCONY - BRAK MIEJSC  |
+| 48   | 32788      | OK       | 43%      | 68%      | 111   | ODRZUCONY - BRAK MIEJSC  |
+| 72   | 32812      | OK       | 46%      | 65%      | 111   | ODRZUCONY - BRAK MIEJSC  |
+| 1    | 32737      | OK       | 43%      | 67%      | 110   | ODRZUCONY - BRAK MIEJSC  |
+| 16   | 32753      | OK       | 60%      | 49%      | 109   | ODRZUCONY - BRAK MIEJSC  |
+| 64   | 32804      | OK       | 58%      | 51%      | 109   | ODRZUCONY - BRAK MIEJSC  |
+| 98   | 32838      | OK       | 49%      | 60%      | 109   | ODRZUCONY - BRAK MIEJSC  |
+| 75   | 32815      | OK       | 44%      | 64%      | 108   | ODRZUCONY - BRAK MIEJSC  |
+| 93   | 32833      | OK       | 30%      | 78%      | 108   | ODRZUCONY - BRAK MIEJSC  |
+| 5    | 32742      | OK       | 62%      | 45%      | 107   | ODRZUCONY - BRAK MIEJSC  |
+| 12   | 32749      | OK       | 45%      | 62%      | 107   | ODRZUCONY - BRAK MIEJSC  |
+| 78   | 32818      | OK       | 31%      | 76%      | 107   | ODRZUCONY - BRAK MIEJSC  |
+| 81   | 32821      | OK       | 51%      | 56%      | 107   | ODRZUCONY - BRAK MIEJSC  |
+| 22   | 32762      | OK       | 55%      | 51%      | 106   | ODRZUCONY - BRAK MIEJSC  |
+| 34   | 32774      | OK       | 54%      | 52%      | 106   | ODRZUCONY - BRAK MIEJSC  |
+| 37   | 32777      | OK       | 44%      | 62%      | 106   | ODRZUCONY - BRAK MIEJSC  |
+| 53   | 32793      | OK       | 59%      | 45%      | 104   | ODRZUCONY - BRAK MIEJSC  |
+| 20   | 32758      | OK       | 53%      | 50%      | 103   | ODRZUCONY - BRAK MIEJSC  |
+| 29   | 32769      | OK       | 51%      | 52%      | 103   | ODRZUCONY - BRAK MIEJSC  |
+| 27   | 32767      | OK       | 56%      | 46%      | 102   | ODRZUCONY - BRAK MIEJSC  |
+| 56   | 32796      | OK       | 54%      | 48%      | 102   | ODRZUCONY - BRAK MIEJSC  |
+| 66   | 32806      | OK       | 53%      | 49%      | 102   | ODRZUCONY - BRAK MIEJSC  |
+| 80   | 32820      | OK       | 59%      | 43%      | 102   | ODRZUCONY - BRAK MIEJSC  |
+| 90   | 32830      | OK       | 44%      | 58%      | 102   | ODRZUCONY - BRAK MIEJSC  |
+| 26   | 32766      | OK       | 56%      | 45%      | 101   | ODRZUCONY - BRAK MIEJSC  |
+| 57   | 32797      | OK       | 37%      | 64%      | 101   | ODRZUCONY - BRAK MIEJSC  |
+| 70   | 32810      | OK       | 60%      | 41%      | 101   | ODRZUCONY - BRAK MIEJSC  |
+| 58   | 32798      | OK       | 68%      | 32%      | 100   | ODRZUCONY - BRAK MIEJSC  |
+| 45   | 32785      | OK       | 54%      | 45%      | 99    | ODRZUCONY - BRAK MIEJSC  |
+| 94   | 32834      | OK       | 49%      | 50%      | 99    | ODRZUCONY - BRAK MIEJSC  |
+| 15   | 32752      | OK       | 34%      | 64%      | 98    | ODRZUCONY - BRAK MIEJSC  |
+| 19   | 32757      | OK       | 65%      | 33%      | 98    | ODRZUCONY - BRAK MIEJSC  |
+| 76   | 32816      | OK       | 38%      | 60%      | 98    | ODRZUCONY - BRAK MIEJSC  |
+| 79   | 32819      | OK       | 33%      | 65%      | 98    | ODRZUCONY - BRAK MIEJSC  |
+| 97   | 32837      | OK       | 57%      | 41%      | 98    | ODRZUCONY - BRAK MIEJSC  |
+| 18   | 32755      | OK       | 50%      | 47%      | 97    | ODRZUCONY - BRAK MIEJSC  |
+| 46   | 32786      | OK       | 41%      | 53%      | 94    | ODRZUCONY - BRAK MIEJSC  |
+| 6    | 32743      | OK       | 44%      | 49%      | 93    | ODRZUCONY - BRAK MIEJSC  |
+| 51   | 32791      | OK       | 54%      | 39%      | 93    | ODRZUCONY - BRAK MIEJSC  |
+| 9    | 32746      | OK       | 33%      | 58%      | 91    | ODRZUCONY - BRAK MIEJSC  |
+| 35   | 32775      | OK       | 43%      | 48%      | 91    | ODRZUCONY - BRAK MIEJSC  |
+| 38   | 32778      | OK       | 32%      | 59%      | 91    | ODRZUCONY - BRAK MIEJSC  |
+| 62   | 32802      | OK       | 51%      | 40%      | 91    | ODRZUCONY - BRAK MIEJSC  |
+| 61   | 32801      | OK       | 59%      | 30%      | 89    | ODRZUCONY - BRAK MIEJSC  |
+| 82   | 32822      | OK       | 39%      | 49%      | 88    | ODRZUCONY - BRAK MIEJSC  |
+| 43   | 32783      | OK       | 40%      | 46%      | 86    | ODRZUCONY - BRAK MIEJSC  |
+| 65   | 32805      | OK       | 43%      | 43%      | 86    | ODRZUCONY - BRAK MIEJSC  |
+| 77   | 32817      | OK       | 44%      | 41%      | 85    | ODRZUCONY - BRAK MIEJSC  |
+| 11   | 32748      | OK       | 50%      | 34%      | 84    | ODRZUCONY - BRAK MIEJSC  |
+| 68   | 32808      | OK       | 40%      | 44%      | 84    | ODRZUCONY - BRAK MIEJSC  |
+| 31   | 32771      | OK       | 46%      | 36%      | 82    | ODRZUCONY - BRAK MIEJSC  |
+| 91   | 32831      | OK       | 31%      | 51%      | 82    | ODRZUCONY - BRAK MIEJSC  |
+| 73   | 32813      | OK       | 41%      | 38%      | 79    | ODRZUCONY - BRAK MIEJSC  |
+| 8    | 32745      | OK       | 35%      | 43%      | 78    | ODRZUCONY - BRAK MIEJSC  |
+| 44   | 32784      | OK       | 33%      | 45%      | 78    | ODRZUCONY - BRAK MIEJSC  |
+| 71   | 32811      | OK       | 33%      | 42%      | 75    | ODRZUCONY - BRAK MIEJSC  |
+| 14   | 32751      | OK       | 32%      | 42%      | 74    | ODRZUCONY - BRAK MIEJSC  |
+| 86   | 32826      | OK       | 39%      | 35%      | 74    | ODRZUCONY - BRAK MIEJSC  |
+| 67   | 32807      | OK       | 37%      | 36%      | 73    | ODRZUCONY - BRAK MIEJSC  |
+| 40   | 32780      | OK       | 34%      | 30%      | 64    | ODRZUCONY - BRAK MIEJSC  |
+| 2    | 32739      | OK       | 26%      | ---      | 26    | NIEZDAL (KOMISJA A)      |
+| 4    | 32741      | OK       | 81%      | 12%      | 93    | NIEZDAL (KOMISJA B)      |
+| 13   | 32750      | OK       | 28%      | ---      | 28    | NIEZDAL (KOMISJA A)      |
+| 17   | 32754      | OK       | 56%      | 29%      | 85    | NIEZDAL (KOMISJA B)      |
+| 24   | 32764      | OK       | 29%      | ---      | 29    | NIEZDAL (KOMISJA A)      |
+| 25   | 32765      | OK       | 56%      | 21%      | 77    | NIEZDAL (KOMISJA B)      |
+| 33   | 32773      | OK       | 23%      | ---      | 23    | NIEZDAL (KOMISJA A)      |
+| 47   | 32787      | OK       | 25%      | ---      | 25    | NIEZDAL (KOMISJA A)      |
+| 50   | 32790      | OK       | 47%      | 29%      | 76    | NIEZDAL (KOMISJA B)      |
+| 52   | 32792      | OK       | 29%      | ---      | 29    | NIEZDAL (KOMISJA A)      |
+| 59   | 32799      | OK       | 63%      | 23%      | 86    | NIEZDAL (KOMISJA B)      |
+| 60   | 32800      | OK       | 29%      | ---      | 29    | NIEZDAL (KOMISJA A)      |
+| 69   | 32809      | OK       | 46%      | 25%      | 71    | NIEZDAL (KOMISJA B)      |
+| 83   | 32823      | OK       | 100%     | 27%      | 127   | NIEZDAL (KOMISJA B)      |
+| 84   | 32824      | OK       | 29%      | ---      | 29    | NIEZDAL (KOMISJA A)      |
+| 87   | 32827      | OK       | 72%      | 29%      | 101   | NIEZDAL (KOMISJA B)      |
+| 89   | 32829      | OK       | 60%      | 14%      | 74    | NIEZDAL (KOMISJA B)      |
+| 99   | 32839      | OK       | 19%      | ---      | 19    | NIEZDAL (KOMISJA A)      |
+| 100  | 32840      | OK       | 27%      | ---      | 27    | NIEZDAL (KOMISJA A)      |
 =================================================================================
 
 
@@ -49,6 +327,15 @@ Student nr 10 (PID: 188612) - DOPUSZCZONY
 =================================================================================
 | NR   | PID        | OCENA A  | OCENA B  | OCENA KONCOWA |
 ---------------------------------------------------------------------------------
-| 3    | 188605     | 31%      | 62%      | 93            |
+| 96   | 32836      | 100%     | 59%      | 159           |
+| 21   | 32759      | 61%      | 92%      | 153           |
+| 7    | 32744      | 58%      | 89%      | 147           |
+| 85   | 32825      | 67%      | 73%      | 140           |
+| 42   | 32782      | 61%      | 72%      | 133           |
+| 10   | 32747      | 67%      | 65%      | 132           |
+| 55   | 32795      | 49%      | 82%      | 131           |
+| 39   | 32779      | 71%      | 55%      | 126           |
+| 95   | 32835      | 68%      | 54%      | 122           |
+| 3    | 32740      | 45%      | 76%      | 121           |
 =================================================================================
-[19:17:17] [Dziekan] Zamykanie systemu i sprzatanie zasobow IPC...
+[20:20:20] [Dziekan] Zamykanie systemu i sprzatanie zasobow IPC...

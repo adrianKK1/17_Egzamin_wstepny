@@ -43,8 +43,8 @@ int znajdz_lub_dodaj_studenta(pid_t pid) {
             baza_wynikow[i].pid = pid;
             baza_wynikow[i].id = i + 1;
             baza_wynikow[i].matura_zdana = -1;
-            baza_wynikow[i].ocena_A = -1;
-            baza_wynikow[i].ocena_B = -1;
+            baza_wynikow[i].ocena_koncowa_A = -1;
+            baza_wynikow[i].ocena_koncowa_B = -1;
             baza_wynikow[i].suma_ocen = 0;
             return i;
         }
@@ -88,8 +88,9 @@ void drukuj_listy_startowe() {
     int dopuszczeni_count = 0;
         for (int i = 0; i < liczba_kandydatow; i++) {
             if(baza_wynikow[i].matura_zdana == 1) {
+                //char bufor[100];
                 //snprintf(bufor, sizeof(bufor), "Student nr %d (PID: %d) - DOPUSZCZONY", baza_wynikow[i].id, baza_wynikow[i].pid);
-               // printf("%s\n", bufor);
+                //printf("%s\n", bufor);
                 if (plik_raportu) {
                     fprintf(plik_raportu, "Student nr %d (PID: %d) - DOPUSZCZONY\n", baza_wynikow[i].id, baza_wynikow[i].pid);
                     dopuszczeni_count++;
@@ -107,8 +108,8 @@ int porownaj_studentow(const void *a, const void *b) {
     StudentWynik *s1 = (StudentWynik *)a;
     StudentWynik *s2 = (StudentWynik *)b;
 
-    int s1_zaliczyl = (s1->pid != 0 && s1->matura_zdana == 1 && s1->ocena_A >= 30 && s1->ocena_B >= 30);
-    int s2_zaliczyl = (s2->pid != 0 && s2->matura_zdana == 1 && s2->ocena_A >= 30 && s2->ocena_B >= 30);
+    int s1_zaliczyl = (s1->pid != 0 && s1->matura_zdana == 1 && s1->ocena_koncowa_A >= 30 && s1->ocena_koncowa_B >= 30);
+    int s2_zaliczyl = (s2->pid != 0 && s2->matura_zdana == 1 && s2->ocena_koncowa_A >= 30 && s2->ocena_koncowa_B >= 30);
 
     if (s1_zaliczyl && !s2_zaliczyl) return -1;
     if (!s1_zaliczyl && s2_zaliczyl) return 1;
@@ -126,8 +127,8 @@ void generuj_ranking() {
     //obliczanie sumyp unktow dla kazdego
     for (int i = 0; i < liczba_kandydatow; i++) {
         if (baza_wynikow[i].pid != 0) {
-           int pkt_A = (baza_wynikow[i].ocena_A == -1) ? 0 : baza_wynikow[i].ocena_A;
-           int pkt_B = (baza_wynikow[i].ocena_B == -1) ? 0 : baza_wynikow[i].ocena_B;
+           int pkt_A = (baza_wynikow[i].ocena_koncowa_A == -1) ? 0 : baza_wynikow[i].ocena_koncowa_A;
+           int pkt_B = (baza_wynikow[i].ocena_koncowa_B == -1) ? 0 : baza_wynikow[i].ocena_koncowa_B;
            baza_wynikow[i].suma_ocen = pkt_A + pkt_B;
         }
     }
@@ -160,31 +161,31 @@ void generuj_ranking() {
         else strcpy(s_matura, "---");
         
         // Opis Oceny A
-        if (s.ocena_A == -1){
+        if (s.ocena_koncowa_A == -1){
             strcpy(s_ocenaA, "---");
         } else {
-            sprintf(s_ocenaA, "%d%%", s.ocena_A);
+            sprintf(s_ocenaA, "%d%%", s.ocena_koncowa_A);
         }
 
         // Opis Oceny B
-        if (s.ocena_B == -1){
+        if (s.ocena_koncowa_B == -1){
             strcpy(s_ocenaB, "---");
         } else {
-            sprintf(s_ocenaB, "%d%%", s.ocena_B);
+            sprintf(s_ocenaB, "%d%%", s.ocena_koncowa_B);
         }
 
         //status końcowy
-        int czy_zdal = (s.matura_zdana == 1 && s.ocena_A >= 30 && s.ocena_B >= 30);
+        int czy_zdal = (s.matura_zdana == 1 && s.ocena_koncowa_A >= 30 && s.ocena_koncowa_B >= 30);
         
         if (s.matura_zdana == 0) {
             // 1 Odrzucony przez brak matury
             strcpy(status, "ODRZUCONY - BRAK MATURY");
         } 
-        else if (s.ocena_A != -1 && s.ocena_A < 30) { 
+        else if (s.ocena_koncowa_A != -1 && s.ocena_koncowa_A < 30) { 
             // 2 Oblal egzamin A (ma ocene i jest < 30)
             strcpy(status, "NIEZDAL (KOMISJA A)");
         } 
-        else if (s.ocena_B != -1 && s.ocena_B < 30) {
+        else if (s.ocena_koncowa_B != -1 && s.ocena_koncowa_B < 30) {
             // 3 Oblal egzamin B (ma ocene i jest < 30)
             strcpy(status, "NIEZDAL (KOMISJA B)");  
         } 
@@ -238,14 +239,14 @@ void generuj_ranking() {
         StudentWynik s = baza_wynikow[i];
         
         // Warunek zaliczenia
-        int czy_zdal = (s.matura_zdana == 1 && s.ocena_A >= 30 && s.ocena_B >= 30);
+        int czy_zdal = (s.matura_zdana == 1 && s.ocena_koncowa_A >= 30 && s.ocena_koncowa_B >= 30);
         
         if (czy_zdal) {
             if (przyjetych_count < liczba_miejsc) {
                 // To jest osoba przyjeta - wypisujemy ja na drugiej liscie
                 char s_ocenaA[10], s_ocenaB[10];
-                sprintf(s_ocenaA, "%d%%", s.ocena_A);
-                sprintf(s_ocenaB, "%d%%", s.ocena_B);
+                sprintf(s_ocenaA, "%d%%", s.ocena_koncowa_A);
+                sprintf(s_ocenaB, "%d%%", s.ocena_koncowa_B);
 
                 printf(ANSI_GREEN "| %-4d | %-10d | %-8s | %-8s | %-13d |" ANSI_RESET "\n", s.id, s.pid, s_ocenaA, s_ocenaB, s.suma_ocen);
                 if (plik_raportu) {
@@ -359,8 +360,8 @@ int main(int argc, char *argv[]) {
         baza_wynikow[i].id = i + 1; 
         baza_wynikow[i].pid = 0;    
         baza_wynikow[i].matura_zdana = -1;
-        baza_wynikow[i].ocena_A = -1;
-        baza_wynikow[i].ocena_B = -1;
+        baza_wynikow[i].ocena_koncowa_A = -1;
+        baza_wynikow[i].ocena_koncowa_B = -1;
         baza_wynikow[i].suma_ocen = 0;
     }
 
@@ -468,7 +469,7 @@ int main(int argc, char *argv[]) {
                 if (baza_wynikow[idx].matura_zdana == 1) {
                     loguj(plik_raportu,"[Dziekan] Student %d (PID: %d) skonczyl. A: %d%%, B: %d%%", 
                         baza_wynikow[idx].id, zakonczony_pid, 
-                        baza_wynikow[idx].ocena_A, baza_wynikow[idx].ocena_B);
+                        baza_wynikow[idx].ocena_koncowa_A, baza_wynikow[idx].ocena_koncowa_B);
                 }
                 
                 /* Mozemy sprawdzic dlaczego skonczyl
