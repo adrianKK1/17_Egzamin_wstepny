@@ -11,6 +11,7 @@ int liczba_pytan_wymagana;
 int max_studentow = 0;
 StudentWynik *baza_shm = NULL;
 const char* KOM_COLOR = ANSI_RESET;
+volatile sig_atomic_t koniec_pracy = 0;
 
 // --- STOLIKI ---
 // Komisja ma 3 stoliki. Każdy stolik przechowuje indeks studenta w SHM.
@@ -27,17 +28,31 @@ void* watek_recepcji(void* arg) {
 
     printf("%s[Recepcja %c] Otwieram zapisy. Czekam na kandydatow.%s\n", KOM_COLOR, typ_komisji, ANSI_RESET);
 
-    while(1) {
+    while(!koniec_pracy) {
         // Odbierz zgłoszenie
-        if (msgrcv(msgid, &msg, sizeof(Komunikat) - sizeof(long), typ_wejscia, 0) == -1) {
-            if (errno == EIDRM) break; // Kolejka usunięta
+        ssize_t result = msgrcv(msgid, &msg, sizeof(Komunikat) - sizeof(long),typ_wejscia, IPC_NOWAIT);
+        
+        if (result == -1) {
+            if (errno == EIDRM) {
+                // Kolejka usunięta - dziekan kończy pracę
+                break;
+            }
+            if (errno == ENOMSG) {
+                // Brak komunikatów - sprawdź flagę i spróbuj ponownie
+                usleep(100000); // 100ms
+                continue;
+            }
+            // Inny błąd
             continue;
         }
 
         // Znajdź studenta w SHM (zeby znac jego index)
         int idx_shm = -1;
         for(int i=0; i<max_studentow; i++) {
-            if (baza_shm[i].pid == msg.nadawca_pid) { idx_shm = i; break; }
+            if (baza_shm[i].pid == msg.nadawca_pid) { 
+                idx_shm = i; 
+                break; 
+            }
         }
 
         if (idx_shm == -1) {
@@ -46,7 +61,6 @@ void* watek_recepcji(void* arg) {
         }
 
         // --- OBSŁUGA POPRAWKOWICZA (TYLKO KOMISJA A) ---
-        // "jeśli nim jest to informuje tylko komisje A... i automatycznie przechodzi... z wynikiem 100%"
         if (typ_komisji == 'A' && msg.status_specjalny == 1) {
             printf("%s[Recepcja A] PID %d to POPRAWKOWICZ. Zaliczam automatycznie (100%%).%s\n", 
                    ANSI_BLUE, msg.nadawca_pid, ANSI_RESET);
@@ -60,12 +74,12 @@ void* watek_recepcji(void* arg) {
             wyn.dane_int = 100;
             msgsnd(msgid, &wyn, sizeof(Komunikat)-sizeof(long), 0);
             
-            continue; // Pomiń przydzielanie stolika!
+            continue; // Pomiń przydzielanie stolika
         }
 
         // Znajdź wolny stolik
         int znaleziono_stolik = 0;
-        while(!znaleziono_stolik) {
+        while(!znaleziono_stolik && !koniec_pracy) {
             for(int i=0; i<LIMIT_SALA; i++) {
                 pthread_mutex_lock(&mutex_stoliki[i]);
                 if (stoliki[i] == -1) { // Wolne!
@@ -78,7 +92,7 @@ void* watek_recepcji(void* arg) {
                         baza_shm[idx_shm].status_A = ZAJETE_CZEKA_NA_PYTANIA;
                         // Reset tablic
                         for(int k=0; k<5; k++) baza_shm[idx_shm].id_egzaminatora_A[k] = 0;
-                        for(int k=0; k<5; k++) baza_shm[idx_shm].oceny_A[k] = 0; // Wyzerowanie ocen
+                        for(int k=0; k<5; k++) baza_shm[idx_shm].oceny_A[k] = 0;
                     } else {
                         baza_shm[idx_shm].licznik_pytan_B = 0;
                         baza_shm[idx_shm].licznik_ocen_B = 0;
@@ -95,9 +109,12 @@ void* watek_recepcji(void* arg) {
                 pthread_mutex_unlock(&mutex_stoliki[i]);
                 if (znaleziono_stolik) break;
             }
-            if (!znaleziono_stolik) usleep(10000); // Czekaj na wolne miejsce
+            if (!znaleziono_stolik && !koniec_pracy) {
+                usleep(100000);
+             } // Czekaj na wolne miejsce
         }
     }
+    printf("%s[Recepcja %c] Kończę prace.%s\n", KOM_COLOR, typ_komisji, ANSI_RESET);
     return NULL;
 }
 
@@ -107,9 +124,17 @@ void* watek_egzaminatora(void* arg) {
     int id_egzaminatora = *((int*)arg);
     free(arg);
     
-    printf("%s[Egzaminator %c-%d] Gotowy do pracy.%s\n", KOM_COLOR, typ_komisji, id_egzaminatora, ANSI_RESET);
+    int czy_przewodniczacy = (id_egzaminatora == 1);
+    
+    if (czy_przewodniczacy) {
+        printf("%s[Egzaminator %c-%d - PRZEWODNICZACY] Gotowy do pracy.%s\n", 
+               KOM_COLOR, typ_komisji, id_egzaminatora, ANSI_RESET);
+    } else {
+        printf("%s[Egzaminator %c-%d] Gotowy do pracy.%s\n", 
+               KOM_COLOR, typ_komisji, id_egzaminatora, ANSI_RESET);
+    }
 
-    while(1) {
+    while(!koniec_pracy) {
         int zrobilem_cos = 0;
 
         // Pętla po stolikach (Work Stealing)
@@ -165,15 +190,20 @@ void* watek_egzaminatora(void* arg) {
                         // Czy to było ostatnie pytanie?
                         if (*licznik_pytan == liczba_pytan_wymagana) {
                              *status = PYTANIA_GOTOWE_CZEKA_NA_KANDYDATA;
+                             Komunikat ready;
+                             ready.mtype = baza_shm[idx].pid;
+                             ready.dane_int = CODE_PYTANIA_GOTOWE; // Zdefiniowane w common.h
+                             msgsnd(msgid, &ready, sizeof(Komunikat)-sizeof(long), 0);
+
                              printf("%s[Komisja %c] Wszystkie pytania gotowe dla PID %d. Czekamy na odpowiedzi.%s\n",
                                     KOM_COLOR, typ_komisji, baza_shm[idx].pid, ANSI_RESET);
                         }
                     }
                 }
 
-                // --- USUNIĘTO OBSŁUGĘ TIMEOUTU (Zgodnie z poleceniem) ---
+               
                 
-                // --- ZADANIE 3: OCENIANIE ---
+                // --- ZADANIE 2: OCENIANIE ---
                 else if (*status == ODPOWIEDZI_GOTOWE_CZEKA_NA_OCENY && *licznik_ocen < liczba_pytan_wymagana) {
                      // Szukam czy jest tu MOJE pytanie, ktorego jeszcze nie ocenilem
                      // Pytanie "k" zadał egzaminator "ids[k]". Jeśli to ja I ocena[k] jest 0 -> oceniam.
@@ -188,44 +218,75 @@ void* watek_egzaminatora(void* arg) {
                              
                              (*licznik_ocen)++;
                              zrobilem_cos = 1;
-                             break; // Jedna akcja na cykl pętli
+                             break; 
                          }
                      }
 
                      // Czy wszystko ocenione?
                      if (*licznik_ocen == liczba_pytan_wymagana) {
-                         *status = OCENIONE_GOTOWE_DO_WYSYLKI;
-                         
-                         // Oblicz średnią (Rola Przewodniczącego)
-                         int suma = 0;
-                         for(int k=0; k<liczba_pytan_wymagana; k++) suma += oceny[k];
-                         *ocena_koncowa = suma / liczba_pytan_wymagana;
-                         
-                         printf("%s[Komisja %c] PID %d - Koniec oceniania. Srednia: %d%%. Zwalniam stolik.%s\n",
-                                KOM_COLOR, typ_komisji, baza_shm[idx].pid, *ocena_koncowa, ANSI_RESET);
-
-                         // Wyślij wynik kandydatowi (mtype = PID)
-                         Komunikat wyn;
-                         wyn.mtype = baza_shm[idx].pid; 
-                         wyn.dane_int = *ocena_koncowa;
-                         msgsnd(msgid, &wyn, sizeof(Komunikat)-sizeof(long), 0);
-
-                         // Zwolnij stolik
-                         stoliki[i] = -1;
-                     }
+                        *status = OCENIONE_GOTOWE_DO_WYSYLKI;
+                        printf("%s[Komisja %c] PID %d - Wszystkie oceny gotowe. Czekam na przewodniczącego.%s\n",
+                               KOM_COLOR, typ_komisji, baza_shm[idx].pid, ANSI_RESET);
+                    }
                 }
-            } // koniec if idx != -1
+            // --- ZADANIE 3: USTALENIE OCENY KOŃCOWEJ (TYLKO PRZEWODNICZĄCY) ---
+                else if (czy_przewodniczacy && *status == OCENIONE_GOTOWE_DO_WYSYLKI && *ocena_koncowa == -1) {
+                    
+                    // Oblicz średnią
+                    int suma = 0;
+                    for(int k=0; k<liczba_pytan_wymagana; k++) {
+                        suma += oceny[k];
+                    }
+                    *ocena_koncowa = suma / liczba_pytan_wymagana;
+                    
+                    printf("%s[Przewodniczacy %c-%d] PID %d - Ustalona ocena koncowa: %d%% (z ocen: ",
+                           KOM_COLOR, typ_komisji, id_egzaminatora, baza_shm[idx].pid, *ocena_koncowa);
+                    for(int k=0; k<liczba_pytan_wymagana; k++) {
+                        printf("%d%% ", oceny[k]);
+                    }
+                    printf(")%s\n", ANSI_RESET);
+                    
+                    // Wyślij wynik kandydatowi
+                    Komunikat wyn;
+                    wyn.mtype = baza_shm[idx].pid; 
+                    wyn.dane_int = *ocena_koncowa;
+                    msgsnd(msgid, &wyn, sizeof(Komunikat)-sizeof(long), 0);
+
+                    printf("%s[Przewodniczacy %c-%d] Wynik wyslany do PID %d. Zwalniam stolik %d.%s\n",
+                           KOM_COLOR, typ_komisji, id_egzaminatora, 
+                           baza_shm[idx].pid, i+1, ANSI_RESET);
+
+                    // Zwolnij stolik
+                    stoliki[i] = -1;
+                    zrobilem_cos = 1;
+                }
+            }
             pthread_mutex_unlock(&mutex_stoliki[i]);
         } // koniec for stoliki
+        
 
-        if (!zrobilem_cos) usleep(10000); 
-        else usleep(5000); 
+        if (!zrobilem_cos) {
+            usleep(100000);
+        }
+    }
+    
+    if (czy_przewodniczacy) {
+        printf("%s[Przewodniczacy %c-%d] Koncze prace.%s\n", 
+               KOM_COLOR, typ_komisji, id_egzaminatora, ANSI_RESET);
+    } else {
+        printf("%s[Egzaminator %c-%d] Koncze prace.%s\n", 
+               KOM_COLOR, typ_komisji, id_egzaminatora, ANSI_RESET);
     }
     return NULL;
 }
 
+void obsluga_sigterm(int sig) {
+    (void)sig;
+    koniec_pracy = 1;
+}
 
 int main(int argc, char* argv[]) {
+    srand(time(NULL) ^ getpid());
     if (argc != 3){ fprintf(stderr, "Uzycie: %s <typ> <max>\n", argv[0]); exit(1); }
     typ_komisji = argv[1][0];
     max_studentow = atoi(argv[2]);
@@ -254,6 +315,9 @@ int main(int argc, char* argv[]) {
 
     printf("%s[Komisja %c] Start Puli Watkow (%d egzaminatorow na 3 stoliki).%s\n", KOM_COLOR, typ_komisji, liczba_egzaminatorow, ANSI_RESET);
 
+    // Obsługa SIGTERM od Dziekana
+    signal(SIGTERM, obsluga_sigterm);
+
     // 1. Wątek Recepcji
     pthread_t t_recepcja;
     pthread_create(&t_recepcja, NULL, watek_recepcji, NULL);
@@ -266,5 +330,17 @@ int main(int argc, char* argv[]) {
     }
 
     pthread_join(t_recepcja, NULL); // Main czeka na recepcję
+    for(int i=0; i<liczba_egzaminatorow; i++) {
+        pthread_join(t_egzam[i], NULL);
+    }
+    for(int i=0; i<LIMIT_SALA; i++) {
+        pthread_mutex_destroy(&mutex_stoliki[i]);
+    }
+    
+    free(t_egzam);
+    shmdt(baza_shm);
+    
+    printf("%s[Komisja %c] Koniec pracy.%s\n", KOM_COLOR, typ_komisji, ANSI_RESET);
+    
     return 0;
 }

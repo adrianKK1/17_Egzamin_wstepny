@@ -61,13 +61,19 @@ void operacja_semafor(int semid,int sem_idx, int op){
     bufor.sem_flg = 0; //brak flag specjalnych
 
     //jesli semafor jest zajety, proces zostanie zablokowany tutaj
-    if (semop(semid, &bufor, 1) == -1) {
-        //igonorujemy blad przerwania przez dziekana
-        if (errno != EINTR && errno != EIDRM) {
-            perror("[KOMISJA] Blad operacji na semaforze");
+    while (semop(semid, &bufor, 1) == -1) {
+        // Jeśli to tylko przerwanie sygnałem (np. fg po Ctrl+Z) -> próbuj dalej
+        if (errno == EINTR) {
+            continue;
+        } 
+        // Jeśli to błąd usunięcia ID (Dziekan sprząta) -> kończymy normalnie (ewakuacja)
+        else if (errno == EIDRM || errno == EINVAL) {
+            exit(0);
+        }
+        // Inny błąd krytyczny -> raportuj
+        else {
+            perror("[KOMISJA/UTILS] Blad operacji na semaforze");
             exit(1);
-        } else {
-            exit(0); 
         }
     }
 }

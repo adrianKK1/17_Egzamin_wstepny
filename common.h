@@ -39,6 +39,7 @@
 
 #define MSG_WYNIKI_DZIEKAN  11  // Raport końcowy do dziekana (NAPRAWIONY KONFLIKT)
 #define MSG_KONIEC          99  // Dziekan -> Kandydat (Odpowiedź: TAK/NIE)
+#define CODE_PYTANIA_GOTOWE -999  // Sygnał od komisji: pytania są w SHM
 
 
 enum StatusEgzaminu {
@@ -69,9 +70,7 @@ typedef struct {
     
     int licznik_pytan_A;       // Ile pytań już zadano (0-5)
     int licznik_ocen_A;        // Ile ocen już wystawiono (0-5)
-
     int status_A;              // enum StatusEgzaminu
-    time_t czas_startu_odpowiedzi_A; // Do timeoutu (2s)
     int ocena_koncowa_A;
 
     //  KOMISJA B 
@@ -82,9 +81,7 @@ typedef struct {
     
     int licznik_pytan_B;
     int licznik_ocen_B;
-    
     int status_B;
-    time_t czas_startu_odpowiedzi_B;
     int ocena_koncowa_B;
   
     int suma_ocen;
@@ -94,6 +91,6 @@ typedef struct {
 #define SEM_KOMISJA_A_IDX 0 // Licznik wolnych miejsc w A
 #define SEM_KOMISJA_B_IDX 1 // Licznik wolnych miejsc w B
 #define SEM_START_IDX     2 // Semafor startowy (Dziekan podnosi o godzinie T)
-#define SEM_DOSTEP_IDX   3 
+#define SEM_DOSTEP_IDX    3 
 
 #endif // COMMON_H

@@ -268,12 +268,16 @@ void generuj_ranking() {
 void sprzatanie() {
     loguj(plik_raportu,"[Dziekan] Zamykanie systemu i sprzatanie zasobow IPC...");
 
-    //zabijanie komisji
+    // Zabicie procesów komisji
     if (pid_komisja_A > 0) {
+        printf("[Dziekan] Zamykam komisje A (PID: %d)...\n", pid_komisja_A);
         kill(pid_komisja_A, SIGTERM);
+        waitpid(pid_komisja_A, NULL, 0);
     }
     if (pid_komisja_B > 0) {
+        printf("[Dziekan] Zamykam komisje B (PID: %d)...\n", pid_komisja_B);
         kill(pid_komisja_B, SIGTERM);
+        waitpid(pid_komisja_B, NULL, 0);
     }
 
     //zabijanie kandydatow
@@ -285,6 +289,8 @@ void sprzatanie() {
         }
         free(pids_kandydatow);
     }
+
+    while (wait(NULL) > 0);
 
     if (baza_wynikow) {
         shmdt(baza_wynikow);
@@ -324,9 +330,28 @@ int main(int argc, char *argv[]) {
     // Deklaracja zmiennej pomocniczej 
     pid_t pid; 
 
-    //domyslna liczba kandydatow
-    int M_miejsc = (argc >1) ? atoi(argv[1]) : 10; 
+        if (argc != 2) {
+        fprintf(stderr, "Uzycie: %s <liczba_miejsc>\n", argv[0]);
+        fprintf(stderr, "Przyklad: %s 120\n", argv[0]);
+        exit(1);
+    }
+
+    int M_miejsc = atoi(argv[1]);
+    
+    // Sprawdzenie zakresu
+    if (M_miejsc <= 0 || M_miejsc > 10000) {
+        fprintf(stderr, "BLAD: Liczba miejsc musi byc w zakresie 1-10000\n");
+        fprintf(stderr, "Podano: %d\n", M_miejsc);
+        exit(1);
+    }
+
     int ilosc_chetnych = M_miejsc * 10;
+    
+    // Ostrzeżenie przy dużej liczbie
+    if (M_miejsc > 1000) {
+        printf(ANSI_YELLOW "UWAGA: Duża liczba kandydatów (%d). " 
+               "Symulacja może trwać długo.\n" ANSI_RESET, ilosc_chetnych);
+    }
 
     liczba_kandydatow = ilosc_chetnych;
     liczba_miejsc = M_miejsc;
@@ -380,20 +405,32 @@ int main(int argc, char *argv[]) {
     arg.val = 50; // Wpuszczamy max 50 osob naraz do kolejki matur
     semctl(semid, SEM_DOSTEP_IDX, SETVAL, arg);
     
-   loguj(plik_raportu,"[Dziekan] Uczelnia otwarta. Miejsc: %d. Przewidywana liczba kandydatow: %d.", liczba_miejsc, liczba_kandydatow);
+    loguj(plik_raportu,"[Dziekan] Uczelnia otwarta. Miejsc: %d. Przewidywana liczba kandydatow: %d.", liczba_miejsc, liczba_kandydatow);
    
     char buf_liczba[20];
     sprintf(buf_liczba, "%d", liczba_kandydatow);
-    //uruchomienie komisji
-    //komisja A
-    if ((pid_komisja_A = fork()) == 0) {
-        execl("./komisja", "komisja", "A", buf_liczba, NULL); 
-        perror("Blad uruchamiania komisji A"); 
+    // Uruchomienie komisji A
+    if ((pid_komisja_A = fork()) == -1) {
+        perror("Blad fork() dla komisji A");
+        sprzatanie();
         exit(1);
     }
-    if ((pid_komisja_B = fork()) == 0) {
+    if (pid_komisja_A == 0) {
+        execl("./komisja", "komisja", "A", buf_liczba, NULL); 
+        perror("Blad execl() komisji A"); 
+        exit(1);
+    }
+
+    // Uruchomienie komisji B
+    if ((pid_komisja_B = fork()) == -1) {
+        perror("Blad fork() dla komisji B");
+        kill(pid_komisja_A, SIGTERM);
+        sprzatanie();
+        exit(1);
+    }
+    if (pid_komisja_B == 0) {
         execl("./komisja", "komisja", "B", buf_liczba, NULL); 
-        perror("Blad uruchamiania komisji B"); 
+        perror("Blad execl() komisji B"); 
         exit(1);
     }
 
@@ -402,20 +439,31 @@ int main(int argc, char *argv[]) {
 
     //3 uruchomienie kandydatow
     pids_kandydatow = malloc(sizeof(pid_t) * liczba_kandydatow);
+
     for (int i = 0; i < liczba_kandydatow; i++) {
+        baza_wynikow[i].pid = -1;
         pid = fork(); 
-        if (pid == 0) {
-            execl("./kandydat", "kandydat", NULL);
-            perror("Blad uruchamiania kandydata");
-            exit(1);
-        }
+        if (pid == -1) {
+        perror("Blad fork() dla kandydata");
+        // Nie przerywaj, kontynuuj z mniejszą liczbą
+        liczba_kandydatow = i; // Zmniejsz oczekiwaną liczbę
+        break;
+    }
+    
+    if (pid == 0) {
+        char arg_idx[16];
+        sprintf(arg_idx, "%d", i);
+        execl("./kandydat", "kandydat", arg_idx, NULL);
+        perror("Blad execl() kandydata");
+        exit(1);
+    }
         
         // Zapisanie danych kandydata w bazie OD RAZU
         pids_kandydatow[i] = pid;
         baza_wynikow[i].pid = pid;
 
-        if (i % 20 == 0) {
-            usleep(100000); 
+       if (i % 20 == 0) {
+           usleep(100000); 
         }
     }
     loguj(plik_raportu,"[Dziekan] Wszyscy kandydaci (%d) zgromadzeni. Wybija godzina T. Rozpoczynam weryfikacje matur.", liczba_kandydatow);
@@ -452,14 +500,16 @@ int main(int argc, char *argv[]) {
 
     //etap 2 egzamin wlasciwy
     //glowna petla obslugi
-    int zakonczonych_procesow = 0;    
+    int zakonczonych_procesow = 0;  
+    int czy_koniec = 0;  
     
     while(1){        
         
         //sprawdzanie czy ktos skonczyl
         int status;
-        pid_t zakonczony_pid = waitpid(-1, &status, WNOHANG);
-        if (zakonczony_pid > 0) {
+        pid_t zakonczony_pid;
+
+        while ((zakonczony_pid = waitpid(-1, &status, WNOHANG)) > 0) {
             // Czy to byl kandydat?
             int idx = znajdz_lub_dodaj_studenta(zakonczony_pid);
             if (idx != -1) {
@@ -481,11 +531,15 @@ int main(int argc, char *argv[]) {
                 */
                 if (zakonczonych_procesow == liczba_kandydatow) {
                     loguj(plik_raportu,"[Dziekan] Wszyscy kandydaci (i odrzuceni) opuscili system.");
+                    czy_koniec = 1;
                     break;
                 }
             }
         }
-        usleep(50000); //chwila przerwy
+        if (czy_koniec){
+            break;
+        }
+        usleep(100000); //chwila przerwy
     }
 
     //koniec symulacji

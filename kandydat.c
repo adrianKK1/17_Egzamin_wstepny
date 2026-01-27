@@ -13,19 +13,50 @@ void znajdz_swoj_rekord(pid_t pid, int max) {
 }
 
 // Funkcja czekająca aż w SHM pojawi się X pytań
-void czekaj_na_pytania(int ile_wymaganych, char typ) {
+void czekaj_na_pytania(pid_t moj_pid, int ile_wymaganych) {
     printf(ANSI_BROWN "[KANDYDAT %d] Czekam na %d pytań w SHM... " ANSI_RESET, getpid(), ile_wymaganych);
     fflush(stdout);
-    
-    while(1) {
-        int obecne = (typ == 'A') ? baza_shm[moj_idx_shm].licznik_pytan_A : baza_shm[moj_idx_shm].licznik_pytan_B;
-        if (obecne == ile_wymaganych) break;
-        usleep(20000); 
+
+    Komunikat msg;
+    ssize_t result; 
+
+    // Pętla odporna na sygnały (Ctrl+Z / fg)
+    while (1) {
+        result = msgrcv(msgid, &msg, sizeof(Komunikat)-sizeof(long), moj_pid, 0);
+        
+        if (result == -1) {
+            if (errno == EINTR) continue; // To tylko pauza/wznowienie, wracamy do czekania
+            
+            if (errno == EIDRM || errno == EINVAL) {
+                // Kolejka usunięta przez Dziekana -> koniec
+                printf(ANSI_RED "\n[KANDYDAT %d] Ewakuacja (kolejka usunieta).\n" ANSI_RESET, moj_pid);
+                exit(0);
+            }
+            perror("Blad msgrcv w kandydata");
+            exit(1);
+        }
+        // Jeśli udało się odebrać (result != -1), wychodzimy z pętli
+        break;
     }
-    printf("Gotowe!\n");
+    
+    // Sprawdzenie czy to właściwy kod (dla bezpieczeństwa)
+    if (msg.dane_int == CODE_PYTANIA_GOTOWE) {
+        printf("Gotowe! Otrzymalem pytania.\n");
+    } else {
+        // Jeśli dostaliśmy coś innego (np. jakiś błędny status), traktujemy to jako błąd logiczny
+        printf(ANSI_RED "Blad: Otrzymano nieznany kod %d zamiast pytań.\n" ANSI_RESET, msg.dane_int);
+        exit(1);
+    }
 }
 
-int main() {
+int main(int argc, char* argv[]) {
+
+    if (argc < 2) {
+        fprintf(stderr, "Kandydat: brak argumentu indeksu w wywolaniu execl\n");
+        exit(1);
+    }
+    moj_idx_shm = atoi(argv[1]);
+
     pid_t moj_pid = getpid();
     srand(time(NULL) ^ moj_pid); 
     int czy_poprawkowicz = (rand() % 100 < 2) ? 1 : 0;
@@ -37,14 +68,30 @@ int main() {
     int semid = semget(key, 4, 0);
     shmid = shmget(key, 0, 0); 
     baza_shm = (StudentWynik*)shmat(shmid, NULL, 0);
-    znajdz_swoj_rekord(moj_pid, 2000);
+    if (baza_shm == (void*)-1) { perror("Błąd shmat"); exit(1); }
+    if (baza_shm[moj_idx_shm].pid == -1 || baza_shm[moj_idx_shm].pid == 0) {
+        baza_shm[moj_idx_shm].pid = moj_pid;
+    }
+    //znajdz_swoj_rekord(moj_pid, 2000);
 
     // ETAP 1: MATURA
     operacja_semafor(semid, SEM_DOSTEP_IDX, -1);
     Komunikat msg; 
     msg.mtype = MSG_MATURA_REQ; msg.nadawca_pid = moj_pid; msg.status_specjalny = czy_poprawkowicz;
     msgsnd(msgid, &msg, sizeof(Komunikat)-sizeof(long), 0);
-    msgrcv(msgid, &msg, sizeof(Komunikat)-sizeof(long), moj_pid, 0);
+
+    ssize_t res;
+    while(1) {
+        res = msgrcv(msgid, &msg, sizeof(Komunikat)-sizeof(long), moj_pid, 0);
+        if (res == -1) {
+            if (errno == EINTR) continue; // Restart po sygnale
+            // Inny błąd to prawdopodobnie koniec symulacji
+            printf(ANSI_RED "[KANDYDAT %d] Ewakuacja podczas matury.\n" ANSI_RESET, moj_pid); 
+            exit(0); 
+        }
+        break;
+    }
+
     operacja_semafor(semid, SEM_DOSTEP_IDX, 1);
 
     if(msg.dane_int == 0) {
@@ -69,10 +116,12 @@ int main() {
         // Nie czeka na pytania, nie śpi, nie odpowiada
     } else {
         // --- ZWYKŁY STUDENT ---
-        czekaj_na_pytania(5, 'A');
+        czekaj_na_pytania(moj_pid,5);
 
         printf(ANSI_BROWN "[KANDYDAT %d] Mam pytania. Mysle (Ti)..." ANSI_RESET "\n", moj_pid);
         usleep(losuj(500000, 900000)); 
+
+        operacja_semafor(semid, SEM_DOSTEP_IDX, -1);
 
         // Losowe odpowiedzi
         for(int i=0; i<5; i++) {
@@ -81,12 +130,23 @@ int main() {
         
         // Zmiana statusu w SHM (Sygnał dla egzaminatorów)
         baza_shm[moj_idx_shm].status_A = ODPOWIEDZI_GOTOWE_CZEKA_NA_OCENY;
+
+        operacja_semafor(semid, SEM_DOSTEP_IDX, 1);
         
         printf(ANSI_BROWN "[KANDYDAT %d] Odpowiedzi wpisane. Czekam na wynik." ANSI_RESET "\n", moj_pid);
     }
 
+
     // Wspólny odbiór wyniku dla obu typów
-    msgrcv(msgid, &msg, sizeof(Komunikat)-sizeof(long), moj_pid, 0);
+    while(1) {
+        res = msgrcv(msgid, &msg, sizeof(Komunikat)-sizeof(long), moj_pid, 0);
+        if (res == -1) {
+            if (errno == EINTR) continue;
+            exit(0);
+        }
+        break;
+    }
+
     int ocena_a = msg.dane_int;
     
     operacja_semafor(semid, SEM_KOMISJA_A_IDX, 1); 
@@ -107,17 +167,28 @@ int main() {
     msg.status_specjalny = 0; // W B już nie jest specjalny
     msgsnd(msgid, &msg, sizeof(Komunikat)-sizeof(long), 0);
 
-    czekaj_na_pytania(3, 'B');
+    czekaj_na_pytania(moj_pid,3);
 
     printf(ANSI_BROWN "[KANDYDAT %d] Mam pytania B. Mysle..." ANSI_RESET "\n", moj_pid);
     usleep(losuj(500000, 900000));
+
+    operacja_semafor(semid, SEM_DOSTEP_IDX, -1);
 
     for(int i=0; i<3; i++) {
         baza_shm[moj_idx_shm].odpowiedzi_B[i] = losuj(1, 100);
     }
     baza_shm[moj_idx_shm].status_B = ODPOWIEDZI_GOTOWE_CZEKA_NA_OCENY;
 
-    msgrcv(msgid, &msg, sizeof(Komunikat)-sizeof(long), moj_pid, 0);
+    operacja_semafor(semid, SEM_DOSTEP_IDX, 1);
+
+    while(1) {
+        res = msgrcv(msgid, &msg, sizeof(Komunikat)-sizeof(long), moj_pid, 0);
+        if (res == -1) {
+            if (errno == EINTR) continue;
+            exit(0);
+        }
+        break;
+    }
     int ocena_b = msg.dane_int;
 
     operacja_semafor(semid, SEM_KOMISJA_B_IDX, 1);
