@@ -60,7 +60,6 @@ GitHub: https://github.com/adrianKK1/17_Egzamin_wstepny.git
     - 10.1 [Problem 1: Race condition w licznikach pytań](#problem-1-race-condition-w-licznikach-pytań)
     - 10.2 [Problem 2: Zakleszczenie przy ewakuacji](#problem-2-zakleszczenie-przy-ewakuacji)
     - 10.3 [Problem 3: Przekroczenie limitu procesów](#problem-3-przekroczenie-limitu-procesów)
-11. [Podsumowanie](#10-podsumowanie)
 
 ## Temat 17 – Egzamin wstępny
 
