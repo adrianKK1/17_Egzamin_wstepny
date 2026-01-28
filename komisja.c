@@ -28,6 +28,8 @@ void* watek_recepcji(void* arg) {
 
     printf("%s[Recepcja %c] Otwieram zapisy. Czekam na kandydatow.%s\n", KOM_COLOR, typ_komisji, ANSI_RESET);
 
+    //sleep(100);
+
     while(!koniec_pracy) {
         ssize_t result = msgrcv(msgid, &msg, sizeof(Komunikat) - sizeof(long),typ_wejscia, IPC_NOWAIT);
         

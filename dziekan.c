@@ -27,7 +27,6 @@ union semun {
     unsigned short *array;  // tablica dla GETALL, SETALL
 };
 
-//FUNKCJE POMOCNICZE
 
 /* Szuka studenta po PID.
    Jeśli nie istnieje, dodaje go w pierwsze wolne miejsce. */
@@ -433,7 +432,7 @@ int main(int argc, char *argv[]) {
     }
 
     loguj(plik_raportu,"[Dziekan] Komisja A (PID: %d) i komisja B (PID: %d) rozpoczynaja prace.", pid_komisja_A, pid_komisja_B);
-    sleep(1);
+    //sleep(1);
 
     //3 uruchomienie kandydatow
     pids_kandydatow = malloc(sizeof(pid_t) * liczba_kandydatow);
@@ -460,9 +459,9 @@ int main(int argc, char *argv[]) {
         pids_kandydatow[i] = pid;
         baza_wynikow[i].pid = pid;
 
-       if (i % 20 == 0) {
-           usleep(100000); 
-        }
+       //if (i % 20 == 0) {
+           //usleep(100000); 
+        //}
     }
     loguj(plik_raportu,"[Dziekan] Wszyscy kandydaci (%d) zgromadzeni. Wybija godzina T. Rozpoczynam weryfikacje matur.", liczba_kandydatow);
     //etap 1 weryfikacja matur
@@ -480,7 +479,7 @@ int main(int argc, char *argv[]) {
             odp.mtype = msg.nadawca_pid;
             
             //losowanie matury (2% szans na brak)
-            if (losuj(1,100) <= 2) {
+            if (losuj(1,100) <= 0) {
                 baza_wynikow[idx].matura_zdana = 0;
                 odp.dane_int = 0; 
             } else {
@@ -522,9 +521,9 @@ int main(int argc, char *argv[]) {
         if (czy_koniec){
             break;
         }
-        usleep(100000);
+        //usleep(100000);
     }
-    sleep(1);
+    //sleep(1);
     generuj_ranking();
     sprzatanie();
 

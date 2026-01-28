@@ -40,7 +40,6 @@ GitHub: https://github.com/adrianKK1/17_Egzamin_wstepny.git
    - 6.3 [Test 3: Ewakuacja (SIGINT) - brak zakleszczeń](#test-3-ewakuacja-sigint---brak-zakleszczeń)
    - 6.4 [Test 4: Obciążeniowy - duża liczba kandydatów](#test-4-obciążeniowy---duża-liczba-kandydatów)
    - 6.5 [Test 5: Synchronizacja - brak race conditions w SHM](#test-5-synchronizacja---brak-race-conditions-w-shm)
-   - 6.6 [Podsumowanie testów](#podsumowanie-testów)
 7. [Elementy Wyróżniające](#6-elementy-wyróżniające)
    - 7.1 [Work-Stealing Pattern](#61-work-stealing-pattern)
    - 7.2 [Enum stanów + automaty](#62-enum-stanów--automaty)
@@ -87,10 +86,11 @@ Raport z przebiegu symulacji zapisać w pliku (plikach) tekstowym.
 
 | Parametr | Wartość |
 |----------|---------|
-| Operating System | Ubuntu 24.04 LTS |
 | Kernel | Linux 5.15+ |
 | Architecture | x86-64 |
 | Kompilator | gcc 11.4.0+ |
+
+Projekt został zrealizowany i przetestowany w środowisku **WSL  (Windows Subsystem for Linux)** z dystrybucją Ubuntu
 
 ### Wymagania wstępne
 
@@ -826,12 +826,12 @@ Funkcja `loguj()` automatycznie koloruje wyjście ANSI:
 
 | Podmiot | Kolor | Kod ANSI |
 |---------|-------|----------|
-| Dziekan | 🟣 Magenta | `\x1b[35m` |
-| Komisja A | 🔵 Niebieski | `\x1b[34m` |
-| Komisja B | 🟠 Pomarańczowy | `\x1b[38;5;208m` |
-| Kandydat | 🟤 Brązowy | `\x1b[38;5;94m` |
-| Przyjęty | 🟢 Zielony | `\x1b[32m` |
-| Odrzucony/Błąd | 🔴 Czerwony | `\x1b[31m` |
+| Dziekan |  Magenta | `\x1b[35m` |
+| Komisja A |  Niebieski | `\x1b[34m` |
+| Komisja B |  Pomarańczowy | `\x1b[38;5;208m` |
+| Kandydat |  Brązowy | `\x1b[38;5;94m` |
+| Przyjęty |  Zielony | `\x1b[32m` |
+| Odrzucony/Błąd |  Czerwony | `\x1b[31m` |
 
 ---
 
@@ -942,7 +942,7 @@ time ./dziekan 500  # 500 miejsc = 5000 kandydatów
 - Przyjętych dokładnie 500
 - Czas < 10 minut
 
-**Wynik:** ✅ **PASS** - 4987 kandydatów obsłużonych (99.7%), 500 przyjętych, czas: 7m23s
+**Wynik:** ✅ **PASS** - 4987 kandydatów obsłużonych (99.7%), 500 przyjętych,
 
 **Obsługa błędu fork():**
 [dziekan.c (Linia 446-451)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L446-L451)
@@ -982,20 +982,6 @@ grep -qP "OCENA [AB].*[0-9]{3,}" raport.txt && echo "BŁĄD"
 [kandydat.c (Linia 91-99)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/kandydat.c#L91-L99) - Semafor mutex dla SHM  
 [komisja.c (Linia 211-330)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/komisja.c#L211-L330) - Pthread mutex dla stolików
 
----
-
-### Podsumowanie testów
-
-| Test | Czas | Wynik | Punkty |
-|------|------|-------|--------|
-| Test 1: Procent bez matury | 1 min | ✅ PASS | 4/20 |
-| Test 2: Poprawkowicze | 1 min | ✅ PASS | 4/20 |
-| Test 3: Ewakuacja | 10 sek | ✅ PASS | 4/20 |
-| Test 4: Obciążeniowy | 7 min | ✅ PASS | 4/20 |
-| Test 5: Race conditions | 2 min | ✅ PASS | 4/20 |
-| **RAZEM** | ~11 min | **5/5** | **20/20** |
-
----
 
 ## 6. Elementy Wyróżniające
 
@@ -1073,9 +1059,6 @@ if (plik_raportu) {
     fclose(plik_raportu);
 }
 ```
-
-*Uwaga: Projekt używa wysokopoziomowego API (`fopen`). Niskopoziomowe `open/write/close` nie są użyte.*
-
 ---
 
 ### B. Tworzenie procesów
@@ -1550,30 +1533,6 @@ if (pid == -1) {
 ```
 
 ---
-
-## 10. Podsumowanie
-
-Projekt realizuje pełną symulację egzaminu wstępnego z wykorzystaniem zaawansowanych mechanizmów IPC i wielowątkowości. Kluczowe osiągnięcia:
-
-✅ **Architektura:**
-- Pełna decentralizacja (fork + exec)
-- Work-stealing pattern (innowacyjne podejście)
-- Graceful shutdown bez zakleszczeń
-
-✅ **IPC:**
-- 3 mechanizmy (semafory, kolejki, SHM)
-- Multipleksing komunikatów na jednej kolejce
-- Enum stanów + automaty skończone
-
-✅ **Testy:**
-- 5/5 testów zaliczonych
-- Weryfikacja: blokady, race conditions, limity procesów
-
-✅ **Funkcjonalność:**
-- Wszystkie wymagania tematu spełnione
-- Poprawkowicze, ewakuacja, ranking
-- Kolorowany output, szczegółowe raporty
-
 
 ---
 

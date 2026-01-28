@@ -1,1152 +1,236 @@
-[00:41:01] [Dziekan] Uczelnia otwarta. Miejsc: 1500. Przewidywana liczba kandydatow: 15000.
-[00:41:01] [Dziekan] Komisja A (PID: 345518) i komisja B (PID: 345519) rozpoczynaja prace.
-[00:41:08] 
+[20:44:39] [Dziekan] Uczelnia otwarta. Miejsc: 10. Przewidywana liczba kandydatow: 100.
+[20:44:39] [Dziekan] Komisja A (PID: 8502) i komisja B (PID: 8503) rozpoczynaja prace.
+[20:44:39] [Dziekan] Wszyscy kandydaci (100) zgromadzeni. Wybija godzina T. Rozpoczynam weryfikacje matur.
+[20:44:39] 
+[Dziekan] ZAKONCZONO WERYFIKACJE MATUR. PUBLIKACJA LIST STARTOWYCH.
+
+===LISTA NIEDOPUSZCZONYCH (BRAK MATURY) ===
+BRAK OSOB NIEDOPUSZCZONYCH
+
+===LISTA DOPUSZCZONYCH DO EGZAMINU ===
+Student nr 1 (PID: 8504) - DOPUSZCZONY
+Student nr 2 (PID: 8505) - DOPUSZCZONY
+Student nr 3 (PID: 8506) - DOPUSZCZONY
+Student nr 4 (PID: 8507) - DOPUSZCZONY
+Student nr 5 (PID: 8508) - DOPUSZCZONY
+Student nr 6 (PID: 8509) - DOPUSZCZONY
+Student nr 7 (PID: 8510) - DOPUSZCZONY
+Student nr 8 (PID: 8514) - DOPUSZCZONY
+Student nr 9 (PID: 8520) - DOPUSZCZONY
+Student nr 10 (PID: 8522) - DOPUSZCZONY
+Student nr 11 (PID: 8524) - DOPUSZCZONY
+Student nr 12 (PID: 8525) - DOPUSZCZONY
+Student nr 13 (PID: 8526) - DOPUSZCZONY
+Student nr 14 (PID: 8527) - DOPUSZCZONY
+Student nr 15 (PID: 8528) - DOPUSZCZONY
+Student nr 16 (PID: 8529) - DOPUSZCZONY
+Student nr 17 (PID: 8530) - DOPUSZCZONY
+Student nr 18 (PID: 8531) - DOPUSZCZONY
+Student nr 19 (PID: 8532) - DOPUSZCZONY
+Student nr 20 (PID: 8533) - DOPUSZCZONY
+Student nr 21 (PID: 8534) - DOPUSZCZONY
+Student nr 22 (PID: 8535) - DOPUSZCZONY
+Student nr 23 (PID: 8536) - DOPUSZCZONY
+Student nr 24 (PID: 8537) - DOPUSZCZONY
+Student nr 25 (PID: 8538) - DOPUSZCZONY
+Student nr 26 (PID: 8539) - DOPUSZCZONY
+Student nr 27 (PID: 8540) - DOPUSZCZONY
+Student nr 28 (PID: 8541) - DOPUSZCZONY
+Student nr 29 (PID: 8542) - DOPUSZCZONY
+Student nr 30 (PID: 8543) - DOPUSZCZONY
+Student nr 31 (PID: 8544) - DOPUSZCZONY
+Student nr 32 (PID: 8545) - DOPUSZCZONY
+Student nr 33 (PID: 8546) - DOPUSZCZONY
+Student nr 34 (PID: 8547) - DOPUSZCZONY
+Student nr 35 (PID: 8548) - DOPUSZCZONY
+Student nr 36 (PID: 8549) - DOPUSZCZONY
+Student nr 37 (PID: 8550) - DOPUSZCZONY
+Student nr 38 (PID: 8551) - DOPUSZCZONY
+Student nr 39 (PID: 8552) - DOPUSZCZONY
+Student nr 40 (PID: 8553) - DOPUSZCZONY
+Student nr 41 (PID: 8554) - DOPUSZCZONY
+Student nr 42 (PID: 8555) - DOPUSZCZONY
+Student nr 43 (PID: 8556) - DOPUSZCZONY
+Student nr 44 (PID: 8557) - DOPUSZCZONY
+Student nr 45 (PID: 8558) - DOPUSZCZONY
+Student nr 46 (PID: 8559) - DOPUSZCZONY
+Student nr 47 (PID: 8560) - DOPUSZCZONY
+Student nr 48 (PID: 8561) - DOPUSZCZONY
+Student nr 49 (PID: 8562) - DOPUSZCZONY
+Student nr 50 (PID: 8563) - DOPUSZCZONY
+Student nr 51 (PID: 8564) - DOPUSZCZONY
+Student nr 52 (PID: 8565) - DOPUSZCZONY
+Student nr 53 (PID: 8566) - DOPUSZCZONY
+Student nr 54 (PID: 8567) - DOPUSZCZONY
+Student nr 55 (PID: 8568) - DOPUSZCZONY
+Student nr 56 (PID: 8569) - DOPUSZCZONY
+Student nr 57 (PID: 8570) - DOPUSZCZONY
+Student nr 58 (PID: 8571) - DOPUSZCZONY
+Student nr 59 (PID: 8572) - DOPUSZCZONY
+Student nr 60 (PID: 8573) - DOPUSZCZONY
+Student nr 61 (PID: 8574) - DOPUSZCZONY
+Student nr 62 (PID: 8575) - DOPUSZCZONY
+Student nr 63 (PID: 8576) - DOPUSZCZONY
+Student nr 64 (PID: 8577) - DOPUSZCZONY
+Student nr 65 (PID: 8578) - DOPUSZCZONY
+Student nr 66 (PID: 8579) - DOPUSZCZONY
+Student nr 67 (PID: 8580) - DOPUSZCZONY
+Student nr 68 (PID: 8581) - DOPUSZCZONY
+Student nr 69 (PID: 8582) - DOPUSZCZONY
+Student nr 70 (PID: 8583) - DOPUSZCZONY
+Student nr 71 (PID: 8584) - DOPUSZCZONY
+Student nr 72 (PID: 8585) - DOPUSZCZONY
+Student nr 73 (PID: 8586) - DOPUSZCZONY
+Student nr 74 (PID: 8587) - DOPUSZCZONY
+Student nr 75 (PID: 8588) - DOPUSZCZONY
+Student nr 76 (PID: 8589) - DOPUSZCZONY
+Student nr 77 (PID: 8590) - DOPUSZCZONY
+Student nr 78 (PID: 8591) - DOPUSZCZONY
+Student nr 79 (PID: 8592) - DOPUSZCZONY
+Student nr 80 (PID: 8593) - DOPUSZCZONY
+Student nr 81 (PID: 8594) - DOPUSZCZONY
+Student nr 82 (PID: 8595) - DOPUSZCZONY
+Student nr 83 (PID: 8596) - DOPUSZCZONY
+Student nr 84 (PID: 8597) - DOPUSZCZONY
+Student nr 85 (PID: 8598) - DOPUSZCZONY
+Student nr 86 (PID: 8599) - DOPUSZCZONY
+Student nr 87 (PID: 8600) - DOPUSZCZONY
+Student nr 88 (PID: 8601) - DOPUSZCZONY
+Student nr 89 (PID: 8602) - DOPUSZCZONY
+Student nr 90 (PID: 8603) - DOPUSZCZONY
+Student nr 91 (PID: 8604) - DOPUSZCZONY
+Student nr 92 (PID: 8605) - DOPUSZCZONY
+Student nr 93 (PID: 8606) - DOPUSZCZONY
+Student nr 94 (PID: 8607) - DOPUSZCZONY
+Student nr 95 (PID: 8608) - DOPUSZCZONY
+Student nr 96 (PID: 8609) - DOPUSZCZONY
+Student nr 97 (PID: 8610) - DOPUSZCZONY
+Student nr 98 (PID: 8611) - DOPUSZCZONY
+Student nr 99 (PID: 8612) - DOPUSZCZONY
+Student nr 100 (PID: 8613) - DOPUSZCZONY
+[20:44:39] [Dziekan] Statystyki wstepne: Miejsc: 10, Kandydatow: 100, Dopuszczeni: 100. Start egzaminow.
+
+--------------------------------------------------
+
+[20:44:40] [Dziekan] Student 1 (PID: 8504) skonczyl. A: 19%, B: -1%
+[20:44:41] [Dziekan] Student 8 (PID: 8514) skonczyl. A: 65%, B: 10%
+[20:44:41] [Dziekan] Student 12 (PID: 8525) skonczyl. A: 20%, B: -1%
+[20:44:41] [Dziekan] Student 10 (PID: 8522) skonczyl. A: 68%, B: 83%
+[20:44:42] [Dziekan] Student 9 (PID: 8520) skonczyl. A: 49%, B: 56%
+[20:44:42] [Dziekan] Student 2 (PID: 8505) skonczyl. A: 32%, B: 27%
+[20:44:43] [Dziekan] Student 15 (PID: 8528) skonczyl. A: 67%, B: 66%
+[20:44:43] [Dziekan] Student 6 (PID: 8509) skonczyl. A: 33%, B: 56%
+[20:44:43] [Dziekan] Student 7 (PID: 8510) skonczyl. A: 54%, B: 51%
+[20:44:44] [Dziekan] Student 14 (PID: 8527) skonczyl. A: 45%, B: 59%
+[20:44:44] [Dziekan] Student 3 (PID: 8506) skonczyl. A: 41%, B: 42%
+[20:44:44] [Dziekan] Student 13 (PID: 8526) skonczyl. A: 79%, B: 65%
+[20:44:44] [Dziekan] Student 5 (PID: 8508) skonczyl. A: 22%, B: -1%
+[20:44:45] 
  [Dziekan] KONIEC EGZAMINU. OBLICZANIE RANKINGU I PUBLIKACJA WYNIKOW
 
 =================================================================================
 | NR   | PID        | MATURA   | KOM A    | KOM B    | SUMA  | STATUS                   |
 =================================================================================
-| 1    | 345531     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 2    | 345554     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 3    | 345555     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 4    | 345556     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 5    | 345557     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 6    | 345558     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 7    | 345559     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 8    | 345560     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 9    | 345561     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 10   | 345562     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 11   | 345563     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 12   | 345564     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 13   | 345565     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 14   | 345566     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 15   | 345567     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 16   | 345568     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 17   | 345569     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 18   | 345570     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 19   | 345571     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 20   | 345572     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 21   | 345573     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 22   | 345574     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 23   | 345575     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 24   | 345576     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 25   | 345577     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 26   | 345578     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 27   | 345579     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 28   | 345580     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 29   | 345581     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 30   | 345582     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 31   | 345583     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 32   | 345584     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 33   | 345585     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 34   | 345586     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 35   | 345587     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 36   | 345588     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 37   | 345589     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 38   | 345590     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 39   | 345591     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 40   | 345592     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 41   | 345593     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 42   | 345594     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 43   | 345595     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 44   | 345596     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 45   | 345597     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 46   | 345598     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 47   | 345599     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 48   | 345600     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 49   | 345601     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 50   | 345602     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 51   | 345603     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 52   | 345604     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 53   | 345605     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 54   | 345606     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 55   | 345607     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 56   | 345608     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 57   | 345609     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 58   | 345610     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 59   | 345611     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 60   | 345612     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 61   | 345613     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 62   | 345614     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 63   | 345615     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 64   | 345616     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 65   | 345617     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 66   | 345618     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 67   | 345619     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 68   | 345620     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 69   | 345621     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 70   | 345622     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 71   | 345623     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 72   | 345624     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 73   | 345625     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 74   | 345626     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 75   | 345627     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 76   | 345628     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 77   | 345629     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 78   | 345630     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 79   | 345631     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 80   | 345632     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 81   | 345633     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 82   | 345634     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 83   | 345635     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 84   | 345636     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 85   | 345637     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 86   | 345638     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 87   | 345639     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 88   | 345640     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 89   | 345641     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 90   | 345642     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 91   | 345643     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 92   | 345644     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 93   | 345645     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 94   | 345646     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 95   | 345647     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 96   | 345648     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 97   | 345649     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 98   | 345650     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 99   | 345651     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 100  | 345652     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 101  | 345653     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 102  | 345654     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 103  | 345655     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 104  | 345656     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 105  | 345657     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 106  | 345658     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 107  | 345659     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 108  | 345660     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 109  | 345661     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 110  | 345662     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 111  | 345663     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 112  | 345664     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 113  | 345665     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 114  | 345666     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 115  | 345667     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 116  | 345668     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 117  | 345669     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 118  | 345670     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 119  | 345671     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 120  | 345672     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 121  | 345673     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 122  | 345674     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 123  | 345675     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 124  | 345676     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 125  | 345677     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 126  | 345678     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 127  | 345679     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 128  | 345680     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 129  | 345681     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 130  | 345682     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 131  | 345683     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 132  | 345684     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 133  | 345685     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 134  | 345686     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 135  | 345687     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 136  | 345688     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 137  | 345689     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 138  | 345690     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 139  | 345691     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 140  | 345692     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 141  | 345693     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 142  | 345694     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 143  | 345695     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 144  | 345696     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 145  | 345697     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 146  | 345698     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 147  | 345699     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 148  | 345700     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 149  | 345701     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 150  | 345702     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 151  | 345703     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 152  | 345704     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 153  | 345705     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 154  | 345706     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 155  | 345707     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 156  | 345708     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 157  | 345709     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 158  | 345710     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 159  | 345711     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 160  | 345712     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 161  | 345713     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 162  | 345714     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 163  | 345715     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 164  | 345716     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 165  | 345717     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 166  | 345718     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 167  | 345719     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 168  | 345720     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 169  | 345721     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 170  | 345722     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 171  | 345723     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 172  | 345724     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 173  | 345725     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 174  | 345726     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 175  | 345727     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 176  | 345728     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 177  | 345729     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 178  | 345730     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 179  | 345731     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 180  | 345732     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 181  | 345733     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 182  | 345736     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 183  | 345738     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 184  | 345739     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 185  | 345740     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 186  | 345741     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 187  | 345742     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 188  | 345743     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 189  | 345744     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 190  | 345745     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 191  | 345746     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 192  | 345747     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 193  | 345749     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 194  | 345750     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 195  | 345751     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 196  | 345752     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 197  | 345753     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 198  | 345754     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 199  | 345755     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 200  | 345756     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 201  | 345757     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 202  | 345765     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 203  | 345766     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 204  | 345767     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 205  | 345768     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 206  | 345769     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 207  | 345770     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 208  | 345771     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 209  | 345772     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 210  | 345773     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 211  | 345774     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 212  | 345775     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 213  | 345776     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 214  | 345777     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 215  | 345778     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 216  | 345779     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 217  | 345780     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 218  | 345781     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 219  | 345782     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 220  | 345783     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 221  | 345784     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 222  | 345785     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 223  | 345786     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 224  | 345787     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 225  | 345788     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 226  | 345789     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 227  | 345790     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 228  | 345791     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 229  | 345792     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 230  | 345793     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 231  | 345794     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 232  | 345795     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 233  | 345796     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 234  | 345797     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 235  | 345798     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 236  | 345799     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 237  | 345800     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 238  | 345801     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 239  | 345802     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 240  | 345803     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 241  | 345804     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 242  | 345805     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 243  | 345806     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 244  | 345807     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 245  | 345808     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 246  | 345809     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 247  | 345810     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 248  | 345811     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 249  | 345812     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 250  | 345813     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 251  | 345814     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 252  | 345815     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 253  | 345816     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 254  | 345817     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 255  | 345818     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 256  | 345819     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 257  | 345820     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 258  | 345821     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 259  | 345822     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 260  | 345823     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 261  | 345824     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 262  | 345825     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 263  | 345826     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 264  | 345827     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 265  | 345828     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 266  | 345829     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 267  | 345830     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 268  | 345831     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 269  | 345832     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 270  | 345833     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 271  | 345834     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 272  | 345835     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 273  | 345836     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 274  | 345837     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 275  | 345838     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 276  | 345839     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 277  | 345840     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 278  | 345841     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 279  | 345842     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 280  | 345843     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 281  | 345844     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 282  | 345919     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 283  | 345920     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 284  | 345921     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 285  | 345922     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 286  | 345923     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 287  | 345924     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 288  | 345926     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 289  | 345927     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 290  | 345928     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 291  | 345929     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 292  | 345930     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 293  | 345931     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 294  | 345932     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 295  | 345933     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 296  | 345934     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 297  | 345935     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 298  | 345936     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 299  | 345937     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 300  | 345938     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 301  | 345939     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 302  | 346044     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 303  | 346045     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 304  | 346046     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 305  | 346047     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 306  | 346048     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 307  | 346049     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 308  | 346050     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 309  | 346051     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 310  | 346052     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 311  | 346053     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 312  | 346054     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 313  | 346055     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 314  | 346056     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 315  | 346057     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 316  | 346058     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 317  | 346059     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 318  | 346060     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 319  | 346061     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 320  | 346062     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 321  | 346063     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 322  | 346175     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 323  | 346176     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 324  | 346177     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 325  | 346178     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 326  | 346179     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 327  | 346180     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 328  | 346181     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 329  | 346182     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 330  | 346183     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 331  | 346184     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 332  | 346185     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 333  | 346186     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 334  | 346187     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 335  | 346188     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 336  | 346189     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 337  | 346190     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 338  | 346191     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 339  | 346193     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 340  | 346194     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 341  | 346195     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 342  | 346198     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 343  | 346199     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 344  | 346200     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 345  | 346201     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 346  | 346202     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 347  | 346203     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 348  | 346204     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 349  | 346205     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 350  | 346206     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 351  | 346207     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 352  | 346208     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 353  | 346209     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 354  | 346210     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 355  | 346211     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 356  | 346212     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 357  | 346213     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 358  | 346214     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 359  | 346215     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 360  | 346216     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 361  | 346217     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 362  | 346218     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 363  | 346219     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 364  | 346220     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 365  | 346221     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 366  | 346222     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 367  | 346223     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 368  | 346224     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 369  | 346225     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 370  | 346226     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 371  | 346227     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 372  | 346228     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 373  | 346229     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 374  | 346230     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 375  | 346231     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 376  | 346232     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 377  | 346233     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 378  | 346234     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 379  | 346235     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 380  | 346236     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 381  | 346237     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 382  | 346241     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 383  | 346242     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 384  | 346243     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 385  | 346244     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 386  | 346245     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 387  | 346246     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 388  | 346247     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 389  | 346248     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 390  | 346249     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 391  | 346250     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 392  | 346251     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 393  | 346252     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 394  | 346253     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 395  | 346254     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 396  | 346255     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 397  | 346256     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 398  | 346257     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 399  | 346258     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 400  | 346259     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 401  | 346260     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 402  | 346261     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 403  | 346262     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 404  | 346263     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 405  | 346264     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 406  | 346265     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 407  | 346266     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 408  | 346267     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 409  | 346268     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 410  | 346269     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 411  | 346270     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 412  | 346271     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 413  | 346272     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 414  | 346273     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 415  | 346274     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 416  | 346275     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 417  | 346276     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 418  | 346277     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 419  | 346278     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 420  | 346279     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 421  | 346280     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 422  | 346284     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 423  | 346285     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 424  | 346286     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 425  | 346287     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 426  | 346288     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 427  | 346289     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 428  | 346290     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 429  | 346291     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 430  | 346292     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 431  | 346293     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 432  | 346294     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 433  | 346295     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 434  | 346296     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 435  | 346297     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 436  | 346298     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 437  | 346299     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 438  | 346300     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 439  | 346301     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 440  | 346302     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 441  | 346303     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 442  | 346304     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 443  | 346305     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 444  | 346306     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 445  | 346307     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 446  | 346308     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 447  | 346309     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 448  | 346310     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 449  | 346311     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 450  | 346312     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 451  | 346313     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 452  | 346314     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 453  | 346315     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 454  | 346316     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 455  | 346317     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 456  | 346318     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 457  | 346319     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 458  | 346320     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 459  | 346321     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 460  | 346322     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 461  | 346323     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 462  | 346324     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 463  | 346325     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 464  | 346326     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 465  | 346327     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 466  | 346328     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 467  | 346329     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 468  | 346330     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 469  | 346331     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 470  | 346332     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 471  | 346333     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 472  | 346334     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 473  | 346335     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 474  | 346336     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 475  | 346337     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 476  | 346338     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 477  | 346339     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 478  | 346340     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 479  | 346341     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 480  | 346342     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 481  | 346343     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 482  | 346344     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 483  | 346345     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 484  | 346346     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 485  | 346347     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 486  | 346348     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 487  | 346349     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 488  | 346350     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 489  | 346351     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 490  | 346352     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 491  | 346353     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 492  | 346354     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 493  | 346355     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 494  | 346356     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 495  | 346357     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 496  | 346358     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 497  | 346359     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 498  | 346360     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 499  | 346361     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 500  | 346362     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 501  | 346363     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 502  | 346364     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 503  | 346365     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 504  | 346366     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 505  | 346367     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 506  | 346368     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 507  | 346369     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 508  | 346370     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 509  | 346371     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 510  | 346372     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 511  | 346373     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 512  | 346374     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 513  | 346375     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 514  | 346376     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 515  | 346377     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 516  | 346378     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 517  | 346379     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 518  | 346380     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 519  | 346381     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 520  | 346382     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 521  | 346383     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 522  | 346406     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 523  | 346407     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 524  | 346408     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 525  | 346409     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 526  | 346411     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 527  | 346412     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 528  | 346413     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 529  | 346414     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 530  | 346415     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 531  | 346417     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 532  | 346418     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 533  | 346419     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 534  | 346420     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 535  | 346421     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 536  | 346422     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 537  | 346423     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 538  | 346424     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 539  | 346425     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 540  | 346426     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 541  | 346427     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 542  | 346550     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 543  | 346551     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 544  | 346552     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 545  | 346553     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 546  | 346554     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 547  | 346555     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 548  | 346557     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 549  | 346558     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 550  | 346559     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 551  | 346560     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 552  | 346561     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 553  | 346562     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 554  | 346563     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 555  | 346565     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 556  | 346566     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 557  | 346567     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 558  | 346568     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 559  | 346569     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 560  | 346570     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 561  | 346571     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 562  | 346682     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 563  | 346683     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 564  | 346684     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 565  | 346685     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 566  | 346686     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 567  | 346687     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 568  | 346689     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 569  | 346690     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 570  | 346691     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 571  | 346692     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 572  | 346693     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 573  | 346694     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 574  | 346695     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 575  | 346696     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 576  | 346697     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 577  | 346699     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 578  | 346700     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 579  | 346701     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 580  | 346702     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 581  | 346703     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 582  | 346812     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 583  | 346813     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 584  | 346814     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 585  | 346815     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 586  | 346816     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 587  | 346817     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 588  | 346818     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 589  | 346819     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 590  | 346820     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 591  | 346821     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 592  | 346822     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 593  | 346823     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 594  | 346824     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 595  | 346825     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 596  | 346826     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 597  | 346828     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 598  | 346829     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 599  | 346830     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 600  | 346831     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 601  | 346832     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 602  | 346971     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 603  | 346972     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 604  | 346973     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 605  | 346974     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 606  | 346975     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 607  | 346976     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 608  | 346978     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 609  | 346979     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 610  | 346980     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 611  | 346981     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 612  | 346982     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 613  | 346983     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 614  | 346984     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 615  | 346985     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 616  | 346986     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 617  | 346987     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 618  | 346988     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 619  | 346989     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 620  | 346990     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 621  | 346991     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 622  | 347055     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 623  | 347056     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 624  | 347057     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 625  | 347058     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 626  | 347059     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 627  | 347060     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 628  | 347061     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 629  | 347062     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 630  | 347063     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 631  | 347064     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 632  | 347065     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 633  | 347066     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 634  | 347067     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 635  | 347068     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 636  | 347069     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 637  | 347070     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 638  | 347071     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 639  | 347072     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 640  | 347073     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 641  | 347074     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 642  | 347075     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 643  | 347076     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 644  | 347077     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 645  | 347078     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 646  | 347079     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 647  | 347080     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 648  | 347081     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 649  | 347082     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 650  | 347083     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 651  | 347084     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 652  | 347085     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 653  | 347086     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 654  | 347087     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 655  | 347088     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 656  | 347089     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 657  | 347090     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 658  | 347091     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 659  | 347092     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 660  | 347093     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 661  | 347094     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 662  | 347095     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 663  | 347096     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 664  | 347097     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 665  | 347098     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 666  | 347099     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 667  | 347100     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 668  | 347101     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 669  | 347102     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 670  | 347103     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 671  | 347104     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 672  | 347105     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 673  | 347106     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 674  | 347107     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 675  | 347108     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 676  | 347109     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 677  | 347110     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 678  | 347111     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 679  | 347112     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 680  | 347113     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 681  | 347114     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 682  | 347115     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 683  | 347116     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 684  | 347117     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 685  | 347118     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 686  | 347119     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 687  | 347120     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 688  | 347121     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 689  | 347122     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 690  | 347123     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 691  | 347124     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 692  | 347125     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 693  | 347126     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 694  | 347127     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 695  | 347128     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 696  | 347129     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 697  | 347130     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 698  | 347131     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 699  | 347132     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 700  | 347133     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 701  | 347134     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 702  | 347135     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 703  | 347136     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 704  | 347137     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 705  | 347138     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 706  | 347139     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 707  | 347140     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 708  | 347141     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 709  | 347142     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 710  | 347143     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 711  | 347144     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 712  | 347145     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 713  | 347146     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 714  | 347147     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 715  | 347148     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 716  | 347149     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 717  | 347150     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 718  | 347151     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 719  | 347152     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 720  | 347153     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 721  | 347154     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 722  | 347155     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 723  | 347156     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 724  | 347157     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 725  | 347158     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 726  | 347159     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 727  | 347160     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 728  | 347161     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 729  | 347162     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 730  | 347163     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 731  | 347164     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 732  | 347165     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 733  | 347166     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 734  | 347167     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 735  | 347168     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 736  | 347169     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 737  | 347170     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 738  | 347171     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 739  | 347172     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 740  | 347173     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 741  | 347174     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 742  | 347175     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 743  | 347176     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 744  | 347177     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 745  | 347178     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 746  | 347179     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 747  | 347180     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 748  | 347181     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 749  | 347182     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 750  | 347183     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 751  | 347184     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 752  | 347185     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 753  | 347186     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 754  | 347187     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 755  | 347188     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 756  | 347189     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 757  | 347190     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 758  | 347191     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 759  | 347192     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 760  | 347193     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 761  | 347194     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 762  | 347195     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 763  | 347196     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 764  | 347197     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 765  | 347198     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 766  | 347199     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 767  | 347200     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 768  | 347201     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 769  | 347202     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 770  | 347203     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 771  | 347204     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 772  | 347205     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 773  | 347206     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 774  | 347207     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 775  | 347208     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 776  | 347209     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 777  | 347210     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 778  | 347211     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 779  | 347212     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 780  | 347213     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 781  | 347214     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 782  | 347215     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 783  | 347216     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 784  | 347217     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 785  | 347218     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 786  | 347219     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 787  | 347220     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 788  | 347221     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 789  | 347222     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 790  | 347223     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 791  | 347224     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 792  | 347225     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 793  | 347226     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 794  | 347227     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 795  | 347228     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 796  | 347229     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 797  | 347230     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 798  | 347231     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 799  | 347232     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 800  | 347233     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 801  | 347234     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 802  | 347238     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 803  | 347239     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 804  | 347240     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 805  | 347241     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 806  | 347242     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 807  | 347243     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 808  | 347244     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 809  | 347245     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 810  | 347246     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 811  | 347247     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 812  | 347248     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 813  | 347249     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 814  | 347250     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 815  | 347251     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 816  | 347252     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 817  | 347253     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 818  | 347254     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 819  | 347255     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 820  | 347256     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 821  | 347257     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 822  | 347258     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 823  | 347259     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 824  | 347260     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 825  | 347261     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 826  | 347262     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 827  | 347263     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 828  | 347264     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 829  | 347265     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 830  | 347266     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 831  | 347267     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 832  | 347268     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 833  | 347269     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 834  | 347270     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 835  | 347271     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 836  | 347272     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 837  | 347273     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 838  | 347274     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 839  | 347275     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 840  | 347276     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 841  | 347277     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 842  | 347278     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 843  | 347279     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 844  | 347280     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 845  | 347281     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 846  | 347282     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 847  | 347283     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 848  | 347284     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 849  | 347285     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 850  | 347286     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 851  | 347287     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 852  | 347288     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 853  | 347289     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 854  | 347290     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 855  | 347291     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 856  | 347292     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 857  | 347293     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 858  | 347294     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 859  | 347295     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 860  | 347296     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 861  | 347297     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 862  | 347298     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 863  | 347299     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 864  | 347300     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 865  | 347301     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 866  | 347302     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 867  | 347303     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 868  | 347304     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 869  | 347305     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 870  | 347306     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 871  | 347307     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 872  | 347308     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 873  | 347309     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 874  | 347310     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 875  | 347311     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 876  | 347312     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 877  | 347313     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 878  | 347314     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 879  | 347315     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 880  | 347316     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 881  | 347317     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 882  | 347321     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 883  | 347322     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 884  | 347323     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 885  | 347324     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 886  | 347325     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 887  | 347326     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 888  | 347327     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 889  | 347328     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 890  | 347329     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 891  | 347330     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 892  | 347331     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 893  | 347332     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 894  | 347333     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 895  | 347334     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 896  | 347335     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 897  | 347336     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 898  | 347337     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 899  | 347338     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 900  | 347339     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 901  | 347340     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 902  | 347341     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 903  | 347342     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 904  | 347343     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 905  | 347344     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 906  | 347345     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 907  | 347346     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 908  | 347347     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 909  | 347348     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 910  | 347349     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 911  | 347350     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 912  | 347351     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 913  | 347352     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 914  | 347353     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 915  | 347354     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 916  | 347355     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 917  | 347356     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 918  | 347357     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 919  | 347358     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 920  | 347359     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 921  | 347360     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 922  | 347361     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 923  | 347362     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 924  | 347363     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 925  | 347364     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 926  | 347365     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 927  | 347366     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 928  | 347367     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 929  | 347368     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 930  | 347369     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 931  | 347370     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 932  | 347371     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 933  | 347372     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 934  | 347373     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 935  | 347374     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 936  | 347375     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 937  | 347376     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 938  | 347377     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 939  | 347378     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 940  | 347379     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 941  | 347380     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 942  | 347381     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 943  | 347382     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 944  | 347383     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 945  | 347384     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 946  | 347385     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 947  | 347386     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 948  | 347387     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 949  | 347388     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 950  | 347389     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 951  | 347390     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 952  | 347391     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 953  | 347392     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 954  | 347393     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 955  | 347394     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 956  | 347395     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 957  | 347396     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 958  | 347397     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 959  | 347398     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 960  | 347399     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 961  | 347400     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 962  | 347401     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 963  | 347402     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 964  | 347403     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 965  | 347404     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 966  | 347405     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 967  | 347406     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 968  | 347407     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 969  | 347408     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 970  | 347409     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 971  | 347410     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 972  | 347411     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 973  | 347412     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 974  | 347413     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 975  | 347414     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 976  | 347415     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 977  | 347416     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 978  | 347417     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 979  | 347418     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 980  | 347419     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 981  | 347420     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 982  | 347421     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 983  | 347422     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 984  | 347423     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 985  | 347424     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 986  | 347425     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 987  | 347426     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 988  | 347427     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 989  | 347428     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 990  | 347429     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 991  | 347430     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 992  | 347431     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 993  | 347432     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 994  | 347433     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 995  | 347434     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 996  | 347435     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 997  | 347436     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 998  | 347437     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 999  | 347438     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1000 | 347439     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1001 | 347440     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1002 | 347441     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1003 | 347442     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1004 | 347443     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1005 | 347444     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1006 | 347445     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1007 | 347446     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1008 | 347447     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1009 | 347448     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1010 | 347449     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1011 | 347450     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1012 | 347451     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1013 | 347452     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1014 | 347453     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1015 | 347454     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1016 | 347455     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1017 | 347456     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1018 | 347457     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1019 | 347458     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1020 | 347459     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1021 | 347460     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1022 | 347461     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1023 | 347462     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1024 | 347463     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1025 | 347464     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1026 | 347465     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1027 | 347466     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1028 | 347467     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1029 | 347468     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1030 | 347469     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1031 | 347470     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1032 | 347471     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1033 | 347472     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1034 | 347473     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1035 | 347474     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1036 | 347475     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1037 | 347476     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1038 | 347477     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1039 | 347478     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1040 | 347479     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1041 | 347480     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1042 | 347481     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1043 | 347482     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1044 | 347483     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1045 | 347484     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1046 | 347485     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1047 | 347486     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1048 | 347487     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1049 | 347488     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1050 | 347489     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1051 | 347490     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1052 | 347491     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1053 | 347492     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1054 | 347493     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1055 | 347494     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1056 | 347495     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1057 | 347496     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1058 | 347497     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1059 | 347498     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1060 | 347499     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1061 | 347500     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1062 | 347501     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1063 | 347502     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1064 | 347503     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1065 | 347504     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1066 | 347505     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1067 | 347506     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1068 | 347507     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1069 | 347508     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1070 | 347509     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1071 | 347510     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1072 | 347511     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1073 | 347512     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1074 | 347513     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1075 | 347514     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1076 | 347515     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1077 | 347516     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1078 | 347517     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1079 | 347518     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1080 | 347519     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1081 | 347520     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1082 | 347521     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1083 | 347522     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1084 | 347523     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1085 | 347524     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1086 | 347525     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1087 | 347526     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1088 | 347527     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1089 | 347528     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1090 | 347529     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1091 | 347530     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1092 | 347531     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1093 | 347532     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1094 | 347533     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1095 | 347534     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1096 | 347535     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1097 | 347536     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1098 | 347537     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1099 | 347538     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1100 | 347539     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1101 | 347540     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1102 | 347541     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1103 | 347542     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1104 | 347543     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1105 | 347544     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1106 | 347545     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1107 | 347546     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1108 | 347547     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1109 | 347548     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1110 | 347549     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1111 | 347550     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1112 | 347551     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1113 | 347552     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1114 | 347553     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1115 | 347554     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1116 | 347555     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1117 | 347556     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1118 | 347557     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1119 | 347558     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1120 | 347559     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1121 | 347560     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1122 | 347561     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1123 | 347562     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1124 | 347563     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1125 | 347564     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1126 | 347565     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1127 | 347566     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1128 | 347567     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1129 | 347568     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1130 | 347569     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1131 | 347570     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1132 | 347571     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1133 | 347572     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1134 | 347573     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1135 | 347574     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1136 | 347575     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1137 | 347576     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1138 | 347577     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1139 | 347578     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1140 | 347579     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
-| 1141 | 347580     | ---      | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 10   | 8522       | OK       | 68%      | 83%      | 151   | PRZYJETY                 |
+| 13   | 8526       | OK       | 79%      | 65%      | 144   | PRZYJETY                 |
+| 15   | 8528       | OK       | 67%      | 66%      | 133   | PRZYJETY                 |
+| 7    | 8510       | OK       | 54%      | 51%      | 105   | PRZYJETY                 |
+| 9    | 8520       | OK       | 49%      | 56%      | 105   | PRZYJETY                 |
+| 14   | 8527       | OK       | 45%      | 59%      | 104   | PRZYJETY                 |
+| 6    | 8509       | OK       | 33%      | 56%      | 89    | PRZYJETY                 |
+| 3    | 8506       | OK       | 41%      | 42%      | 83    | PRZYJETY                 |
+| 1    | 8504       | OK       | 19%      | ---      | 19    | NIEZDAL (KOMISJA A)      |
+| 2    | 8505       | OK       | 32%      | 27%      | 59    | NIEZDAL (KOMISJA B)      |
+| 4    | 8507       | OK       | 53%      | ---      | 53    | PRZERWANY - EWAKUACJA    |
+| 5    | 8508       | OK       | 22%      | ---      | 22    | NIEZDAL (KOMISJA A)      |
+| 8    | 8514       | OK       | 65%      | 10%      | 75    | NIEZDAL (KOMISJA B)      |
+| 11   | 8524       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 12   | 8525       | OK       | 20%      | ---      | 20    | NIEZDAL (KOMISJA A)      |
+| 16   | 8529       | OK       | 58%      | ---      | 58    | PRZERWANY - EWAKUACJA    |
+| 17   | 8530       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 18   | 8531       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 19   | 8532       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 20   | 8533       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 21   | 8534       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 22   | 8535       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 23   | 8536       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 24   | 8537       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 25   | 8538       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 26   | 8539       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 27   | 8540       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 28   | 8541       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 29   | 8542       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 30   | 8543       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 31   | 8544       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 32   | 8545       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 33   | 8546       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 34   | 8547       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 35   | 8548       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 36   | 8549       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 37   | 8550       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 38   | 8551       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 39   | 8552       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 40   | 8553       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 41   | 8554       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 42   | 8555       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 43   | 8556       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 44   | 8557       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 45   | 8558       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 46   | 8559       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 47   | 8560       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 48   | 8561       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 49   | 8562       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 50   | 8563       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 51   | 8564       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 52   | 8565       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 53   | 8566       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 54   | 8567       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 55   | 8568       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 56   | 8569       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 57   | 8570       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 58   | 8571       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 59   | 8572       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 60   | 8573       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 61   | 8574       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 62   | 8575       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 63   | 8576       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 64   | 8577       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 65   | 8578       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 66   | 8579       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 67   | 8580       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 68   | 8581       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 69   | 8582       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 70   | 8583       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 71   | 8584       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 72   | 8585       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 73   | 8586       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 74   | 8587       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 75   | 8588       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 76   | 8589       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 77   | 8590       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 78   | 8591       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 79   | 8592       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 80   | 8593       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 81   | 8594       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 82   | 8595       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 83   | 8596       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 84   | 8597       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 85   | 8598       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 86   | 8599       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 87   | 8600       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 88   | 8601       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 89   | 8602       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 90   | 8603       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 91   | 8604       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 92   | 8605       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 93   | 8606       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 94   | 8607       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 95   | 8608       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 96   | 8609       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 97   | 8610       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 98   | 8611       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 99   | 8612       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
+| 100  | 8613       | OK       | ---      | ---      | 0     | PRZERWANY - EWAKUACJA    |
 =================================================================================
 
 
@@ -1155,5 +239,13 @@
 =================================================================================
 | NR   | PID        | OCENA A  | OCENA B  | OCENA KONCOWA |
 ---------------------------------------------------------------------------------
+| 10   | 8522       | 68%      | 83%      | 151           |
+| 13   | 8526       | 79%      | 65%      | 144           |
+| 15   | 8528       | 67%      | 66%      | 133           |
+| 7    | 8510       | 54%      | 51%      | 105           |
+| 9    | 8520       | 49%      | 56%      | 105           |
+| 14   | 8527       | 45%      | 59%      | 104           |
+| 6    | 8509       | 33%      | 56%      | 89            |
+| 3    | 8506       | 41%      | 42%      | 83            |
 =================================================================================
-[00:41:08] [Dziekan] Zamykanie systemu i sprzatanie zasobow IPC...
+[20:44:45] [Dziekan] Zamykanie systemu i sprzatanie zasobow IPC...

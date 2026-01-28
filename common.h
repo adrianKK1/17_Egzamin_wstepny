@@ -27,18 +27,12 @@
 
 // --- TYPY KOMUNIKATÓW ---
 #define MSG_MATURA_REQ      1  // Kandydat -> Dziekan (weryfikacja matury)
-#define MSG_MATURA_RESP     2  // Dziekan -> Kandydat (wynik matury) 
 
 #define MSG_WEJSCIE_A       3   // Kandydat zgłasza chęć wejścia
-#define MSG_ODPOWIEDZI_A    4   // Kandydat -> Komisja A (odpowiedzi gotowe)
-#define MSG_WYNIK_A         5   // Komisja odsyła wynik
 
 #define MSG_WEJSCIE_B       6   // Kandydat -> Komisja B
-#define MSG_ODPOWIEDZI_B    7
-#define MSG_WYNIK_B         8
 
-#define MSG_WYNIKI_DZIEKAN  11  // Raport końcowy do dziekana 
-#define MSG_KONIEC          99  // Dziekan -> Kandydat (Odpowiedź: TAK/NIE)
+
 #define CODE_PYTANIA_GOTOWE -999  // Sygnał od komisji: pytania są w SHM
 
 
