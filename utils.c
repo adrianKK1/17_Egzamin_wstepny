@@ -2,21 +2,23 @@
 #include "utils.h"
 #include <time.h>
 #include <string.h>
-#include <stdarg.h> // Potrzebne do va_list
-#include <sys/sem.h> // Potrzebne do sembuf
+#include <stdarg.h>
+#include <sys/sem.h> 
 
+/* Sprawdza wynik wywołania funkcji systemowej */
 void check_error(int val, const char *msg) {
     if (val == -1) {
-        perror(msg); // Wypisuje błąd systemowy (z errno) [cite: 161, 351]
+        perror(msg);
         exit(EXIT_FAILURE);
     }
 }
 
+/* Losuje liczbę całkowitą z zakresu [min, max] */
 int losuj(int min, int max) {
     return min + rand() % (max - min + 1);
 }
 
-// Prosty helper do logowania czasu
+/* Zwraca aktualny czas w formacie HH:MM:SS */
 char* aktualny_czas() {
     static char bufor[30];
     time_t now;
@@ -26,7 +28,7 @@ char* aktualny_czas() {
     return bufor;
 }
 
-//funkcja zapisujaca logi do pliku i na ekran
+/* Logowanie zdarzeń: kolor na ekranie + zapis do pliku */
 void loguj(FILE* plik, const char *format, ...) {
     va_list args;
     char bufor[1024];
@@ -53,24 +55,20 @@ void loguj(FILE* plik, const char *format, ...) {
     }
 }
 
-//funkcje pomocnicze do operacji na semgaforach (P - czrekaj, V - sygnalizuj)
+/* Operacja P/V na semaforze z obsługą przerwań i ewakuacji */
 void operacja_semafor(int semid,int sem_idx, int op){
     struct sembuf bufor; 
-    bufor.sem_num = sem_idx; //indeks semafora w zbiorze
-    bufor.sem_op = op; //-1 czekaj/zajmiij, lub 1 zwolnij
-    bufor.sem_flg = 0; //brak flag specjalnych
+    bufor.sem_num = sem_idx; 
+    bufor.sem_op = op; 
+    bufor.sem_flg = 0; 
 
-    //jesli semafor jest zajety, proces zostanie zablokowany tutaj
     while (semop(semid, &bufor, 1) == -1) {
-        // Jeśli to tylko przerwanie sygnałem (np. fg po Ctrl+Z) -> próbuj dalej
         if (errno == EINTR) {
             continue;
         } 
-        // Jeśli to błąd usunięcia ID (Dziekan sprząta) -> kończymy normalnie (ewakuacja)
         else if (errno == EIDRM || errno == EINVAL) {
             exit(0);
         }
-        // Inny błąd krytyczny -> raportuj
         else {
             perror("[KOMISJA/UTILS] Blad operacji na semaforze");
             exit(1);

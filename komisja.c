@@ -2,10 +2,10 @@
 #include "utils.h"
 #include <pthread.h>
 
-//zmienne globalne dla wątków
+//zmienne globalne
 int msgid = -1;
 int shmid = -1;
-char typ_komisji; // 'A' lub 'B'
+char typ_komisji;
 int liczba_egzaminatorow; 
 int liczba_pytan_wymagana;
 int max_studentow = 0;
@@ -29,24 +29,20 @@ void* watek_recepcji(void* arg) {
     printf("%s[Recepcja %c] Otwieram zapisy. Czekam na kandydatow.%s\n", KOM_COLOR, typ_komisji, ANSI_RESET);
 
     while(!koniec_pracy) {
-        // Odbierz zgłoszenie
         ssize_t result = msgrcv(msgid, &msg, sizeof(Komunikat) - sizeof(long),typ_wejscia, IPC_NOWAIT);
         
         if (result == -1) {
             if (errno == EIDRM) {
-                // Kolejka usunięta - dziekan kończy pracę
                 break;
             }
             if (errno == ENOMSG) {
-                // Brak komunikatów - sprawdź flagę i spróbuj ponownie
-                usleep(100000); // 100ms
+                usleep(100000);
                 continue;
             }
-            // Inny błąd
             continue;
         }
 
-        // Znajdź studenta w SHM (zeby znac jego index)
+        /* Wyszukanie studenta w pamięci dzielonej */
         int idx_shm = -1;
         for(int i=0; i<max_studentow; i++) {
             if (baza_shm[i].pid == msg.nadawca_pid) { 
@@ -54,43 +50,39 @@ void* watek_recepcji(void* arg) {
                 break; 
             }
         }
-
         if (idx_shm == -1) {
             printf(ANSI_RED "BLAD: Nieznany student PID %d!\n" ANSI_RESET, msg.nadawca_pid);
             continue;
         }
 
-        // --- OBSŁUGA POPRAWKOWICZA (TYLKO KOMISJA A) ---
+        /* Obsługa poprawkowicza (tylko komisja A) */
         if (typ_komisji == 'A' && msg.status_specjalny == 1) {
             printf("%s[Recepcja A] PID %d to POPRAWKOWICZ. Zaliczam automatycznie (100%%).%s\n", 
                    ANSI_BLUE, msg.nadawca_pid, ANSI_RESET);
-            
-            // Wpisz wynik do SHM
+
             baza_shm[idx_shm].ocena_koncowa_A = 100;
-            
-            // Odeślij natychmiast wynik
+
             Komunikat wyn;
             wyn.mtype = msg.nadawca_pid;
             wyn.dane_int = 100;
             msgsnd(msgid, &wyn, sizeof(Komunikat)-sizeof(long), 0);
             
-            continue; // Pomiń przydzielanie stolika
+            continue;
         }
 
-        // Znajdź wolny stolik
+         /* Szukanie wolnego stolika */
         int znaleziono_stolik = 0;
         while(!znaleziono_stolik && !koniec_pracy) {
             for(int i=0; i<LIMIT_SALA; i++) {
                 pthread_mutex_lock(&mutex_stoliki[i]);
-                if (stoliki[i] == -1) { // Wolne!
+                if (stoliki[i] == -1) {
                     stoliki[i] = idx_shm;
-                    
-                    // Inicjalizacja stanu w SHM dla tego etapu
+
                     if (typ_komisji == 'A') {
                         baza_shm[idx_shm].licznik_pytan_A = 0;
                         baza_shm[idx_shm].licznik_ocen_A = 0;
                         baza_shm[idx_shm].status_A = ZAJETE_CZEKA_NA_PYTANIA;
-                        // Reset tablic
+
                         for(int k=0; k<5; k++) baza_shm[idx_shm].id_egzaminatora_A[k] = 0;
                         for(int k=0; k<5; k++) baza_shm[idx_shm].oceny_A[k] = 0;
                     } else {
@@ -111,7 +103,7 @@ void* watek_recepcji(void* arg) {
             }
             if (!znaleziono_stolik && !koniec_pracy) {
                 usleep(100000);
-             } // Czekaj na wolne miejsce
+             }
         }
     }
     printf("%s[Recepcja %c] Kończę prace.%s\n", KOM_COLOR, typ_komisji, ANSI_RESET);
@@ -119,7 +111,7 @@ void* watek_recepcji(void* arg) {
 }
 
 // --- WĄTEK ROBOCZY (EGZAMINATOR) ---
-// Biega po stolikach i szuka pracy
+/* Obsługuje pytania, ocenianie i (przewodniczący) ocenę końcową */
 void* watek_egzaminatora(void* arg) {
     int id_egzaminatora = *((int*)arg);
     free(arg);
@@ -142,9 +134,7 @@ void* watek_egzaminatora(void* arg) {
             pthread_mutex_lock(&mutex_stoliki[i]);
             int idx = stoliki[i];
             
-            if (idx != -1) { // Jest student
-                
-                // Wskaźniki na odpowiednie pola
+            if (idx != -1) {
                 int *licznik_pytan, *licznik_ocen, *status;
                 int *pytania, *oceny, *ids;
                 int *ocena_koncowa;
@@ -180,7 +170,7 @@ void* watek_egzaminatora(void* arg) {
                         int nr_pytania = *licznik_pytan;
                         pytania[nr_pytania] = losuj(100, 999);
                         ids[nr_pytania] = id_egzaminatora;
-                        (*licznik_pytan)++; // Atomowo (mutex stolika trzyma)
+                        (*licznik_pytan)++;
                         
                         printf("%s[Egzaminator %c-%d] Zadaje pytanie %d/%d (Tresc: %d) studentowi PID %d.%s\n",
                                KOM_COLOR, typ_komisji, id_egzaminatora, nr_pytania+1, liczba_pytan_wymagana, pytania[nr_pytania], baza_shm[idx].pid, ANSI_RESET);
@@ -192,7 +182,7 @@ void* watek_egzaminatora(void* arg) {
                              *status = PYTANIA_GOTOWE_CZEKA_NA_KANDYDATA;
                              Komunikat ready;
                              ready.mtype = baza_shm[idx].pid;
-                             ready.dane_int = CODE_PYTANIA_GOTOWE; // Zdefiniowane w common.h
+                             ready.dane_int = CODE_PYTANIA_GOTOWE;
                              msgsnd(msgid, &ready, sizeof(Komunikat)-sizeof(long), 0);
 
                              printf("%s[Komisja %c] Wszystkie pytania gotowe dla PID %d. Czekamy na odpowiedzi.%s\n",
@@ -204,13 +194,10 @@ void* watek_egzaminatora(void* arg) {
                
                 
                 // --- ZADANIE 2: OCENIANIE ---
-                else if (*status == ODPOWIEDZI_GOTOWE_CZEKA_NA_OCENY && *licznik_ocen < liczba_pytan_wymagana) {
-                     // Szukam czy jest tu MOJE pytanie, ktorego jeszcze nie ocenilem
-                     // Pytanie "k" zadał egzaminator "ids[k]". Jeśli to ja I ocena[k] jest 0 -> oceniam.
-                     
+                else if (*status == ODPOWIEDZI_GOTOWE_CZEKA_NA_OCENY && *licznik_ocen < liczba_pytan_wymagana) {                   
                      for (int k=0; k < liczba_pytan_wymagana; k++) {
                          if (ids[k] == id_egzaminatora && oceny[k] == 0) {
-                             // OCENIAM LOSOWO (Zgodnie z poleceniem: "ocena za każdą odpowiedź jest losowana")
+
                              oceny[k] = losuj(0, 100);
 
                              printf("%s[Egzaminator %c-%d] Oceniam odp studenta PID %d. Pyt: %d -> Ocena: %d%%%s\n",
@@ -221,8 +208,6 @@ void* watek_egzaminatora(void* arg) {
                              break; 
                          }
                      }
-
-                     // Czy wszystko ocenione?
                      if (*licznik_ocen == liczba_pytan_wymagana) {
                         *status = OCENIONE_GOTOWE_DO_WYSYLKI;
                         printf("%s[Komisja %c] PID %d - Wszystkie oceny gotowe. Czekam na przewodniczącego.%s\n",
@@ -231,8 +216,6 @@ void* watek_egzaminatora(void* arg) {
                 }
             // --- ZADANIE 3: USTALENIE OCENY KOŃCOWEJ (TYLKO PRZEWODNICZĄCY) ---
                 else if (czy_przewodniczacy && *status == OCENIONE_GOTOWE_DO_WYSYLKI && *ocena_koncowa == -1) {
-                    
-                    // Oblicz średnią
                     int suma = 0;
                     for(int k=0; k<liczba_pytan_wymagana; k++) {
                         suma += oceny[k];
@@ -246,7 +229,6 @@ void* watek_egzaminatora(void* arg) {
                     }
                     printf(")%s\n", ANSI_RESET);
                     
-                    // Wyślij wynik kandydatowi
                     Komunikat wyn;
                     wyn.mtype = baza_shm[idx].pid; 
                     wyn.dane_int = *ocena_koncowa;
@@ -256,15 +238,13 @@ void* watek_egzaminatora(void* arg) {
                            KOM_COLOR, typ_komisji, id_egzaminatora, 
                            baza_shm[idx].pid, i+1, ANSI_RESET);
 
-                    // Zwolnij stolik
                     stoliki[i] = -1;
                     zrobilem_cos = 1;
                 }
             }
             pthread_mutex_unlock(&mutex_stoliki[i]);
-        } // koniec for stoliki
+        } 
         
-
         if (!zrobilem_cos) {
             usleep(100000);
         }
@@ -280,6 +260,7 @@ void* watek_egzaminatora(void* arg) {
     return NULL;
 }
 
+//obsługa sygnału
 void obsluga_sigterm(int sig) {
     (void)sig;
     koniec_pracy = 1;
@@ -301,7 +282,6 @@ int main(int argc, char* argv[]) {
         KOM_COLOR = ANSI_ORANGE;
     }
 
-    // Init Stoliki
     for(int i=0; i<LIMIT_SALA; i++) {
         stoliki[i] = -1;
         pthread_mutex_init(&mutex_stoliki[i], NULL);
@@ -322,14 +302,14 @@ int main(int argc, char* argv[]) {
     pthread_t t_recepcja;
     pthread_create(&t_recepcja, NULL, watek_recepcji, NULL);
 
-    // 2. Wątki Egzaminatorów (Pula)
+    // 2. Wątki Egzaminatorów
     pthread_t* t_egzam = malloc(sizeof(pthread_t) * liczba_egzaminatorow);
     for(int i=0; i<liczba_egzaminatorow; i++) {
         int* id = malloc(sizeof(int)); *id = i+1;
         pthread_create(&t_egzam[i], NULL, watek_egzaminatora, id);
     }
 
-    pthread_join(t_recepcja, NULL); // Main czeka na recepcję
+    pthread_join(t_recepcja, NULL);
     for(int i=0; i<liczba_egzaminatorow; i++) {
         pthread_join(t_egzam[i], NULL);
     }
