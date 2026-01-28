@@ -854,7 +854,7 @@ grep "BRAK MATURY" raport.txt | wc -l
 **Wynik:** ✅ **PASS** - 23/1000 (2.3%)
 
 **Weryfikacja w kodzie:**
-[dziekan.c (Linia 485)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L485)
+[dziekan.c (Linia 482)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L482)
 ```c
 if (losuj(1,100) <= 2) {  // 2% szans
     baza_wynikow[idx].matura_zdana = 0;
@@ -881,7 +881,7 @@ grep -i "poprawkowicz" raport.txt | wc -l
 **Wynik:** ✅ **PASS** - 19 poprawkowiczów (~1.9%), wszyscy 100%
 
 **Kod odpowiedzialny:**
-[komisja.c (Linia 61-68)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/komisja.c#L61-L68)
+[komisja.c (Linia 61-70)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/komisja.c#L61-L70)
 ```c
 if (typ_komisji == 'A' && msg.status_specjalny == 1) {
     printf("POPRAWKOWICZ. Zaliczam automatycznie (100%).\n");
@@ -921,8 +921,8 @@ ipcs -m | grep $USER
 **Wynik:** ✅ **PASS** - wszystkie procesy zakończone, IPC usunięte
 
 **Kod obsługi:**
-[dziekan.c (Linia 320-326)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L320-L326) - Handler SIGINT  
-[dziekan.c (Linia 268-317)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L268-L317) - Funkcja sprzątania
+[dziekan.c (Linia 318-324)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L318-L324) - Handler SIGINT  
+[dziekan.c (Linia 266-315)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L266-L315) - Funkcja sprzątania
 
 ---
 
@@ -945,7 +945,7 @@ time ./dziekan 500  # 500 miejsc = 5000 kandydatów
 **Wynik:** ✅ **PASS** - 4987 kandydatów obsłużonych (99.7%), 500 przyjętych,
 
 **Obsługa błędu fork():**
-[dziekan.c (Linia 446-451)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L446-L451)
+[dziekan.c (Linia 442-449)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L442-L449)
 ```c
 if (pid == -1) {
     perror("Blad fork() dla kandydata");
@@ -979,8 +979,8 @@ grep -qP "OCENA [AB].*[0-9]{3,}" raport.txt && echo "BŁĄD"
 **Wynik:** ✅ **PASS** - brak duplikatów, dane spójne
 
 **Mechanizmy ochrony:**
-[kandydat.c (Linia 91-99)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/kandydat.c#L91-L99) - Semafor mutex dla SHM  
-[komisja.c (Linia 211-330)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/komisja.c#L211-L330) - Pthread mutex dla stolików
+[kandydat.c (Linia 112-120)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/kandydat.c#L112-L120) - Semafor mutex dla SHM  
+[komisja.c (Linia 136-247)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/komisja.c#L136-L247) - Pthread mutex dla stolików
 
 
 ## 6. Elementy Wyróżniające
@@ -1042,18 +1042,18 @@ Brak `pthread_cancel()` (który mógłby spowodować zakleszczenia).
 ### A. Tworzenie i obsługa plików
 
 * **fopen() / fprintf() / fclose()**  
-[dziekan.c (Linia 360)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L360) - Otwarcie pliku raportu
+[dziekan.c (Linia 357)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L357) - Otwarcie pliku raportu
 ```c
 plik_raportu = fopen("raport.txt", "w");
 ```
 
-[utils.c (Linia 39-41)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/utils.c#L39-L41) - Zapisywanie logów
+[utils.c (Linia 53-54)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/utils.c#L53-L54) - Zapisywanie logów
 ```c
 fprintf(plik, "[%s] %s\n", czas, bufor);
 fflush(plik);
 ```
 
-[dziekan.c (Linia 312-314)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L312-L314) - Zamknięcie
+[dziekan.c (Linia 311)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L311) - Zamknięcie
 ```c
 if (plik_raportu) {
     fclose(plik_raportu);
@@ -1064,7 +1064,7 @@ if (plik_raportu) {
 ### B. Tworzenie procesów
 
 * **fork()**  
-[dziekan.c (Linia 413-422)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L413-L422) - Fork komisji A
+[dziekan.c (Linia 410-413)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L410-L413) - Fork komisji A
 ```c
 if ((pid_komisja_A = fork()) == -1) {
     perror("Blad fork() dla komisji A");
@@ -1073,7 +1073,7 @@ if ((pid_komisja_A = fork()) == -1) {
 }
 ```
 
-[dziekan.c (Linia 443-468)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L443-L468) - Fork kandydatów (pętla)
+[dziekan.c (Linia 442-449)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L442-L449) - Fork kandydatów (pętla)
 ```c
 for (int i = 0; i < liczba_kandydatow; i++) {
     pid = fork();
@@ -1089,18 +1089,18 @@ for (int i = 0; i < liczba_kandydatow; i++) {
 ```
 
 * **exec() (execl)**  
-[dziekan.c (Linia 419)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L419) - Uruchomienie komisji A
+[dziekan.c (Linia 416)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L416) - Uruchomienie komisji A
 ```c
 execl("./komisja", "komisja", "A", buf_liczba, NULL);
 ```
 
-[dziekan.c (Linia 456)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L456) - Uruchomienie kandydata
+[dziekan.c (Linia 453)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L453) - Uruchomienie kandydata
 ```c
 execl("./kandydat", "kandydat", arg_idx, NULL);
 ```
 
 * **exit()**  
-[kandydat.c (Linia 73)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/kandydat.c#L73) - Zakończenie kandydata bez matury
+[kandydat.c (Linia 90)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/kandydat.c#L90) - Zakończenie kandydata bez matury
 ```c
 if(msg.dane_int == 0) {
     printf("Brak matury. Koniec.\n");
@@ -1109,7 +1109,7 @@ if(msg.dane_int == 0) {
 ```
 
 * **wait() / waitpid()**  
-[dziekan.c (Linia 512-538)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L512-L538) - Zbieranie statusów
+[dziekan.c (Linia 505-521)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L505-L521) - Zbieranie statusów
 ```c
 while ((zakonczony_pid = waitpid(-1, &status, WNOHANG)) > 0) {
     int idx = znajdz_lub_dodaj_studenta(zakonczony_pid);
@@ -1118,7 +1118,7 @@ while ((zakonczony_pid = waitpid(-1, &status, WNOHANG)) > 0) {
 }
 ```
 
-[dziekan.c (Linia 275)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L275) - Oczekiwanie na komisję
+[dziekan.c (Linia 273)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L273) - Oczekiwanie na komisję
 ```c
 waitpid(pid_komisja_A, NULL, 0);
 ```
@@ -1128,13 +1128,13 @@ waitpid(pid_komisja_A, NULL, 0);
 ### C. Tworzenie i obsługa wątków
 
 * **pthread_create()**  
-[komisja.c (Linia 361-362)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/komisja.c#L361-L362) - Wątek recepcji
+[komisja.c (Linia 305)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/komisja.c#L305) - Wątek recepcji
 ```c
 pthread_t t_recepcja;
 pthread_create(&t_recepcja, NULL, watek_recepcji, NULL);
 ```
 
-[komisja.c (Linia 365-369)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/komisja.c#L365-L369) - Pula egzaminatorów
+[komisja.c (Linia 308-312)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/komisja.c#L308-L312) - Pula egzaminatorów
 ```c
 pthread_t* t_egzam = malloc(sizeof(pthread_t) * liczba_egzaminatorow);
 for(int i=0; i<liczba_egzaminatorow; i++) {
@@ -1144,7 +1144,7 @@ for(int i=0; i<liczba_egzaminatorow; i++) {
 ```
 
 * **pthread_join()**  
-[komisja.c (Linia 371-374)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/komisja.c#L371-L374)
+[komisja.c (Linia 314-317)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/komisja.c#L314-L317)
 ```c
 pthread_join(t_recepcja, NULL);
 for(int i=0; i<liczba_egzaminatorow; i++) {
@@ -1153,7 +1153,7 @@ for(int i=0; i<liczba_egzaminatorow; i++) {
 ```
 
 * **pthread_mutex_init()**  
-[komisja.c (Linia 337-339)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/komisja.c#L337-L339)
+[komisja.c (Linia 289)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/komisja.c#L289)
 ```c
 for(int i=0; i<LIMIT_SALA; i++) {
     pthread_mutex_init(&mutex_stoliki[i], NULL);
@@ -1161,19 +1161,19 @@ for(int i=0; i<LIMIT_SALA; i++) {
 ```
 
 * **pthread_mutex_lock()**  
-[komisja.c (Linia 212)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/komisja.c#L212)
+[komisja.c (Linia 136)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/komisja.c#L136)
 ```c
 pthread_mutex_lock(&mutex_stoliki[i]);
 ```
 
 * **pthread_mutex_unlock()**  
-[komisja.c (Linia 329)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/komisja.c#L329)
+[komisja.c (Linia 247)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/komisja.c#L247)
 ```c
 pthread_mutex_unlock(&mutex_stoliki[i]);
 ```
 
 * **pthread_mutex_destroy()**  
-[komisja.c (Linia 375-377)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/komisja.c#L375-L377)
+[komisja.c (Linia 319)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/komisja.c#L319)
 ```c
 for(int i=0; i<LIMIT_SALA; i++) {
     pthread_mutex_destroy(&mutex_stoliki[i]);
@@ -1185,12 +1185,12 @@ for(int i=0; i<LIMIT_SALA; i++) {
 ### D. Obsługa sygnałów
 
 * **kill()**  
-[dziekan.c (Linia 274)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L274) - Wysłanie SIGTERM do komisji
+[dziekan.c (Linia 272)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L272) - Wysłanie SIGTERM do komisji
 ```c
 kill(pid_komisja_A, SIGTERM);
 ```
 
-[dziekan.c (Linia 286-288)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L286-L288) - Zabijanie kandydatów
+[dziekan.c (Linia 285)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L285) - Zabijanie kandydatów
 ```c
 for (int i = 0; i < liczba_kandydatow; i++) {
     if (pids_kandydatow[i] > 0) {
@@ -1200,18 +1200,18 @@ for (int i = 0; i < liczba_kandydatow; i++) {
 ```
 
 * **signal()**  
-[dziekan.c (Linia 366)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L366) - Rejestracja handlera SIGINT
+[dziekan.c (Linia 363)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L363) - Rejestracja handlera SIGINT
 ```c
 signal(SIGINT, obsluga_sigint);
 ```
 
-[komisja.c (Linia 355)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/komisja.c#L355) - Rejestracja SIGTERM
+[komisja.c (Linia 301)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/komisja.c#L301) - Rejestracja SIGTERM
 ```c
 signal(SIGTERM, obsluga_sigterm);
 ```
 
 * **Handler SIGINT**  
-[dziekan.c (Linia 320-326)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L320-L326)
+[dziekan.c (Linia 318-324)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L318-L324)
 ```c
 void obsluga_sigint(int sig) {
     (void)sig;
@@ -1223,7 +1223,7 @@ void obsluga_sigint(int sig) {
 ```
 
 * **Handler SIGTERM**  
-[komisja.c (Linia 192-195)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/komisja.c#L192-L195)
+[komisja.c (Linia 266-269)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/komisja.c#L266-L269)
 ```c
 void obsluga_sigterm(int sig) {
     (void)sig;
@@ -1236,19 +1236,19 @@ void obsluga_sigterm(int sig) {
 ### E. Synchronizacja procesów (wątków)
 
 * **ftok()**  
-[dziekan.c (Linia 369)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L369)
+[dziekan.c (Linia 366)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L366)
 ```c
 key_t key = ftok(PROG_SCIEZKA, PROG_ID);  // "." i 'E'
 ```
 
 * **semget()**  
-[dziekan.c (Linia 371)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L371) - Utworzenie zbioru 4 semaforów
+[dziekan.c (Linia 368)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L368) - Utworzenie zbioru 4 semaforów
 ```c
 semid = semget(key, 4, IPC_CREAT | 0600);
 ```
 
 * **semctl()**  
-[dziekan.c (Linia 398-406)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L398-L406) - Inicjalizacja wartości
+[dziekan.c (Linia 396-403)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L396-L403) - Inicjalizacja wartości
 ```c
 union semun arg;
 arg.val = LIMIT_SALA;  // 3
@@ -1260,15 +1260,13 @@ arg.val = 50;
 semctl(semid, SEM_DOSTEP_IDX, SETVAL, arg);
 ```
 
-[dziekan.c (Linia 304-306)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L304-L306) - Usuwanie semaforów
+[dziekan.c (Linia 303)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L303) - Usuwanie semaforów
 ```c
-if (semid != -1) {
-    semctl(semid, 0, IPC_RMID);
-}
+semctl(semid, 0, IPC_RMID);
 ```
 
 * **semop()**  
-[utils.c (Linia 42-62)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/utils.c#L42-L62) - Wrapper `operacja_semafor`
+[utils.c (Linia 59-76)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/utils.c#L59-L76) - Wrapper `operacja_semafor`
 ```c
 void operacja_semafor(int semid, int sem_idx, int op) {
     struct sembuf bufor;
@@ -1285,12 +1283,12 @@ void operacja_semafor(int semid, int sem_idx, int op) {
 }
 ```
 
-[kandydat.c (Linia 82)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/kandydat.c#L82) - Wejście do komisji A
+[kandydat.c (Linia 95)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/kandydat.c#L95) - Wejście do komisji A
 ```c
 operacja_semafor(semid, SEM_KOMISJA_A_IDX, -1);  // P (wait)
 ```
 
-[kandydat.c (Linia 115)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/kandydat.c#L115) - Wyjście z komisji A
+[kandydat.c (Linia 138)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/kandydat.c#L138) - Wyjście z komisji A
 ```c
 operacja_semafor(semid, SEM_KOMISJA_A_IDX, 1);   // V (signal)
 ```
@@ -1306,7 +1304,7 @@ operacja_semafor(semid, SEM_KOMISJA_A_IDX, 1);   // V (signal)
 ### G. Segmenty pamięci dzielonej
 
 * **shmget()**  
-[dziekan.c (Linia 374-377)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L374-L377) - Utworzenie segmentu
+[dziekan.c (Linia 371-374)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L371-L374) - Utworzenie segmentu
 ```c
 shmid = shmget(key, sizeof(StudentWynik) * liczba_kandydatow, 
                IPC_CREAT | 0600);
@@ -1317,7 +1315,7 @@ if (shmid == -1) {
 ```
 
 * **shmat()**  
-[dziekan.c (Linia 378-381)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L378-L381) - Dołączenie w Dziekanie
+[dziekan.c (Linia 375-378)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L375-L378) - Dołączenie w Dziekanie
 ```c
 baza_wynikow = (StudentWynik*)shmat(shmid, NULL, 0);
 if (baza_wynikow == (void*)-1) {
@@ -1326,7 +1324,7 @@ if (baza_wynikow == (void*)-1) {
 }
 ```
 
-[kandydat.c (Linia 28-32)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/kandydat.c#L28-L32) - Dołączenie w kandydacie
+[kandydat.c (Linia 60-63)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/kandydat.c#L60-L63) - Dołączenie w kandydacie
 ```c
 shmid = shmget(key, 0, 0);
 baza_shm = (StudentWynik*)shmat(shmid, NULL, 0);
@@ -1337,7 +1335,7 @@ if (baza_shm == (void*)-1) {
 ```
 
 * **Inicjalizacja danych w SHM**  
-[dziekan.c (Linia 382-391)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L382-L391)
+[dziekan.c (Linia 379-388)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L379-L388)
 ```c
 memset(baza_wynikow, 0, sizeof(StudentWynik) * liczba_kandydatow);
 for (int i = 0; i < liczba_kandydatow; i++) {
@@ -1351,7 +1349,7 @@ for (int i = 0; i < liczba_kandydatow; i++) {
 ```
 
 * **Dostęp z synchronizacją**  
-[kandydat.c (Linia 91-99)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/kandydat.c#L91-L99) - Kandydat zapisuje odpowiedzi
+[kandydat.c (Linia 112-120)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/kandydat.c#L112-L120) - Kandydat zapisuje odpowiedzi
 ```c
 operacja_semafor(semid, SEM_DOSTEP_IDX, -1);  // MUTEX
 
@@ -1364,20 +1362,15 @@ operacja_semafor(semid, SEM_DOSTEP_IDX, 1);   // UNLOCK
 ```
 
 * **shmdt()**  
-[dziekan.c (Linia 295-297)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L295-L297) - Odłączenie
+[dziekan.c (Linia 294)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L294) - Odłączenie
 ```c
-if (baza_wynikow) {
-    shmdt(baza_wynikow);
-}
+shmdt(baza_wynikow);
 ```
 
 * **shmctl()**  
-[dziekan.c (Linia 298-301)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L298-L301) - Usunięcie segmentu
+[dziekan.c (Linia 297)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L297) - Usunięcie segmentu
 ```c
-if (shmid != -1) {
-    shmctl(shmid, IPC_RMID, NULL);
-    printf("[Dziekan] Usunieto pamiec dzielona.\n");
-}
+shmctl(shmid, IPC_RMID, NULL);
 ```
 
 ---
@@ -1385,13 +1378,13 @@ if (shmid != -1) {
 ### H. Kolejki komunikatów
 
 * **msgget()**  
-[dziekan.c (Linia 370)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L370) - Utworzenie kolejki
+[dziekan.c (Linia 367)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L367) - Utworzenie kolejki
 ```c
 msgid = msgget(key, IPC_CREAT | 0600);
 ```
 
 * **msgsnd()**  
-[dziekan.c (Linia 494)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L494) - Odpowiedź na maturę
+[dziekan.c (Linia 478-489)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L478-L489) - Odpowiedź na maturę
 ```c
 Komunikat odp;
 odp.mtype = msg.nadawca_pid;  // Adres zwrotny (PID kandydata)
@@ -1399,7 +1392,7 @@ odp.dane_int = (losuj(1,100) <= 2) ? 0 : 1;  // 0=nie, 1=tak
 msgsnd(msgid, &odp, sizeof(Komunikat) - sizeof(long), 0);
 ```
 
-[komisja.c (Linia 253)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/komisja.c#L253) - Sygnał "pytania gotowe"
+[komisja.c (Linia 185-188)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/komisja.c#L185-L188) - Sygnał "pytania gotowe"
 ```c
 Komunikat ready;
 ready.mtype = baza_shm[idx].pid;
@@ -1408,7 +1401,7 @@ msgsnd(msgid, &ready, sizeof(Komunikat)-sizeof(long), 0);
 ```
 
 * **msgrcv()**  
-[kandydat.c (Linia 85-102)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/kandydat.c#L85-L102) - Odbiór z obsługą EINTR
+[kandydat.c (Linia 76-84)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/kandydat.c#L76-L84) - Odbiór z obsługą EINTR
 ```c
 while(1) {
     res = msgrcv(msgid, &msg, sizeof(Komunikat)-sizeof(long), 
@@ -1426,7 +1419,7 @@ while(1) {
 }
 ```
 
-[komisja.c (Linia 161-177)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/komisja.c#L161-L177) - Recepcja z IPC_NOWAIT
+[komisja.c (Linia 34-45)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/komisja.c#L34-L45) - Recepcja z IPC_NOWAIT
 ```c
 ssize_t result = msgrcv(msgid, &msg, sizeof(Komunikat) - sizeof(long),
                         typ_wejscia, IPC_NOWAIT);
@@ -1444,11 +1437,9 @@ if (result == -1) {
 ```
 
 * **msgctl()**  
-[dziekan.c (Linia 307-309)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L307-L309) - Usunięcie kolejki
+[dziekan.c (Linia 306)](https://github.com/adrianKK1/17_Egzamin_wstepny/blob/main/dziekan.c#L306) - Usunięcie kolejki
 ```c
-if (msgid != -1) {
-    msgctl(msgid, IPC_RMID, NULL);
-}
+msgctl(msgid, IPC_RMID, NULL);
 ```
 
 ---
